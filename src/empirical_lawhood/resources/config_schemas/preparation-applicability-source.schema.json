@@ -1,0 +1,191 @@
+{
+  "$defs": {
+    "ObjectIdentity_1e3d5e7bc67c": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/kernel/object-identity"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "object_fingerprint": {
+              "description": "object fingerprint; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_id": {
+              "description": "object id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_schema": {
+              "description": "object schema; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_version": {
+              "description": "object version; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "object_id",
+            "object_schema",
+            "object_version",
+            "object_fingerprint"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "PreparationApplicabilityDesign_ee4d91dc027f": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/preparation-applicability/design"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "development_roots": {
+              "description": "development roots; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "evaluation_roots": {
+              "description": "evaluation roots; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "lower_sha256": {
+              "description": "lower sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "menu": {
+              "description": "menu; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "request_pairs": {
+              "description": "request pairs; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "ridge": {
+              "additionalProperties": false,
+              "description": "ridge; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "lower_sha256",
+            "development_roots",
+            "evaluation_roots",
+            "ridge",
+            "menu",
+            "request_pairs"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "PreparationApplicabilitySource_b71eabf82c85": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/preparation-applicability/source"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "conformance_receipt": {
+              "$ref": "#/$defs/ObjectIdentity_1e3d5e7bc67c",
+              "description": "conformance receipt; constructor checks semantics and units."
+            },
+            "dependency_lock_sha256": {
+              "description": "dependency lock sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "design": {
+              "$ref": "#/$defs/PreparationApplicabilityDesign_ee4d91dc027f",
+              "description": "design; constructor checks semantics and units."
+            },
+            "implementation_plan_sha256": {
+              "description": "implementation plan sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "native_implementation": {
+              "$ref": "#/$defs/ObjectIdentity_1e3d5e7bc67c",
+              "description": "native implementation; constructor checks semantics and units."
+            },
+            "native_recipe": {
+              "description": "native recipe; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "numpy_version": {
+              "description": "numpy version; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "python_version": {
+              "description": "python version; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "implementation_plan_sha256",
+            "dependency_lock_sha256",
+            "native_implementation",
+            "conformance_receipt",
+            "design",
+            "python_version",
+            "numpy_version",
+            "native_recipe"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:preparation-applicability-source",
+  "$ref": "#/$defs/PreparationApplicabilitySource_b71eabf82c85",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Preparation Applicability Source",
+  "x-consumer": "preparation-applicability-source",
+  "x-consumer-maximum-bytes": 1048576,
+  "x-disposition": "editable",
+  "x-preparation-allowed": true
+}

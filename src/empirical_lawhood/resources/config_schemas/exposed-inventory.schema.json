@@ -1,0 +1,66 @@
+{
+  "$id": "urn:empirical-lawhood:configuration:exposed-inventory",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "additionalProperties": false,
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "properties": {
+    "schema": {
+      "const": "empirical-lawhood/examples/exposed-inventory"
+    },
+    "value": {
+      "additionalProperties": false,
+      "properties": {
+        "evidence_role": {
+          "const": "SYNTHETIC_EXPOSED_NONPROMOTABLE"
+        },
+        "history_complete": {
+          "const": false
+        },
+        "inventory_id": {
+          "type": "string"
+        },
+        "members": {
+          "items": {
+            "additionalProperties": false,
+            "properties": {
+              "locator": {
+                "type": "string"
+              },
+              "sha256": {
+                "pattern": "^[0-9a-f]{64}$",
+                "type": "string"
+              }
+            },
+            "required": [
+              "locator",
+              "sha256"
+            ],
+            "type": "object"
+          },
+          "type": "array"
+        }
+      },
+      "required": [
+        "inventory_id",
+        "evidence_role",
+        "history_complete",
+        "members"
+      ],
+      "type": "object"
+    },
+    "version": {
+      "const": "1.0.0"
+    }
+  },
+  "required": [
+    "schema",
+    "version",
+    "value"
+  ],
+  "title": "Exposed Inventory",
+  "type": "object",
+  "x-consumer": "exposed-inventory",
+  "x-consumer-maximum-bytes": 65536,
+  "x-disposition": "helper",
+  "x-preparation-allowed": false
+}

@@ -1,0 +1,86 @@
+{
+  "$defs": {
+    "Grid2OpDevelopmentInput_c672391c362c": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/simulators/grid2op-response/grid2-op-development-input"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "backend_wheel_relative_path": {
+              "description": "backend wheel relative path; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "binding_id": {
+              "description": "binding id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "config_id": {
+              "description": "config id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "dataset_relative_path": {
+              "description": "dataset relative path; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "environment_seed": {
+              "description": "environment seed; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "fresh_target_identity_disjoint": {
+              "description": "fresh target identity disjoint; constructor checks semantics and units.",
+              "type": "boolean"
+            },
+            "grid2op_wheel_relative_path": {
+              "description": "grid2op wheel relative path; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "native_chronic_id": {
+              "description": "native chronic id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "receiver_horizon_steps": {
+              "description": "receiver horizon steps; constructor checks semantics and units.",
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "config_id",
+            "binding_id",
+            "dataset_relative_path",
+            "grid2op_wheel_relative_path",
+            "backend_wheel_relative_path",
+            "native_chronic_id",
+            "environment_seed",
+            "receiver_horizon_steps",
+            "fresh_target_identity_disjoint"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:grid-development",
+  "$ref": "#/$defs/Grid2OpDevelopmentInput_c672391c362c",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Grid Development",
+  "x-consumer": "grid-development",
+  "x-consumer-maximum-bytes": 16384,
+  "x-disposition": "editable",
+  "x-preparation-allowed": true
+}

@@ -1,0 +1,100 @@
+{
+  "scope": "Document and transcription checks only; not independent reproduction of experiments or verification of repository availability.",
+  "checks": {
+    "early_empirical_table_by_page_2": true,
+    "three_figures_in_markdown": true,
+    "three_numbered_tables_in_pdf": true,
+    "references_1_to_28": true,
+    "all_numerical_anchors_present": true,
+    "removed_framing_and_internal_labels_absent": true,
+    "visible_main_version_branding_absent": true,
+    "correct_author_and_orcid": true,
+    "no_out_of_page_text": true,
+    "no_replacement_glyphs": true,
+    "no_sparse_final_page": true,
+    "markdown_image_assets_exist": true,
+    "detailed_empirical_passages_unchanged": true,
+    "all_three_main_tables_unchanged": true,
+    "all_three_figure_captions_unchanged": true,
+    "inherited_asset_and_document_hashes_match": true,
+    "wheeler_discovery_agency_sections_present": true,
+    "no_precise_resource_budgets_added": true,
+    "approved_four_sentence_opening_present_once": true,
+    "only_approved_opening_and_version_changed": true,
+    "evidence_note_unchanged_except_version": true
+  },
+  "all_automated_checks_pass": true,
+  "missing_numerical_anchors": [],
+  "forbidden_matches": [],
+  "changed_inherited_files": [],
+  "early_overview_table_pages": [
+    2
+  ],
+  "manuscript": {
+    "pages": 19,
+    "page_word_counts": [
+      531,
+      562,
+      616,
+      460,
+      502,
+      606,
+      530,
+      343,
+      527,
+      498,
+      321,
+      630,
+      227,
+      537,
+      610,
+      629,
+      563,
+      646,
+      257
+    ],
+    "metadata": {
+      "format": "PDF 1.5",
+      "title": "Empirical Lawhood",
+      "author": "Gareth Seneque",
+      "subject": "Preprint. Internal manuscript version 0.60; 4 October 2026",
+      "keywords": "Empirical Lawhood, response laws, conditions of knowledge, scientific capability, scientific agency, observer-participancy, version 0.60",
+      "creator": "LaTeX via pandoc",
+      "producer": "xdvipdfmx (20240305)",
+      "creationDate": "D:20261004114555Z",
+      "modDate": "",
+      "trapped": "",
+      "encryption": null
+    },
+    "out_of_page_text": [],
+    "replacement_glyph_count": 0,
+    "sha256": "b000a94eeeaa014b6e79491e09ea3d526450457bb0f06236c1d9007e7632f1c7"
+  },
+  "evidence_note": {
+    "pages": 6,
+    "page_word_counts": [
+      376,
+      375,
+      596,
+      503,
+      557,
+      484
+    ],
+    "metadata": {
+      "format": "PDF 1.5",
+      "title": "Empirical Lawhood: Evidence and provenance",
+      "author": "Gareth Seneque",
+      "subject": "Companion note. Internal version 0.60; 4 October 2026",
+      "keywords": "Empirical Lawhood, evidence, provenance, version 0.60",
+      "creator": "LaTeX via pandoc",
+      "producer": "xdvipdfmx (20240305)",
+      "creationDate": "D:20261004114558Z",
+      "modDate": "",
+      "trapped": "",
+      "encryption": null
+    },
+    "out_of_page_text": [],
+    "replacement_glyph_count": 0,
+    "sha256": "0e2216ba1d18839eed387bec93302b6e00a0dd4e70bd53d1e945bb05bb07ff9c"
+  }
+}

@@ -1,0 +1,367 @@
+{
+  "$defs": {
+    "UniformElectronGasAnalyticReferenceConfig_bfdc7290ddcf": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/simulators/uniform-electron-gas-response/analytic-reference-config"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "accepted_clock": {
+              "description": "accepted clock; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "action_direction": {
+              "description": "action direction; constructor checks semantics and units.",
+              "items": false,
+              "maxItems": 3,
+              "minItems": 3,
+              "prefixItems": [
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "decimal": {
+                      "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "decimal"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "decimal": {
+                      "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "decimal"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "decimal": {
+                      "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "decimal"
+                  ],
+                  "type": "object"
+                }
+              ],
+              "type": "array"
+            },
+            "analytic_profile_points": {
+              "description": "analytic profile points; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "applied_clock": {
+              "description": "applied clock; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "config_id": {
+              "description": "config id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "deterministic_kernel_relative_error": {
+              "additionalProperties": false,
+              "description": "deterministic kernel relative error; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "field_ceiling_T": {
+              "additionalProperties": false,
+              "description": "field ceiling T; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "independent_unit_id": {
+              "description": "independent unit id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "q_direction": {
+              "description": "q direction; constructor checks semantics and units.",
+              "items": false,
+              "maxItems": 3,
+              "minItems": 3,
+              "prefixItems": [
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "decimal": {
+                      "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "decimal"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "decimal": {
+                      "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "decimal"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "decimal": {
+                      "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "decimal"
+                  ],
+                  "type": "object"
+                }
+              ],
+              "type": "array"
+            },
+            "q_over_kf": {
+              "description": "q over kf; constructor checks semantics and units.",
+              "items": false,
+              "maxItems": 4,
+              "minItems": 4,
+              "prefixItems": [
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "decimal": {
+                      "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "decimal"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "decimal": {
+                      "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "decimal"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "decimal": {
+                      "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "decimal"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "decimal": {
+                      "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "decimal"
+                  ],
+                  "type": "object"
+                }
+              ],
+              "type": "array"
+            },
+            "r_s": {
+              "additionalProperties": false,
+              "description": "r s; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "receiver_clock": {
+              "description": "receiver clock; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "reference_penetration_depth_m": {
+              "additionalProperties": false,
+              "description": "reference penetration depth m; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "requested_clock": {
+              "description": "requested clock; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "slab_thickness_m": {
+              "additionalProperties": false,
+              "description": "slab thickness m; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "temperature_K": {
+              "additionalProperties": false,
+              "description": "temperature K; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "thresholds": {
+              "description": "thresholds; constructor checks semantics and units.",
+              "items": {
+                "items": false,
+                "maxItems": 2,
+                "minItems": 2,
+                "prefixItems": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "decimal": {
+                        "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "decimal"
+                    ],
+                    "type": "object"
+                  }
+                ],
+                "type": "array"
+              },
+              "type": "array"
+            },
+            "u0": {
+              "additionalProperties": false,
+              "description": "u0; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "config_id",
+            "independent_unit_id",
+            "r_s",
+            "temperature_K",
+            "u0",
+            "q_over_kf",
+            "action_direction",
+            "q_direction",
+            "requested_clock",
+            "accepted_clock",
+            "applied_clock",
+            "receiver_clock",
+            "slab_thickness_m",
+            "reference_penetration_depth_m",
+            "analytic_profile_points",
+            "field_ceiling_T",
+            "deterministic_kernel_relative_error",
+            "thresholds"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:electron-gas-reference",
+  "$ref": "#/$defs/UniformElectronGasAnalyticReferenceConfig_bfdc7290ddcf",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Electron Gas Reference",
+  "x-consumer": "electron-gas-reference",
+  "x-consumer-maximum-bytes": 32768,
+  "x-disposition": "editable",
+  "x-preparation-allowed": true
+}

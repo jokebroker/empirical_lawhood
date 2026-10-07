@@ -1,0 +1,377 @@
+{
+  "edition": "0.60",
+  "scope": "All22 completed-study/analysis families including retrospective/exploratory results; exact original native producing-source joins remain unresolved where stated. Native archive availability is distinct from included documentary evidence.",
+  "claims": [
+    {
+      "id": "R01",
+      "study": "Analytical RC information illustration",
+      "preserved_scope": "Recompute the analytical construction; do not present it as sampled confirmation.",
+      "evidence_role": "analytical construction, not sampled confirmation",
+      "manuscript_references": [
+        18
+      ],
+      "documentary_status": "V0_60_MANUSCRIPT_AND_COMPANION_PACKAGED_BYTE_EXACT; REFERENCED_PREDECESSOR_DOCUMENTS_EXTERNALLY_PRESERVED_NOT_PACKAGED",
+      "selected_external_original_reports": [
+        "parent-result:el-rge-rc1-q-supervised-r3-result-v1.md"
+      ],
+      "original_record_binding": "UNRESOLVED exact claim-to-native-producing-source/arrays/protocol/exposure/receipt join; candidate existence does not establish it",
+      "availability_limit": "No experiments or fresh qualification performed. Deeper archive/native arrays, fitting packages and authority/custody stores left AS IS. Uninspected is not absent.",
+      "external_archive_inventory": "Maintainer preservation packet; private physical locators are not published."
+    },
+    {
+      "id": "R02",
+      "study": "RC hidden-state challenge and history-depth tests",
+      "preserved_scope": "Retain nomination, adverse/nonadverse and untargetable-depth outcomes across the original design.",
+      "evidence_role": "originally prospective reported study; no fresh repetition in integration",
+      "manuscript_references": [
+        18
+      ],
+      "documentary_status": "V0_60_MANUSCRIPT_AND_COMPANION_PACKAGED_BYTE_EXACT; REFERENCED_PREDECESSOR_DOCUMENTS_EXTERNALLY_PRESERVED_NOT_PACKAGED",
+      "selected_external_original_reports": [
+        "parent-result:el-rge-rc1-qd-campaign-closeout-v1.md"
+      ],
+      "original_record_binding": "UNRESOLVED exact claim-to-native-producing-source/arrays/protocol/exposure/receipt join; candidate existence does not establish it",
+      "availability_limit": "No experiments or fresh qualification performed. Deeper archive/native arrays, fitting packages and authority/custody stores left AS IS. Uninspected is not absent.",
+      "external_archive_inventory": "Maintainer preservation packet; private physical locators are not published."
+    },
+    {
+      "id": "R03",
+      "study": "Six-matrix geometry feasibility scan",
+      "preserved_scope": "Include the completed negative result and failed recurring-regime criteria.",
+      "evidence_role": "originally prospective reported study; no fresh repetition in integration",
+      "manuscript_references": [
+        19
+      ],
+      "documentary_status": "V0_60_MANUSCRIPT_AND_COMPANION_PACKAGED_BYTE_EXACT; REFERENCED_PREDECESSOR_DOCUMENTS_EXTERNALLY_PRESERVED_NOT_PACKAGED",
+      "selected_external_original_reports": [
+        "parent-result:constitutive-closure-i-cc1-c1-anisotropic-feasibility-v1.md"
+      ],
+      "original_record_binding": "UNRESOLVED exact claim-to-native-producing-source/arrays/protocol/exposure/receipt join; candidate existence does not establish it",
+      "availability_limit": "No experiments or fresh qualification performed. Deeper archive/native arrays, fitting packages and authority/custody stores left AS IS. Uninspected is not absent.",
+      "external_archive_inventory": "Maintainer preservation packet; private physical locators are not published."
+    },
+    {
+      "id": "R04",
+      "study": "Selected geometric-event investigation",
+      "preserved_scope": "Cover exact replay, same-driver half-step, amplitude controls, local stability and all seven shooting cohorts; keep their selected-event status.",
+      "evidence_role": "retained retrospective/exploratory analysis",
+      "manuscript_references": [
+        19
+      ],
+      "documentary_status": "V0_60_MANUSCRIPT_AND_COMPANION_PACKAGED_BYTE_EXACT; REFERENCED_PREDECESSOR_DOCUMENTS_EXTERNALLY_PRESERVED_NOT_PACKAGED",
+      "selected_external_original_reports": [
+        "parent-result:constitutive-closure-i-isolated-event-shooting-committor-v1-closeout.md"
+      ],
+      "original_record_binding": "UNRESOLVED exact claim-to-native-producing-source/arrays/protocol/exposure/receipt join; candidate existence does not establish it",
+      "availability_limit": "No experiments or fresh qualification performed. Deeper archive/native arrays, fitting packages and authority/custody stores left AS IS. Uninspected is not absent.",
+      "external_archive_inventory": "Maintainer preservation packet; private physical locators are not published."
+    },
+    {
+      "id": "R05",
+      "study": "Approximate algebra persistence",
+      "preserved_scope": "Re-evaluate eigenvalues, subspace angle and associative leakage; distinguish the algebra from its scalar detector.",
+      "evidence_role": "retained retrospective/exploratory analysis",
+      "manuscript_references": [
+        21,
+        22
+      ],
+      "documentary_status": "V0_60_MANUSCRIPT_AND_COMPANION_PACKAGED_BYTE_EXACT; REFERENCED_PREDECESSOR_DOCUMENTS_EXTERNALLY_PRESERVED_NOT_PACKAGED",
+      "selected_external_original_reports": [
+        "parent-result:cross-program-effective-law-metatheory-posthoc-analysis-tranche-v1-closeout.md"
+      ],
+      "original_record_binding": "UNRESOLVED exact claim-to-native-producing-source/arrays/protocol/exposure/receipt join; candidate existence does not establish it",
+      "availability_limit": "No experiments or fresh qualification performed. Deeper archive/native arrays, fitting packages and authority/custody stores left AS IS. Uninspected is not absent.",
+      "external_archive_inventory": "Maintainer preservation packet; private physical locators are not published."
+    },
+    {
+      "id": "R06",
+      "study": "Directional passive prediction",
+      "preserved_scope": "Cover retained histories and horizons, including poor worst-direction prediction.",
+      "evidence_role": "retained retrospective/exploratory analysis",
+      "manuscript_references": [
+        22
+      ],
+      "documentary_status": "V0_60_MANUSCRIPT_AND_COMPANION_PACKAGED_BYTE_EXACT; REFERENCED_PREDECESSOR_DOCUMENTS_EXTERNALLY_PRESERVED_NOT_PACKAGED",
+      "selected_external_original_reports": [
+        "parent-result:cross-program-effective-law-metatheory-posthoc-analysis-tranche-v1-closeout.md"
+      ],
+      "original_record_binding": "UNRESOLVED exact claim-to-native-producing-source/arrays/protocol/exposure/receipt join; candidate existence does not establish it",
+      "availability_limit": "No experiments or fresh qualification performed. Deeper archive/native arrays, fitting packages and authority/custody stores left AS IS. Uninspected is not absent.",
+      "external_archive_inventory": "Maintainer preservation packet; private physical locators are not published."
+    },
+    {
+      "id": "R07",
+      "study": "Coupled-tangent response comparison",
+      "preserved_scope": "Preserve preparation nesting; an explanatory realised-future tangent is not a use-time forecast.",
+      "evidence_role": "retained retrospective/exploratory analysis",
+      "manuscript_references": [
+        21
+      ],
+      "documentary_status": "V0_60_MANUSCRIPT_AND_COMPANION_PACKAGED_BYTE_EXACT; REFERENCED_PREDECESSOR_DOCUMENTS_EXTERNALLY_PRESERVED_NOT_PACKAGED",
+      "selected_external_original_reports": [
+        "parent-result:cc1-cir1-posthoc-analysis-v1-results-2026-09-13.md"
+      ],
+      "original_record_binding": "UNRESOLVED exact claim-to-native-producing-source/arrays/protocol/exposure/receipt join; candidate existence does not establish it",
+      "availability_limit": "No experiments or fresh qualification performed. Deeper archive/native arrays, fitting packages and authority/custody stores left AS IS. Uninspected is not absent.",
+      "external_archive_inventory": "Maintainer preservation packet; private physical locators are not published."
+    },
+    {
+      "id": "R08",
+      "study": "Radial preparation-increment surrogate",
+      "preserved_scope": "Repeat fitting, holdouts and comparisons with endpoint maps under their actual menus.",
+      "evidence_role": "retained retrospective/exploratory analysis",
+      "manuscript_references": [
+        20
+      ],
+      "documentary_status": "V0_60_MANUSCRIPT_AND_COMPANION_PACKAGED_BYTE_EXACT; REFERENCED_PREDECESSOR_DOCUMENTS_EXTERNALLY_PRESERVED_NOT_PACKAGED",
+      "selected_external_original_reports": [
+        "parent-result:cc1-m5-transient-bridge-2026-09-20.md"
+      ],
+      "original_record_binding": "UNRESOLVED exact claim-to-native-producing-source/arrays/protocol/exposure/receipt join; candidate existence does not establish it",
+      "availability_limit": "No experiments or fresh qualification performed. Deeper archive/native arrays, fitting packages and authority/custody stores left AS IS. Uninspected is not absent.",
+      "external_archive_inventory": "Maintainer preservation packet; private physical locators are not published."
+    },
+    {
+      "id": "R09",
+      "study": "Absolute-baseline and support diagnostics",
+      "preserved_scope": "Include oracle diagnostics and failed support predictions; retain the absolute-forecasting limitation.",
+      "evidence_role": "retained retrospective/exploratory analysis",
+      "manuscript_references": [
+        20
+      ],
+      "documentary_status": "V0_60_MANUSCRIPT_AND_COMPANION_PACKAGED_BYTE_EXACT; REFERENCED_PREDECESSOR_DOCUMENTS_EXTERNALLY_PRESERVED_NOT_PACKAGED",
+      "selected_external_original_reports": [
+        "parent-result:cc1-m5-transient-bridge-2026-09-20.md"
+      ],
+      "original_record_binding": "UNRESOLVED exact claim-to-native-producing-source/arrays/protocol/exposure/receipt join; candidate existence does not establish it",
+      "availability_limit": "No experiments or fresh qualification performed. Deeper archive/native arrays, fitting packages and authority/custody stores left AS IS. Uninspected is not absent.",
+      "external_archive_inventory": "Maintainer preservation packet; private physical locators are not published."
+    },
+    {
+      "id": "R10",
+      "study": "Forecast-mediated reuse",
+      "preserved_scope": "Keep calibration and evaluation separate, and retain admission and comparator results.",
+      "evidence_role": "originally prospective reported study; no fresh repetition in integration",
+      "manuscript_references": [
+        18
+      ],
+      "documentary_status": "V0_60_MANUSCRIPT_AND_COMPANION_PACKAGED_BYTE_EXACT; REFERENCED_PREDECESSOR_DOCUMENTS_EXTERNALLY_PRESERVED_NOT_PACKAGED",
+      "selected_external_original_reports": [
+        "parent-result:cc1-finite-lawhood-m4-results-2026-09-17.md"
+      ],
+      "original_record_binding": "UNRESOLVED exact claim-to-native-producing-source/arrays/protocol/exposure/receipt join; candidate existence does not establish it",
+      "availability_limit": "No experiments or fresh qualification performed. Deeper archive/native arrays, fitting packages and authority/custody stores left AS IS. Uninspected is not absent.",
+      "external_archive_inventory": "Maintainer preservation packet; private physical locators are not published."
+    },
+    {
+      "id": "R11",
+      "study": "Preparation-mediated applicability",
+      "preserved_scope": "Include preceding failed screens and separate qualification/confirmation, preserving the unchanged response-package comparisons.",
+      "evidence_role": "originally prospective reported study; no fresh repetition in integration",
+      "manuscript_references": [
+        18
+      ],
+      "documentary_status": "V0_60_MANUSCRIPT_AND_COMPANION_PACKAGED_BYTE_EXACT; REFERENCED_PREDECESSOR_DOCUMENTS_EXTERNALLY_PRESERVED_NOT_PACKAGED",
+      "selected_external_original_reports": [
+        "parent-result:cc1-boundary-production-v1-2026-10-01.md",
+        "parent-result:cc1-finite-lawhood-m5-results-2026-09-19.md",
+        "parent-result:cc1-finite-lawhood-m5-v2-results-2026-09-20.md"
+      ],
+      "original_record_binding": "UNRESOLVED exact claim-to-native-producing-source/arrays/protocol/exposure/receipt join; candidate existence does not establish it",
+      "availability_limit": "No experiments or fresh qualification performed. Deeper archive/native arrays, fitting packages and authority/custody stores left AS IS. Uninspected is not absent.",
+      "external_archive_inventory": "Maintainer preservation packet; private physical locators are not published."
+    },
+    {
+      "id": "R12",
+      "study": "Preparation diagnostics and numerical sensitivity",
+      "preserved_scope": "Include support bypass, outcome-visible action search, both-view checks and the conservative envelope; preserve post-hoc status.",
+      "evidence_role": "retained retrospective/exploratory analysis",
+      "manuscript_references": [
+        18
+      ],
+      "documentary_status": "V0_60_MANUSCRIPT_AND_COMPANION_PACKAGED_BYTE_EXACT; REFERENCED_PREDECESSOR_DOCUMENTS_EXTERNALLY_PRESERVED_NOT_PACKAGED",
+      "selected_external_original_reports": [
+        "parent-result:cc1-boundary-adversarial-posthoc-2026-10-01.md",
+        "parent-result:cc1-applicability-production-opportunity-v1-2026-10-01.md"
+      ],
+      "original_record_binding": "UNRESOLVED exact claim-to-native-producing-source/arrays/protocol/exposure/receipt join; candidate existence does not establish it",
+      "availability_limit": "No experiments or fresh qualification performed. Deeper archive/native arrays, fitting packages and authority/custody stores left AS IS. Uninspected is not absent.",
+      "external_archive_inventory": "Maintainer preservation packet; private physical locators are not published."
+    },
+    {
+      "id": "R13",
+      "study": "Cortical-cell records",
+      "preserved_scope": "Reanalyse the recorded cohort and logged options; option availability is not successful selection.",
+      "evidence_role": "retained retrospective/exploratory analysis",
+      "manuscript_references": [
+        18,
+        22
+      ],
+      "documentary_status": "V0_60_MANUSCRIPT_AND_COMPANION_PACKAGED_BYTE_EXACT; REFERENCED_PREDECESSOR_DOCUMENTS_EXTERNALLY_PRESERVED_NOT_PACKAGED",
+      "selected_external_original_reports": [],
+      "original_record_binding": "UNRESOLVED exact claim-to-native-producing-source/arrays/protocol/exposure/receipt join; candidate existence does not establish it",
+      "availability_limit": "No experiments or fresh qualification performed. Deeper archive/native arrays, fitting packages and authority/custody stores left AS IS. Uninspected is not absent.",
+      "external_archive_inventory": "Maintainer preservation packet; private physical locators are not published."
+    },
+    {
+      "id": "R14",
+      "study": "Optical-mirror records",
+      "preserved_scope": "Reanalyse all held-out blocks and correct/reversed-action comparisons; distinguish published underlying effects from new analysis.",
+      "evidence_role": "retained retrospective/exploratory analysis",
+      "manuscript_references": [
+        18,
+        22
+      ],
+      "documentary_status": "V0_60_MANUSCRIPT_AND_COMPANION_PACKAGED_BYTE_EXACT; REFERENCED_PREDECESSOR_DOCUMENTS_EXTERNALLY_PRESERVED_NOT_PACKAGED",
+      "selected_external_original_reports": [],
+      "original_record_binding": "UNRESOLVED exact claim-to-native-producing-source/arrays/protocol/exposure/receipt join; candidate existence does not establish it",
+      "availability_limit": "No experiments or fresh qualification performed. Deeper archive/native arrays, fitting packages and authority/custody stores left AS IS. Uninspected is not absent.",
+      "external_archive_inventory": "Maintainer preservation packet; private physical locators are not published."
+    },
+    {
+      "id": "R15",
+      "study": "Physical-battery records",
+      "preserved_scope": "Include prediction and voltage/capacity uncertainty coverage for the recorded cohort.",
+      "evidence_role": "retained retrospective/exploratory analysis",
+      "manuscript_references": [
+        18,
+        22
+      ],
+      "documentary_status": "V0_60_MANUSCRIPT_AND_COMPANION_PACKAGED_BYTE_EXACT; REFERENCED_PREDECESSOR_DOCUMENTS_EXTERNALLY_PRESERVED_NOT_PACKAGED",
+      "selected_external_original_reports": [],
+      "original_record_binding": "UNRESOLVED exact claim-to-native-producing-source/arrays/protocol/exposure/receipt join; candidate existence does not establish it",
+      "availability_limit": "No experiments or fresh qualification performed. Deeper archive/native arrays, fitting packages and authority/custody stores left AS IS. Uninspected is not absent.",
+      "external_archive_inventory": "Maintainer preservation packet; private physical locators are not published."
+    },
+    {
+      "id": "R16",
+      "study": "MAST-U divertor modulation",
+      "preserved_scope": "Include both discharges and unresolved delivery/sink-accounting limits.",
+      "evidence_role": "retained retrospective/exploratory analysis",
+      "manuscript_references": [
+        18,
+        22
+      ],
+      "documentary_status": "V0_60_MANUSCRIPT_AND_COMPANION_PACKAGED_BYTE_EXACT; REFERENCED_PREDECESSOR_DOCUMENTS_EXTERNALLY_PRESERVED_NOT_PACKAGED",
+      "selected_external_original_reports": [
+        "parent-result:mastu-grounded-freegsnke-epistemic-control-v1-short-horizon-closeout.md"
+      ],
+      "original_record_binding": "UNRESOLVED exact claim-to-native-producing-source/arrays/protocol/exposure/receipt join; candidate existence does not establish it",
+      "availability_limit": "No experiments or fresh qualification performed. Deeper archive/native arrays, fitting packages and authority/custody stores left AS IS. Uninspected is not absent.",
+      "external_archive_inventory": "Maintainer preservation packet; private physical locators are not published."
+    },
+    {
+      "id": "R17",
+      "study": "Gym\u2013TORAX selected-action efficacy",
+      "preserved_scope": "Cover the originally prospective efficacy study under its declared design and effects.",
+      "evidence_role": "originally prospective reported study; no fresh repetition in integration",
+      "manuscript_references": [
+        18
+      ],
+      "documentary_status": "V0_60_MANUSCRIPT_AND_COMPANION_PACKAGED_BYTE_EXACT; REFERENCED_PREDECESSOR_DOCUMENTS_EXTERNALLY_PRESERVED_NOT_PACKAGED",
+      "selected_external_original_reports": [
+        "parent-result:empirical-lawhood-epistemic-control-simulator-local-flagship-v6-r1.md"
+      ],
+      "original_record_binding": "UNRESOLVED exact claim-to-native-producing-source/arrays/protocol/exposure/receipt join; candidate existence does not establish it",
+      "availability_limit": "No experiments or fresh qualification performed. Deeper archive/native arrays, fitting packages and authority/custody stores left AS IS. Uninspected is not absent.",
+      "external_archive_inventory": "Maintainer preservation packet; private physical locators are not published."
+    },
+    {
+      "id": "R18",
+      "study": "PyBaMM selected-action efficacy",
+      "preserved_scope": "Cover the originally prospective efficacy study and its integrated-current interpretation.",
+      "evidence_role": "originally prospective reported study; no fresh repetition in integration",
+      "manuscript_references": [
+        18
+      ],
+      "documentary_status": "V0_60_MANUSCRIPT_AND_COMPANION_PACKAGED_BYTE_EXACT; REFERENCED_PREDECESSOR_DOCUMENTS_EXTERNALLY_PRESERVED_NOT_PACKAGED",
+      "selected_external_original_reports": [
+        "parent-result:empirical-lawhood-epistemic-control-simulator-local-flagship-v6-r1.md"
+      ],
+      "original_record_binding": "UNRESOLVED exact claim-to-native-producing-source/arrays/protocol/exposure/receipt join; candidate existence does not establish it",
+      "availability_limit": "No experiments or fresh qualification performed. Deeper archive/native arrays, fitting packages and authority/custody stores left AS IS. Uninspected is not absent.",
+      "external_archive_inventory": "Maintainer preservation packet; private physical locators are not published."
+    },
+    {
+      "id": "R19",
+      "study": "Reduced PyBaMM description",
+      "preserved_scope": "Include every continuation check and the thermal failure; do not imply prospective-control entry.",
+      "evidence_role": "originally prospective reported study; no fresh repetition in integration",
+      "manuscript_references": [
+        18
+      ],
+      "documentary_status": "V0_60_MANUSCRIPT_AND_COMPANION_PACKAGED_BYTE_EXACT; REFERENCED_PREDECESSOR_DOCUMENTS_EXTERNALLY_PRESERVED_NOT_PACKAGED",
+      "selected_external_original_reports": [
+        "parent-result:pybamm-reduced-coordinate-sufficiency-successor-v8d-closeout-v1.md"
+      ],
+      "original_record_binding": "UNRESOLVED exact claim-to-native-producing-source/arrays/protocol/exposure/receipt join; candidate existence does not establish it",
+      "availability_limit": "No experiments or fresh qualification performed. Deeper archive/native arrays, fitting packages and authority/custody stores left AS IS. Uninspected is not absent.",
+      "external_archive_inventory": "Maintainer preservation packet; private physical locators are not published."
+    },
+    {
+      "id": "R20",
+      "study": "Reactor atlas and prospective service",
+      "preserved_scope": "Cover qualification, prospective requests, deliveries and guard declines with their distinct denominators.",
+      "evidence_role": "originally prospective reported study; no fresh repetition in integration",
+      "manuscript_references": [
+        18
+      ],
+      "documentary_status": "V0_60_MANUSCRIPT_AND_COMPANION_PACKAGED_BYTE_EXACT; REFERENCED_PREDECESSOR_DOCUMENTS_EXTERNALLY_PRESERVED_NOT_PACKAGED",
+      "selected_external_original_reports": [
+        "parent-result:reactor-reusable-composition-capstone-v1-2026-10-01.md",
+        "parent-result:reactor-classical-el-v2-closeout-2026-09-25.md"
+      ],
+      "original_record_binding": "UNRESOLVED exact claim-to-native-producing-source/arrays/protocol/exposure/receipt join; candidate existence does not establish it",
+      "availability_limit": "No experiments or fresh qualification performed. Deeper archive/native arrays, fitting packages and authority/custody stores left AS IS. Uninspected is not absent.",
+      "external_archive_inventory": "Maintainer preservation packet; private physical locators are not published."
+    },
+    {
+      "id": "R21",
+      "study": "Reactor counterfactual service audit",
+      "preserved_scope": "Repeat all comparator policies as a same-episode retrospective analysis.",
+      "evidence_role": "retained retrospective/exploratory analysis",
+      "manuscript_references": [
+        18
+      ],
+      "documentary_status": "V0_60_MANUSCRIPT_AND_COMPANION_PACKAGED_BYTE_EXACT; REFERENCED_PREDECESSOR_DOCUMENTS_EXTERNALLY_PRESERVED_NOT_PACKAGED",
+      "selected_external_original_reports": [
+        "parent-result:reactor-reusable-composition-posthoc-2026-10-01.md"
+      ],
+      "original_record_binding": "UNRESOLVED exact claim-to-native-producing-source/arrays/protocol/exposure/receipt join; candidate existence does not establish it",
+      "availability_limit": "No experiments or fresh qualification performed. Deeper archive/native arrays, fitting packages and authority/custody stores left AS IS. Uninspected is not absent.",
+      "external_archive_inventory": "Maintainer preservation packet; private physical locators are not published."
+    },
+    {
+      "id": "R22",
+      "study": "MAST heating\u2013TORAX bridge",
+      "preserved_scope": "Include the failed physical-classifier criterion and corrected replay's intervention refusal.",
+      "evidence_role": "retained retrospective/exploratory analysis",
+      "manuscript_references": [
+        18,
+        22
+      ],
+      "documentary_status": "V0_60_MANUSCRIPT_AND_COMPANION_PACKAGED_BYTE_EXACT; REFERENCED_PREDECESSOR_DOCUMENTS_EXTERNALLY_PRESERVED_NOT_PACKAGED",
+      "selected_external_original_reports": [
+        "parent-result:mast-torax-phase12-joint-adjudication-and-closeout-v1.md",
+        "parent-result:mast-torax-compiler-semantic-correction-v1.md"
+      ],
+      "original_record_binding": "UNRESOLVED exact claim-to-native-producing-source/arrays/protocol/exposure/receipt join; candidate existence does not establish it",
+      "availability_limit": "No experiments or fresh qualification performed. Deeper archive/native arrays, fitting packages and authority/custody stores left AS IS. Uninspected is not absent.",
+      "external_archive_inventory": "Maintainer preservation packet; private physical locators are not published."
+    }
+  ],
+  "proposed_not_performed": [
+    "Dependent matrix constitutive and nested-control stages following failed feasibility",
+    "Later recursive-closure proposal stages beyond completed source sections1\u20132",
+    "General integrated preparation-selection-and-use controller",
+    "Agency/interface efficiency benefits and proposed fusion-propulsion/materials dependency chain"
+  ],
+  "selected_native_records_publicly_deposited": false,
+  "later_all_experiments_rerun": "Deferred until source fixes and finalisation finish; original-cohort reproduction and fresh repetition remain separate",
+  "limitations": [
+    "Included40-member bundle is documentary/figure/build source, not complete native archive.",
+    "Available external reports and metadata are subject-related candidates; exact claim/source/custody joins require later verification.",
+    "Original execution tool/command/full TeX logs absent from supplied publication bundle.",
+    "Original source namespaces/signatures/exposure histories are retained without current-source qualification."
+  ]
+}

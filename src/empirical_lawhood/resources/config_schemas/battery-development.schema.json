@@ -1,0 +1,220 @@
+{
+  "$defs": {
+    "PyBaMMDevelopmentInput_c65a8ff1e48d": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/simulators/py-ba-mm-development-input"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "config_id": {
+              "description": "config id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "denominator_id": {
+              "description": "denominator id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "electrothermal_unit_id": {
+              "description": "electrothermal unit id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "initial_soc": {
+              "additionalProperties": false,
+              "description": "initial soc; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "initial_temperature_k": {
+              "additionalProperties": false,
+              "description": "initial temperature k; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "reduced_observation_chart_id": {
+              "description": "reduced observation chart id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "reduced_observation_history_id": {
+              "description": "reduced observation history id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "reduced_observation_initial_socs": {
+              "description": "reduced observation initial socs; constructor checks semantics and units.",
+              "items": false,
+              "maxItems": 3,
+              "minItems": 3,
+              "prefixItems": [
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "decimal": {
+                      "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "decimal"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "decimal": {
+                      "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "decimal"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "decimal": {
+                      "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "decimal"
+                  ],
+                  "type": "object"
+                }
+              ],
+              "type": "array"
+            },
+            "reduced_observation_initial_temperatures_k": {
+              "description": "reduced observation initial temperatures k; constructor checks semantics and units.",
+              "items": false,
+              "maxItems": 3,
+              "minItems": 3,
+              "prefixItems": [
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "decimal": {
+                      "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "decimal"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "decimal": {
+                      "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "decimal"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "decimal": {
+                      "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "decimal"
+                  ],
+                  "type": "object"
+                }
+              ],
+              "type": "array"
+            },
+            "reduced_observation_unit_ids": {
+              "description": "reduced observation unit ids; constructor checks semantics and units.",
+              "items": false,
+              "maxItems": 3,
+              "minItems": 3,
+              "prefixItems": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "string"
+                }
+              ],
+              "type": "array"
+            },
+            "restart_history_id": {
+              "description": "restart history id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "restart_unit_id": {
+              "description": "restart unit id; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "config_id",
+            "denominator_id",
+            "electrothermal_unit_id",
+            "restart_unit_id",
+            "reduced_observation_unit_ids",
+            "initial_soc",
+            "initial_temperature_k",
+            "reduced_observation_initial_socs",
+            "reduced_observation_initial_temperatures_k",
+            "restart_history_id",
+            "reduced_observation_history_id",
+            "reduced_observation_chart_id"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:battery-development",
+  "$ref": "#/$defs/PyBaMMDevelopmentInput_c65a8ff1e48d",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Battery Development",
+  "x-consumer": "battery-development",
+  "x-consumer-maximum-bytes": 16384,
+  "x-disposition": "editable",
+  "x-preparation-allowed": true
+}

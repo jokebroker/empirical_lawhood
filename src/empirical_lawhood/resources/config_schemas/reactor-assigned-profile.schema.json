@@ -1,0 +1,247 @@
+{
+  "$defs": {
+    "AssignedReactorAuthoringProfile_4016bcc159e3": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/composition/reactor-prefix-response/assigned-reactor-authoring-profile"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "assignment": {
+              "$ref": "#/$defs/ReactorPrefixAssignment_92089cd04c4d",
+              "description": "assignment; constructor checks semantics and units."
+            },
+            "experiment_id": {
+              "description": "experiment id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "prior_census": {
+              "$ref": "#/$defs/ReactorPrefixPriorCensus_7e9ea5680a9f",
+              "description": "prior census; constructor checks semantics and units."
+            },
+            "profile_id": {
+              "description": "profile id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "public_source_sha256": {
+              "description": "public source sha256; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "profile_id",
+            "experiment_id",
+            "public_source_sha256",
+            "assignment",
+            "prior_census"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "ObjectIdentity_1e3d5e7bc67c": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/kernel/object-identity"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "object_fingerprint": {
+              "description": "object fingerprint; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_id": {
+              "description": "object id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_schema": {
+              "description": "object schema; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_version": {
+              "description": "object version; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "object_id",
+            "object_schema",
+            "object_version",
+            "object_fingerprint"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "ReactorPrefixAssignedUnit_324d472a60ff": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/simulators/reactor-prefix-response/reactor-prefix-assigned-unit"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "noise_seed": {
+              "description": "noise seed; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "public_scenario": {
+              "description": "public scenario; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "unit_id": {
+              "description": "unit id; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "unit_id",
+            "public_scenario",
+            "noise_seed"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "ReactorPrefixAssignment_92089cd04c4d": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/simulators/reactor-prefix-response/reactor-prefix-assignment"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "assignment_id": {
+              "description": "assignment id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "evidence_role": {
+              "description": "evidence role; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "prior_census": {
+              "$ref": "#/$defs/ObjectIdentity_1e3d5e7bc67c",
+              "description": "prior census; constructor checks semantics and units."
+            },
+            "units": {
+              "description": "units; constructor checks semantics and units.",
+              "items": {
+                "$ref": "#/$defs/ReactorPrefixAssignedUnit_324d472a60ff"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "assignment_id",
+            "units",
+            "prior_census",
+            "evidence_role"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "ReactorPrefixPriorCensus_7e9ea5680a9f": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/simulators/reactor-prefix-response/reactor-prefix-prior-census"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "census_id": {
+              "description": "census id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "prior_seed_ids": {
+              "description": "prior seed ids; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "prior_unit_ids": {
+              "description": "prior unit ids; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "source_inventory": {
+              "$ref": "#/$defs/ObjectIdentity_1e3d5e7bc67c",
+              "description": "source inventory; constructor checks semantics and units."
+            }
+          },
+          "required": [
+            "census_id",
+            "prior_unit_ids",
+            "prior_seed_ids",
+            "source_inventory"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:reactor-assigned-profile",
+  "$ref": "#/$defs/AssignedReactorAuthoringProfile_4016bcc159e3",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Reactor Assigned Profile",
+  "x-consumer": "reactor-assigned-profile",
+  "x-consumer-maximum-bytes": 67108864,
+  "x-disposition": "retained",
+  "x-preparation-allowed": false
+}

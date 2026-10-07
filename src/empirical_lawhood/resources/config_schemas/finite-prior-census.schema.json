@@ -1,0 +1,47 @@
+{
+  "$id": "urn:empirical-lawhood:configuration:finite-prior-census",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "properties": {
+    "excluded_seed_ids": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "excluded_unit_ids": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "proposed_seed_ids": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "proposed_unit_ids": {
+      "items": {
+        "type": "string"
+      },
+      "type": "array"
+    },
+    "schema": {
+      "const": "empirical-lawhood/methods/finite-response-law/native-exposure-metadata"
+    }
+  },
+  "required": [
+    "schema",
+    "excluded_unit_ids",
+    "excluded_seed_ids",
+    "proposed_unit_ids",
+    "proposed_seed_ids"
+  ],
+  "title": "Finite Prior Census",
+  "type": "object",
+  "x-consumer": "finite-prior-census",
+  "x-consumer-maximum-bytes": 134217728,
+  "x-disposition": "import",
+  "x-preparation-allowed": false
+}

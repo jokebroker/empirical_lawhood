@@ -1,0 +1,145 @@
+{
+  "edition": "0.60",
+  "scope": "Published summary operands and roles only. This file is not a plot generator, native array archive, fit, resampling input or scientific adjudication.",
+  "rc": {
+    "source": "manuscript section3.1 and Figure1; D2 E1",
+    "decay_times": [
+      1,
+      4
+    ],
+    "initial_branch_voltages": [
+      [
+        1,
+        1
+      ],
+      [
+        0.5,
+        1.5
+      ]
+    ],
+    "max_separation_over_V0": 0.11812,
+    "minimax_bound_over_V0": 0.05906,
+    "seed_blocks": 36,
+    "nominations": 2319,
+    "nonadverse": 795,
+    "response_adverse_only": 625,
+    "response_and_decision_adverse": 899
+  },
+  "geometry": {
+    "source": "manuscript section3.2; D4 executive synthesis, sections1.1/8",
+    "valid_trajectories": 9126,
+    "label_00": 9125,
+    "label_01": 1,
+    "shooting_cohorts": 7,
+    "branches_per_cohort": 64,
+    "resolved_branches": 448,
+    "source_admitted_checkpoints": 6,
+    "rolling_target_first_successes": 0,
+    "source_admitted_branches": 384,
+    "sampling_unit": "conditional futures from selected checkpoints; not independent event discovery",
+    "dependent_constitutive_stages_executed": false
+  },
+  "factor": {
+    "source": "manuscript section3.3; D3/D6 overlapping retained analysis",
+    "slow_eigenvalues": [
+      0.1404,
+      0.1457,
+      0.2263
+    ],
+    "next_band": 8.34,
+    "principal_angle_degrees": 0.74,
+    "associative_leakage": 0.000292,
+    "scalar_threshold": 0.3,
+    "histories": 64,
+    "horizon_ticks": 32,
+    "median_normalised_losses": [
+      0.00024,
+      0.42,
+      3.714
+    ],
+    "histories_worst_loss_above_one": 63
+  },
+  "transient": {
+    "source": "manuscript section3.4; D5 sections1\u20132 retrospective reported findings",
+    "preset_stiffness_numerator": 88,
+    "preset_stiffness_denominator": 9,
+    "backward_difference_ticks": 32,
+    "channels": 4,
+    "interface_coordinates": 24,
+    "interface_increment_mse_reduction_percent": 93.0,
+    "response_increment_mse_reduction_percent": 90.1,
+    "mse_higher_than_endpoint_menu_percent": 41.5,
+    "baseline_squared_contribution": 2.2224e-06,
+    "increment_squared_contribution": 2.8448e-09,
+    "rounded_ratio": 781,
+    "support_failures_forecast_inside": 10,
+    "fresh_confirmation": false,
+    "future_hold_baseline_available_to_selector": false
+  },
+  "fixed_coefficient_composition": {
+    "source": "manuscript section4.1/Figure2; D2 E2; revision notes section4.1",
+    "calibration_episodes": 32,
+    "calibration_order_statistic": 30,
+    "marginal_target": 0.9,
+    "episodes": 64,
+    "joint_successes": 61,
+    "false_admissions": 0,
+    "delivered_assays": 125,
+    "nonattempts": 3,
+    "cancellations": 0,
+    "one_sided_95_success_lower": 0.8833,
+    "one_sided_95_false_admission_upper": 0.04573,
+    "composed_mse": 0.01865547,
+    "cached_mse": 0.02574974,
+    "direct_mse": 0.01994648,
+    "loss_reduction_vs_cached_percent": 27.55,
+    "loss_reduction_vs_direct_percent": 6.47,
+    "paired_p": 0.5,
+    "final_first_example_admission_interval": null
+  },
+  "boundary_production": {
+    "source": "manuscript section4.2/Figure3; D2 E3; revision notes section4.3",
+    "qualification_episodes_excluded": 8,
+    "confirmation_episodes": 32,
+    "pairs_per_episode": 256,
+    "pairs": 8192,
+    "primary_successes": {
+      "H": 0,
+      "N": 7965,
+      "P": 0
+    },
+    "primary_validity_episodes": {
+      "H": 0,
+      "N": 32,
+      "P": 0
+    },
+    "false_admission_episodes": 0,
+    "paired_favourable": 32,
+    "paired_reverse": 0,
+    "paired_p": 2.3283064365386963e-10,
+    "primary_gain_percentage_points": 97.23,
+    "support_bypass_counts": {
+      "H": 7916,
+      "N": 7965,
+      "P": 7952
+    },
+    "support_bypass_difference_pairs": 49,
+    "support_bypass_gain_percentage_points": 0.5981445,
+    "both_view_episodes": 31,
+    "both_view_pairs": 7719,
+    "conservative_episodes": 27,
+    "conservative_pairs": 6720,
+    "conservative_gain_percentage_points": 82.03,
+    "zero_failure_one_sided_95_upper_percent": 8.94,
+    "uncertainty_unit": "episode, not request pair",
+    "bootstrap_confidence_level": null,
+    "formal_admission": "NOT_EVALUATED",
+    "source_perturbation_scale": 0.002,
+    "source_perturbation_variance": 4e-06,
+    "preparation_selection_tick": 4096,
+    "handoff_tick": 4496,
+    "response_end_tick": 4688
+  },
+  "license": "CC0-1.0",
+  "provenance": "Transcribed summary operands carried from archived0.10 diagnostic owner, checked against exact selected0.60 manuscript and companion; not recomputed native results."
+}

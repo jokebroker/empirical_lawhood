@@ -1,0 +1,96 @@
+{
+  "$defs": {
+    "SyntheticPropulsionDevelopmentInput_45d782706eef": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/methods/synthetic-propulsion-development-input"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "config_id": {
+              "description": "config id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "cycle_count": {
+              "description": "cycle count; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "fault_cycle": {
+              "description": "fault cycle; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "generation_seed": {
+              "description": "generation seed; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "independent_world_count": {
+              "description": "independent world count; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "maximum_acts": {
+              "description": "maximum acts; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "maximum_cost": {
+              "description": "maximum cost; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "method_ids": {
+              "description": "method ids; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "repair_cycle": {
+              "description": "repair cycle; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "split": {
+              "description": "split; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "world_id_prefix": {
+              "description": "world id prefix; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "config_id",
+            "world_id_prefix",
+            "split",
+            "independent_world_count",
+            "generation_seed",
+            "method_ids",
+            "maximum_acts",
+            "maximum_cost",
+            "cycle_count",
+            "fault_cycle",
+            "repair_cycle"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:propulsion-reference",
+  "$ref": "#/$defs/SyntheticPropulsionDevelopmentInput_45d782706eef",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Propulsion Reference",
+  "x-consumer": "propulsion-reference",
+  "x-consumer-maximum-bytes": 16384,
+  "x-disposition": "editable",
+  "x-preparation-allowed": true
+}

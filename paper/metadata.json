@@ -1,0 +1,17 @@
+{
+  "edition": "0.60",
+  "title": "Empirical Lawhood",
+  "creator": {
+    "name": "Seneque, Gareth",
+    "orcid": "0009-0003-3046-6899"
+  },
+  "manuscript_date_as_supplied": "2026-10-04",
+  "manuscript_doi": "10.5281/zenodo.23083988",
+  "peer_reviewed": false,
+  "related_doi_resolution_verified": true,
+  "owner_selected_deposit": "https://zenodo.org/records/23083988",
+  "deposit_metadata_verification": "Live Zenodo API HTTP200; exact record retained with the deposited PDF, file MD5 independently matched.",
+  "deposit_publication_date": "2026-10-01",
+  "supplied_bundle_doi_statement": "Original bundle calls DOI project/software and assigns no manuscript DOI; preserved unchanged as original-source provenance.",
+  "supplied_bundle_project_software_doi_label": "10.5281/zenodo.23083988"
+}

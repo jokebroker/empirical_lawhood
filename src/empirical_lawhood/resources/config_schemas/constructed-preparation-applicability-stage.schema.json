@@ -1,0 +1,981 @@
+{
+  "$defs": {
+    "ArtifactIdentity_3b360fc69225": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/kernel/artifact-identity"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "artifact_id": {
+              "description": "artifact id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "extensions": {
+              "description": "extensions; constructor checks semantics and units.",
+              "items": {
+                "$ref": "#/$defs/ExtensionBinding_d34345d4218d"
+              },
+              "type": "array"
+            },
+            "media_type": {
+              "description": "media type; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "payload_schema": {
+              "description": "payload schema; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "role": {
+              "description": "role; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "sha256": {
+              "description": "sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "size_bytes": {
+              "description": "size bytes; constructor checks semantics and units.",
+              "type": "integer"
+            }
+          },
+          "required": [
+            "artifact_id",
+            "role",
+            "payload_schema",
+            "sha256",
+            "media_type",
+            "size_bytes",
+            "extensions"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "ConstructedPreparationCompatibility_dea549bb2319": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/constructed-preparation-applicability/compatibility"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "authority_ceiling": {
+              "description": "authority ceiling; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "changed_denominator": {
+              "description": "changed denominator; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "chart": {
+              "$ref": "#/$defs/FiniteResponseLawResponseChart_15959af4146d",
+              "description": "chart; constructor checks semantics and units."
+            },
+            "clocks": {
+              "description": "clocks; constructor checks semantics and units.",
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            "instrument": {
+              "$ref": "#/$defs/ObjectIdentity_1e3d5e7bc67c",
+              "description": "instrument; constructor checks semantics and units."
+            },
+            "native_chart_map": {
+              "description": "native chart map; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "instrument",
+            "chart",
+            "native_chart_map",
+            "clocks",
+            "changed_denominator",
+            "authority_ceiling"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "ConstructedPreparationDesign_60f3af453632": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/constructed-preparation-applicability/design"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "compatibility": {
+              "$ref": "#/$defs/ConstructedPreparationCompatibility_dea549bb2319",
+              "description": "compatibility; constructor checks semantics and units."
+            },
+            "evaluation_roots": {
+              "description": "evaluation roots; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "innovation_fraction": {
+              "additionalProperties": false,
+              "description": "innovation fraction; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "lower_sha256": {
+              "description": "lower sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "menu": {
+              "description": "menu; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "nominal_index": {
+              "description": "nominal index; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "nominal_phase": {
+              "description": "nominal phase; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "nominal_programme": {
+              "description": "nominal programme; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "qualification_roots": {
+              "description": "qualification roots; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "request_pairs": {
+              "description": "request pairs; constructor checks semantics and units.",
+              "type": "integer"
+            }
+          },
+          "required": [
+            "lower_sha256",
+            "qualification_roots",
+            "evaluation_roots",
+            "innovation_fraction",
+            "menu",
+            "request_pairs",
+            "nominal_programme",
+            "nominal_phase",
+            "nominal_index",
+            "compatibility"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "ConstructedPreparationStage_c30231efb98f": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/constructed-preparation-applicability/stage"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "allocation": {
+              "$ref": "#/$defs/MatrixAllocation_df23657b2a7e",
+              "description": "allocation; constructor checks semantics and units."
+            },
+            "config_id": {
+              "description": "config id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "design": {
+              "$ref": "#/$defs/ConstructedPreparationDesign_60f3af453632",
+              "description": "design; constructor checks semantics and units."
+            },
+            "exposure": {
+              "$ref": "#/$defs/PreparationApplicabilityExposure_7373b9bf4b9a",
+              "description": "exposure; constructor checks semantics and units."
+            },
+            "phase": {
+              "description": "phase; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "source": {
+              "$ref": "#/$defs/ObjectIdentity_1e3d5e7bc67c",
+              "description": "source; constructor checks semantics and units."
+            },
+            "upstream": {
+              "description": "upstream; constructor checks semantics and units.",
+              "items": {
+                "$ref": "#/$defs/PreparationApplicabilityUpstream_115bda3991b5"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "config_id",
+            "design",
+            "phase",
+            "allocation",
+            "upstream",
+            "exposure",
+            "source"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "ExtensionBinding_d34345d4218d": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/kernel/extension-binding"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "namespace": {
+              "description": "namespace; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "payload_sha256": {
+              "description": "payload sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "schema": {
+              "description": "schema; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "namespace",
+            "schema",
+            "payload_sha256"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "FiniteResponseLawResponseChart_15959af4146d": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/methods/finite-response-law/finite-response-law-response-chart"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "algebraic_origin": {
+              "additionalProperties": false,
+              "description": "algebraic origin; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "clock_id": {
+              "description": "clock id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "frame_id": {
+              "description": "frame id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "hold_reference": {
+              "description": "hold reference; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "horizon_ticks": {
+              "description": "horizon ticks; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "native_words": {
+              "description": "native words; constructor checks semantics and units.",
+              "items": {
+                "items": false,
+                "maxItems": 3,
+                "minItems": 3,
+                "prefixItems": [
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "integer"
+                  }
+                ],
+                "type": "array"
+              },
+              "type": "array"
+            },
+            "output_ids": {
+              "description": "output ids; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "output_units": {
+              "description": "output units; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "receiver_definition": {
+              "description": "receiver definition; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "science": {
+              "$ref": "#/$defs/FiniteResponseLawScienceSpec_6e6ebcd1724c",
+              "description": "science; constructor checks semantics and units."
+            }
+          },
+          "required": [
+            "science",
+            "output_ids",
+            "output_units",
+            "native_words",
+            "frame_id",
+            "clock_id",
+            "horizon_ticks",
+            "receiver_definition",
+            "hold_reference",
+            "algebraic_origin"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "FiniteResponseLawScienceSpec_6e6ebcd1724c": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/methods/finite-response-law/finite-response-law-science-spec"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "delta": {
+              "description": "delta; constructor checks semantics and units.",
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "decimal": {
+                    "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "decimal"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "horizon_ticks": {
+              "description": "horizon ticks; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "joint_opportunity_minimum": {
+              "additionalProperties": false,
+              "description": "joint opportunity minimum; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "lower_ranges": {
+              "description": "lower ranges; constructor checks semantics and units.",
+              "items": {
+                "items": false,
+                "maxItems": 2,
+                "minItems": 2,
+                "prefixItems": [
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "decimal": {
+                        "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "decimal"
+                    ],
+                    "type": "object"
+                  },
+                  {
+                    "additionalProperties": false,
+                    "properties": {
+                      "decimal": {
+                        "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                        "type": "string"
+                      }
+                    },
+                    "required": [
+                      "decimal"
+                    ],
+                    "type": "object"
+                  }
+                ],
+                "type": "array"
+              },
+              "type": "array"
+            },
+            "magnitude_discrimination_minimum": {
+              "additionalProperties": false,
+              "description": "magnitude discrimination minimum; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "master_seed": {
+              "description": "master seed; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "parent_work_maximum": {
+              "additionalProperties": false,
+              "description": "parent work maximum; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "plan_sha256": {
+              "description": "plan sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "preservation": {
+              "description": "preservation; constructor checks semantics and units.",
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "decimal": {
+                    "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "decimal"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "request_pairs_per_root": {
+              "description": "request pairs per root; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "stage_root_counts": {
+              "description": "stage root counts; constructor checks semantics and units.",
+              "items": {
+                "items": false,
+                "maxItems": 2,
+                "minItems": 2,
+                "prefixItems": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "integer"
+                  }
+                ],
+                "type": "array"
+              },
+              "type": "array"
+            },
+            "transverse": {
+              "description": "transverse; constructor checks semantics and units.",
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "decimal": {
+                    "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "decimal"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "upper": {
+              "description": "upper; constructor checks semantics and units.",
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "decimal": {
+                    "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "decimal"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "plan_sha256",
+            "master_seed",
+            "request_pairs_per_root",
+            "lower_ranges",
+            "upper",
+            "transverse",
+            "preservation",
+            "delta",
+            "stage_root_counts",
+            "joint_opportunity_minimum",
+            "magnitude_discrimination_minimum",
+            "parent_work_maximum",
+            "horizon_ticks"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "MatrixAllocation_df23657b2a7e": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/kernel/matrix-allocation"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "allocation_id": {
+              "description": "allocation id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "bootstrap_seed": {
+              "anyOf": [
+                {
+                  "type": "integer"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "bootstrap seed; constructor checks semantics and units."
+            },
+            "exposure": {
+              "description": "exposure; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "roots": {
+              "description": "roots; constructor checks semantics and units.",
+              "items": {
+                "$ref": "#/$defs/MatrixRootAllocation_97b6dafb4e35"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "allocation_id",
+            "roots",
+            "bootstrap_seed",
+            "exposure"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "MatrixPurposeSeed_80c78d2d2640": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/kernel/matrix-purpose-seed"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "generator": {
+              "description": "generator; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "purpose_id": {
+              "description": "purpose id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "seed": {
+              "description": "seed; constructor checks semantics and units.",
+              "type": "integer"
+            }
+          },
+          "required": [
+            "purpose_id",
+            "seed",
+            "generator"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "MatrixRootAllocation_97b6dafb4e35": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/kernel/matrix-root-allocation"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "cohort": {
+              "description": "cohort; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "conditioning_seeds": {
+              "description": "conditioning seeds; constructor checks semantics and units.",
+              "items": {
+                "$ref": "#/$defs/MatrixPurposeSeed_80c78d2d2640"
+              },
+              "type": "array"
+            },
+            "root_id": {
+              "description": "root id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "scientific_seeds": {
+              "description": "scientific seeds; constructor checks semantics and units.",
+              "items": {
+                "$ref": "#/$defs/MatrixPurposeSeed_80c78d2d2640"
+              },
+              "type": "array"
+            },
+            "source_artifact": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/ArtifactIdentity_3b360fc69225"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "source artifact; constructor checks semantics and units."
+            },
+            "source_prefix": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/ObjectIdentity_1e3d5e7bc67c"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "source prefix; constructor checks semantics and units."
+            },
+            "source_receipt": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/ObjectIdentity_1e3d5e7bc67c"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "source receipt; constructor checks semantics and units."
+            },
+            "split_role": {
+              "description": "split role; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "root_id",
+            "cohort",
+            "scientific_seeds",
+            "split_role",
+            "conditioning_seeds",
+            "source_prefix",
+            "source_artifact",
+            "source_receipt"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "ObjectIdentity_1e3d5e7bc67c": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/kernel/object-identity"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "object_fingerprint": {
+              "description": "object fingerprint; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_id": {
+              "description": "object id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_schema": {
+              "description": "object schema; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_version": {
+              "description": "object version; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "object_id",
+            "object_schema",
+            "object_version",
+            "object_fingerprint"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "PreparationApplicabilityExposure_7373b9bf4b9a": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/composition/preparation-applicability/exposure"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "custody_receipt": {
+              "$ref": "#/$defs/ObjectIdentity_1e3d5e7bc67c",
+              "description": "custody receipt; constructor checks semantics and units."
+            },
+            "excluded_seed_ids": {
+              "description": "excluded seed ids; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "excluded_unit_ids": {
+              "description": "excluded unit ids; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "inspection": {
+              "$ref": "#/$defs/ObjectIdentity_1e3d5e7bc67c",
+              "description": "inspection; constructor checks semantics and units."
+            }
+          },
+          "required": [
+            "inspection",
+            "custody_receipt",
+            "excluded_unit_ids",
+            "excluded_seed_ids"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "PreparationApplicabilityUpstream_115bda3991b5": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/preparation-applicability/upstream"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "artifact": {
+              "$ref": "#/$defs/ArtifactIdentity_3b360fc69225",
+              "description": "artifact; constructor checks semantics and units."
+            },
+            "custody_receipt": {
+              "$ref": "#/$defs/ObjectIdentity_1e3d5e7bc67c",
+              "description": "custody receipt; constructor checks semantics and units."
+            },
+            "key": {
+              "description": "key; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "source_run_id": {
+              "description": "source run id; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "key",
+            "artifact",
+            "custody_receipt",
+            "source_run_id"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:constructed-preparation-applicability-stage",
+  "$ref": "#/$defs/ConstructedPreparationStage_c30231efb98f",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Constructed Preparation Applicability Stage",
+  "x-consumer": "constructed-preparation-applicability-stage",
+  "x-consumer-maximum-bytes": 4194304,
+  "x-disposition": "editable",
+  "x-preparation-allowed": true
+}

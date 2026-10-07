@@ -1,0 +1,345 @@
+{
+  "$defs": {
+    "MatrixHistoryAnalysisConfig_d48a3824936b": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/matrix-history-analysis/analysis-config"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "compare_commutant_altered": {
+              "description": "compare commutant altered; constructor checks semantics and units.",
+              "type": "boolean"
+            },
+            "config_id": {
+              "description": "config id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "evidence_role": {
+              "description": "evidence role; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "mode": {
+              "description": "mode; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "source": {
+              "$ref": "#/$defs/MatrixHistorySourceConfig_c736a5a437b2",
+              "description": "source; constructor checks semantics and units."
+            }
+          },
+          "required": [
+            "config_id",
+            "mode",
+            "source",
+            "compare_commutant_altered",
+            "evidence_role"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "MatrixHistoryProtocol_5dcd43a82c5e": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/matrix-history-analysis/protocol"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "algebra_stride": {
+              "description": "algebra stride; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "cohort_origins": {
+              "description": "cohort origins; constructor checks semantics and units.",
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            "decreasing_start": {
+              "additionalProperties": false,
+              "description": "decreasing start; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "dense_family_index": {
+              "description": "dense family index; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "dense_family_slot": {
+              "description": "dense family slot; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "dense_horizons": {
+              "description": "dense horizons; constructor checks semantics and units.",
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            "dense_kappas": {
+              "description": "dense kappas; constructor checks semantics and units.",
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "decimal": {
+                    "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "decimal"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "dense_origins": {
+              "description": "dense origins; constructor checks semantics and units.",
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            "fine_multiplier": {
+              "description": "fine multiplier; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "historical_source_closure_verified": {
+              "description": "historical source closure verified; constructor checks semantics and units.",
+              "type": "boolean"
+            },
+            "histories_per_family": {
+              "description": "histories per family; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "history_count": {
+              "description": "history count; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "original_selected_excursion_reproduced": {
+              "description": "original selected excursion reproduced; constructor checks semantics and units.",
+              "type": "boolean"
+            },
+            "primary_dt": {
+              "additionalProperties": false,
+              "description": "primary dt; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "ramp_ticks": {
+              "description": "ramp ticks; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "reference_math_sha256": {
+              "description": "reference math sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "target_x": {
+              "additionalProperties": false,
+              "description": "target x; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "target_y": {
+              "additionalProperties": false,
+              "description": "target y; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "total_ticks": {
+              "description": "total ticks; constructor checks semantics and units.",
+              "type": "integer"
+            }
+          },
+          "required": [
+            "history_count",
+            "histories_per_family",
+            "ramp_ticks",
+            "total_ticks",
+            "fine_multiplier",
+            "primary_dt",
+            "target_x",
+            "target_y",
+            "decreasing_start",
+            "algebra_stride",
+            "dense_family_index",
+            "dense_family_slot",
+            "cohort_origins",
+            "dense_origins",
+            "dense_horizons",
+            "dense_kappas",
+            "reference_math_sha256",
+            "historical_source_closure_verified",
+            "original_selected_excursion_reproduced"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "MatrixHistorySourceConfig_c736a5a437b2": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/matrix-history-analysis/source-config"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "allocation": {
+              "$ref": "#/$defs/ObjectIdentity_1e3d5e7bc67c",
+              "description": "allocation; constructor checks semantics and units."
+            },
+            "code_sources_sha256": {
+              "description": "code sources sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "config_id": {
+              "description": "config id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "dependency_lock_sha256": {
+              "description": "dependency lock sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "evidence_role": {
+              "description": "evidence role; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "protocol": {
+              "$ref": "#/$defs/MatrixHistoryProtocol_5dcd43a82c5e",
+              "description": "protocol; constructor checks semantics and units."
+            }
+          },
+          "required": [
+            "config_id",
+            "allocation",
+            "protocol",
+            "code_sources_sha256",
+            "dependency_lock_sha256",
+            "evidence_role"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "ObjectIdentity_1e3d5e7bc67c": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/kernel/object-identity"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "object_fingerprint": {
+              "description": "object fingerprint; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_id": {
+              "description": "object id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_schema": {
+              "description": "object schema; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_version": {
+              "description": "object version; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "object_id",
+            "object_schema",
+            "object_version",
+            "object_fingerprint"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:matrix-history-analysis",
+  "$ref": "#/$defs/MatrixHistoryAnalysisConfig_d48a3824936b",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Matrix History Analysis",
+  "x-consumer": "matrix-history-analysis",
+  "x-consumer-maximum-bytes": 1048576,
+  "x-disposition": "editable",
+  "x-preparation-allowed": true
+}

@@ -1,0 +1,11 @@
+{
+  "schema": "empirical-lawhood/documentary/scientific-source-provenance",
+  "version": "1.0.0",
+  "source_repository": "icf-yolo",
+  "source_commit": "70ad6708799f0e8070526ef15c1da4870e080238",
+  "source_path": "scripts/analyze_cc1_boundary_adversarial_v1.py",
+  "source_sha256": "dbe0324f33b5df36836cf790cb54c967d1de9bef6683b57719f42ff34bc0539f",
+  "preserved": "signed finite-word chart, separate consumers, masks, thresholds and whole-root bootstrap",
+  "changes": "explicit current request/bootstrap allocations; current custody; actual-count one-sided95 bounds; no historical outcome/count defaults",
+  "qualification": "NOT_PERFORMED"
+}

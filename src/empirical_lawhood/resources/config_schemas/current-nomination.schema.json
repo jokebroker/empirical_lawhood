@@ -1,0 +1,176 @@
+{
+  "$defs": {
+    "ArtifactIdentity_3b360fc69225": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/kernel/artifact-identity"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "artifact_id": {
+              "description": "artifact id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "extensions": {
+              "description": "extensions; constructor checks semantics and units.",
+              "items": {
+                "$ref": "#/$defs/ExtensionBinding_d34345d4218d"
+              },
+              "type": "array"
+            },
+            "media_type": {
+              "description": "media type; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "payload_schema": {
+              "description": "payload schema; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "role": {
+              "description": "role; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "sha256": {
+              "description": "sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "size_bytes": {
+              "description": "size bytes; constructor checks semantics and units.",
+              "type": "integer"
+            }
+          },
+          "required": [
+            "artifact_id",
+            "role",
+            "payload_schema",
+            "sha256",
+            "media_type",
+            "size_bytes",
+            "extensions"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "CurrentNominationOperand_55519d29acba": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/methods/finite-response-law/current-nomination-operand"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "coefficients": {
+              "$ref": "#/$defs/ArtifactIdentity_3b360fc69225",
+              "description": "coefficients; constructor checks semantics and units."
+            },
+            "development_manifest": {
+              "$ref": "#/$defs/ArtifactIdentity_3b360fc69225",
+              "description": "development manifest; constructor checks semantics and units."
+            },
+            "development_report": {
+              "$ref": "#/$defs/ArtifactIdentity_3b360fc69225",
+              "description": "development report; constructor checks semantics and units."
+            },
+            "nomination_id": {
+              "description": "nomination id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "original_coefficients": {
+              "$ref": "#/$defs/ArtifactIdentity_3b360fc69225",
+              "description": "original coefficients; constructor checks semantics and units."
+            },
+            "original_manifest": {
+              "$ref": "#/$defs/ArtifactIdentity_3b360fc69225",
+              "description": "original manifest; constructor checks semantics and units."
+            },
+            "original_report": {
+              "$ref": "#/$defs/ArtifactIdentity_3b360fc69225",
+              "description": "original report; constructor checks semantics and units."
+            }
+          },
+          "required": [
+            "nomination_id",
+            "original_report",
+            "original_coefficients",
+            "original_manifest",
+            "development_report",
+            "coefficients",
+            "development_manifest"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "ExtensionBinding_d34345d4218d": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/kernel/extension-binding"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "namespace": {
+              "description": "namespace; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "payload_sha256": {
+              "description": "payload sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "schema": {
+              "description": "schema; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "namespace",
+            "schema",
+            "payload_sha256"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:current-nomination",
+  "$ref": "#/$defs/CurrentNominationOperand_55519d29acba",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Current Nomination",
+  "x-consumer": "current-nomination",
+  "x-consumer-maximum-bytes": 1048576,
+  "x-disposition": "retained",
+  "x-preparation-allowed": false
+}

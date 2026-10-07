@@ -1,0 +1,51 @@
+# Evidence provenance template
+
+SPDX-License-Identifier: CC0-1.0
+
+# Copy and adapt this template next to a released evidence tranche.
+# Remove fields that genuinely do not apply rather than fabricating values.
+
+experiment_id: ""
+description: ""
+
+code:
+  repository: "https://github.com/jokebroker/empirical_lawhood"
+  commit: ""
+  release: ""
+  entry_point: ""
+
+environment:
+  runtime: ""
+  dependency_spec: ""
+  platform_notes: ""
+
+inputs:
+  - name: ""
+    source: ""
+    version_or_identifier: ""
+    checksum: ""
+    license: ""
+
+configuration:
+  file: ""
+  notes: ""
+
+randomness:
+  seeds: []
+  notes: ""
+
+execution:
+  started_at: ""
+  completed_at: ""
+  hardware: ""
+  simulator_or_solver: ""
+
+outputs:
+  - path: ""
+    description: ""
+    checksum: ""
+
+verification:
+  receipts: []
+  adjudication: ""
+  notes: ""

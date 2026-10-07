@@ -1,0 +1,135 @@
+{
+  "$defs": {
+    "FiniteResponseLawRuntimeContext_a0344f0a7eed": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/composition/finite-response-law/finite-response-law-runtime-context"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "authority": {
+              "$ref": "#/$defs/ObjectIdentity_1e3d5e7bc67c",
+              "description": "authority; constructor checks semantics and units."
+            },
+            "compiler_release_id": {
+              "description": "compiler release id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "context_id": {
+              "description": "context id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "grantee_id": {
+              "description": "grantee id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "issued_study": {
+              "$ref": "#/$defs/ObjectIdentity_1e3d5e7bc67c",
+              "description": "issued study; constructor checks semantics and units."
+            },
+            "prerequisite_authority": {
+              "$ref": "#/$defs/ObjectIdentity_1e3d5e7bc67c",
+              "description": "prerequisite authority; constructor checks semantics and units."
+            },
+            "reveal_authority_id": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "reveal authority id; constructor checks semantics and units."
+            },
+            "run_id": {
+              "description": "run id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "source_sha256": {
+              "description": "source sha256; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "context_id",
+            "run_id",
+            "source_sha256",
+            "issued_study",
+            "prerequisite_authority",
+            "authority",
+            "grantee_id",
+            "compiler_release_id",
+            "reveal_authority_id"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "ObjectIdentity_1e3d5e7bc67c": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/kernel/object-identity"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "object_fingerprint": {
+              "description": "object fingerprint; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_id": {
+              "description": "object id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_schema": {
+              "description": "object schema; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_version": {
+              "description": "object version; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "object_id",
+            "object_schema",
+            "object_version",
+            "object_fingerprint"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:finite-runtime-context",
+  "$ref": "#/$defs/FiniteResponseLawRuntimeContext_a0344f0a7eed",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Finite Runtime Context",
+  "x-consumer": "finite-runtime-context",
+  "x-consumer-maximum-bytes": 1048576,
+  "x-disposition": "editable",
+  "x-preparation-allowed": true
+}

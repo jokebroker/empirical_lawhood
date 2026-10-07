@@ -1,0 +1,68 @@
+{
+  "$defs": {
+    "PreparedResponseDependentInput_42a14a615fe1": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/composition/prepared-response/prepared-response-dependent-input"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "config_id": {
+              "description": "config id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "evidence_role": {
+              "description": "evidence role; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "route": {
+              "description": "route; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "seed_label": {
+              "description": "seed label; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "source_seed_sha256": {
+              "description": "source seed sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "target_prefix": {
+              "description": "target prefix; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "config_id",
+            "route",
+            "target_prefix",
+            "seed_label",
+            "evidence_role",
+            "source_seed_sha256"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:prepared-dependent-input",
+  "$ref": "#/$defs/PreparedResponseDependentInput_42a14a615fe1",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Prepared Dependent Input",
+  "x-consumer": "prepared-dependent-input",
+  "x-consumer-maximum-bytes": 16384,
+  "x-disposition": "editable",
+  "x-preparation-allowed": true
+}

@@ -1,0 +1,1 @@
+"Pure scientific contracts for the current response-law platform.\n\nPublic objects live in focused modules so downstream code imports only the\nconcepts it uses. This package initializer intentionally performs no dynamic\nregistration or infrastructure work.\n"

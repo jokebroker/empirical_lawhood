@@ -1,0 +1,14 @@
+{
+  "current_specification_sha256": "810a04f28cdd88c8c1c1952078a00c70e3561255880d4d5881ad782cc16d82ab",
+  "donor_commit": "70ad6708799f0e8070526ef15c1da4870e080238",
+  "original_f_payload_sha256": "ab880c96a5e4d4e5070e4e2268331ea542f5cc0bedf18da43cded949d2462b1b",
+  "purpose": "Documentary scientific source; no runtime donor import or historical outcome authority",
+  "qualification": "NONE",
+  "scientific_campaign": "NOT_PERFORMED",
+  "sources": {
+    "scripts/analyze_cc1_m5_transient_bridge.py": "cef47c6ff99623fbb64d7857027a8aaa09b1a6d46f909b783a909ee18c96594d",
+    "scripts/report_cc1_m5_transient_bridge.py": "038a85a34c9d17b5210b335fd2298c7d5c4c74ec059afb873645c934e12f7623",
+    "tests/adapters/simulators/six_matrix_constitutive_v1/test_preparation_differential.py": "ddacc30f9dbfbdae3d9af993f5cbd606f35332589b63cd68d98d10c904059aee"
+  },
+  "spdx_license": "MPL-2.0"
+}

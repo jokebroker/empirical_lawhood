@@ -1,0 +1,506 @@
+{
+  "$defs": {
+    "GaugeCovariantResponseFixtureSpec_82801a17d791": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/adapters/simulators/ambient-pressure-superconductor/gauge-covariant-response-fixture-spec"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "chemical_potential_eV": {
+              "additionalProperties": false,
+              "description": "chemical potential eV; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "expected_disposition": {
+              "description": "expected disposition; constructor checks semantics and units.",
+              "enum": [
+                "ACCEPT",
+                "REJECT"
+              ],
+              "type": "string"
+            },
+            "fixture_id": {
+              "description": "fixture id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "fixture_kind": {
+              "description": "fixture kind; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "gap_eV": {
+              "additionalProperties": false,
+              "description": "gap eV; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "hopping_eV": {
+              "additionalProperties": false,
+              "description": "hopping eV; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "perturbation_id": {
+              "description": "perturbation id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "temperature_K": {
+              "additionalProperties": false,
+              "description": "temperature K; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "fixture_id",
+            "fixture_kind",
+            "expected_disposition",
+            "temperature_K",
+            "hopping_eV",
+            "chemical_potential_eV",
+            "gap_eV",
+            "perturbation_id"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "GaugeCovariantResponseFixtureSuite_ebb2b4a8f14d": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/adapters/simulators/ambient-pressure-superconductor/gauge-covariant-response-fixture-suite"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "base_nky": {
+              "description": "base nky; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "base_nx": {
+              "description": "base nx; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "derivative_step": {
+              "additionalProperties": false,
+              "description": "derivative step; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "fixtures": {
+              "description": "fixtures; constructor checks semantics and units.",
+              "items": {
+                "$ref": "#/$defs/GaugeCovariantResponseFixtureSpec_82801a17d791"
+              },
+              "type": "array"
+            },
+            "minimum_positive_stiffness": {
+              "additionalProperties": false,
+              "description": "minimum positive stiffness; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "nonlinear_relative_limit": {
+              "additionalProperties": false,
+              "description": "nonlinear relative limit; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "normal_cancellation_absolute_limit": {
+              "additionalProperties": false,
+              "description": "normal cancellation absolute limit; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "oddness_relative_limit": {
+              "additionalProperties": false,
+              "description": "oddness relative limit; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "refined_nky": {
+              "description": "refined nky; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "refined_nx": {
+              "description": "refined nx; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "signed_probe_amplitude": {
+              "additionalProperties": false,
+              "description": "signed probe amplitude; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "suite_id": {
+              "description": "suite id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "ward_absolute_limit_eV": {
+              "additionalProperties": false,
+              "description": "ward absolute limit eV; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "suite_id",
+            "fixtures",
+            "base_nx",
+            "base_nky",
+            "refined_nx",
+            "refined_nky",
+            "signed_probe_amplitude",
+            "derivative_step",
+            "oddness_relative_limit",
+            "nonlinear_relative_limit",
+            "ward_absolute_limit_eV",
+            "normal_cancellation_absolute_limit",
+            "minimum_positive_stiffness"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "GaugeCovariantResponseFormalismFreeze_9a60868db403": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/adapters/simulators/ambient-pressure-superconductor/gauge-covariant-response-formalism-freeze"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "base_view_id": {
+              "description": "base view id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "compatibility_map_ids": {
+              "description": "compatibility map ids; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "equation_ids": {
+              "description": "equation ids; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "finite_q_required": {
+              "description": "finite q required; constructor checks semantics and units.",
+              "type": "boolean"
+            },
+            "formalism_id": {
+              "description": "formalism id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "gauge_covariance_required": {
+              "description": "gauge covariance required; constructor checks semantics and units.",
+              "type": "boolean"
+            },
+            "independent_view_id": {
+              "description": "independent view id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "input_operand_ids": {
+              "description": "input operand ids; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "material_compatibility_required": {
+              "description": "material compatibility required; constructor checks semantics and units.",
+              "type": "boolean"
+            },
+            "nonpromotion_rule_ids": {
+              "description": "nonpromotion rule ids; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "normal_comparator_required": {
+              "description": "normal comparator required; constructor checks semantics and units.",
+              "type": "boolean"
+            },
+            "operating_temperature_K": {
+              "additionalProperties": false,
+              "description": "operating temperature K; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "output_operand_ids": {
+              "description": "output operand ids; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "producer_implementation_id": {
+              "description": "producer implementation id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "refined_view_id": {
+              "description": "refined view id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "source_ids": {
+              "description": "source ids; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "validity_requirement_ids": {
+              "description": "validity requirement ids; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "formalism_id",
+            "producer_implementation_id",
+            "source_ids",
+            "equation_ids",
+            "compatibility_map_ids",
+            "input_operand_ids",
+            "output_operand_ids",
+            "validity_requirement_ids",
+            "nonpromotion_rule_ids",
+            "base_view_id",
+            "refined_view_id",
+            "independent_view_id",
+            "operating_temperature_K",
+            "finite_q_required",
+            "normal_comparator_required",
+            "gauge_covariance_required",
+            "material_compatibility_required"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "SyntheticMaterialResponseMethodConfig_38dba63f24f7": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/simulators/ambient-pressure-superconductor/synthetic-material-response-method-config"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "accepted_clock": {
+              "description": "accepted clock; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "applied_clock": {
+              "description": "applied clock; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "config_id": {
+              "description": "config id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "fixture_suite": {
+              "$ref": "#/$defs/GaugeCovariantResponseFixtureSuite_ebb2b4a8f14d",
+              "description": "fixture suite; constructor checks semantics and units."
+            },
+            "formalism": {
+              "$ref": "#/$defs/GaugeCovariantResponseFormalismFreeze_9a60868db403",
+              "description": "formalism; constructor checks semantics and units."
+            },
+            "independent_unit_id": {
+              "description": "independent unit id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "operating_pressure_Pa": {
+              "additionalProperties": false,
+              "description": "operating pressure Pa; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "receiver_clock": {
+              "description": "receiver clock; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "requested_clock": {
+              "description": "requested clock; constructor checks semantics and units.",
+              "type": "integer"
+            }
+          },
+          "required": [
+            "config_id",
+            "independent_unit_id",
+            "formalism",
+            "fixture_suite",
+            "operating_pressure_Pa",
+            "requested_clock",
+            "accepted_clock",
+            "applied_clock",
+            "receiver_clock"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:lattice-method-authoring",
+  "$ref": "#/$defs/SyntheticMaterialResponseMethodConfig_38dba63f24f7",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Lattice Method Authoring",
+  "x-consumer": "lattice-method-authoring",
+  "x-consumer-maximum-bytes": 131072,
+  "x-disposition": "editable",
+  "x-preparation-allowed": true
+}

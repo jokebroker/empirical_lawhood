@@ -1,0 +1,158 @@
+{
+  "$defs": {
+    "GymToraxNativeQuickstart_51752605de9c": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/simulators/gym-torax-native/gym-torax-native-quickstart"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "config_id": {
+              "description": "config id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "maximum_output_bytes": {
+              "description": "maximum output bytes; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "numerical_member_id": {
+              "description": "numerical member id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "preparation": {
+              "$ref": "#/$defs/GymToraxPreparation_142de9216bab",
+              "description": "preparation; constructor checks semantics and units."
+            }
+          },
+          "required": [
+            "config_id",
+            "preparation",
+            "numerical_member_id",
+            "maximum_output_bytes"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "GymToraxPreparation_142de9216bab": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/simulators/gym-torax-native/gym-torax-preparation"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "bootstrap_multiplier": {
+              "additionalProperties": false,
+              "description": "bootstrap multiplier; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "environment_seed": {
+              "description": "environment seed; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "initial_density_nbar": {
+              "additionalProperties": false,
+              "description": "initial density nbar; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "initial_temperature_scale": {
+              "additionalProperties": false,
+              "description": "initial temperature scale; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "inner_transport_scale": {
+              "additionalProperties": false,
+              "description": "inner transport scale; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "physical_independent_unit_id": {
+              "description": "physical independent unit id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "preparation_id": {
+              "description": "preparation id; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "preparation_id",
+            "physical_independent_unit_id",
+            "environment_seed",
+            "initial_temperature_scale",
+            "initial_density_nbar",
+            "bootstrap_multiplier",
+            "inner_transport_scale"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:tokamak-control",
+  "$ref": "#/$defs/GymToraxNativeQuickstart_51752605de9c",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Tokamak Control",
+  "x-consumer": "tokamak-control",
+  "x-consumer-maximum-bytes": 16384,
+  "x-disposition": "editable",
+  "x-preparation-allowed": true
+}

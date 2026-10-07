@@ -1,0 +1,21 @@
+{
+  "access_right": "open",
+  "creators": [
+    {
+      "name": "Seneque, Gareth",
+      "orcid": "0009-0003-3046-6899"
+    }
+  ],
+  "description": "Research software for defining, executing and checking empirical response-law experiments across heterogeneous systems. This repository is mixed-license: software is MPL-2.0, project-authored documentation and figures are CC-BY-4.0, and project-generated evidence and data are CC0-1.0 unless a file says otherwise. Third-party material retains its own terms. See docs/licensing.md for file scopes. Native substrate readiness is route-specific; no historical experimental source archive is deposited here. The associated manuscript is intended for a separate publication record and has no reserved DOI in this metadata.",
+  "keywords": [
+    "empirical lawhood",
+    "response laws",
+    "system identification",
+    "dynamical systems",
+    "control",
+    "scientific reproducibility"
+  ],
+  "license": "other-open",
+  "title": "Empirical Lawhood",
+  "upload_type": "software"
+}

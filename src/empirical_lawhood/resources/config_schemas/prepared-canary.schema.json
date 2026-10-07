@@ -1,0 +1,164 @@
+{
+  "$defs": {
+    "PreparedResponsePreparedCanary_a9c6fa753cff": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/simulators/prepared-response/prepared-response-prepared-canary"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "config_id": {
+              "description": "config id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "context": {
+              "description": "context; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "direction_index": {
+              "description": "direction index; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "evidence_role": {
+              "description": "evidence role; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "magnitude": {
+              "additionalProperties": false,
+              "description": "magnitude; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "parent": {
+              "description": "parent; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "root_seed_census": {
+              "description": "root seed census; constructor checks semantics and units.",
+              "items": {
+                "$ref": "#/$defs/PreparedRootRandomness_f9d048841392"
+              },
+              "type": "array"
+            },
+            "seed_label": {
+              "description": "seed label; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "sign": {
+              "description": "sign; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "source_seed_sha256": {
+              "description": "source seed sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "stage": {
+              "description": "stage; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "config_id",
+            "seed_label",
+            "context",
+            "parent",
+            "magnitude",
+            "direction_index",
+            "sign",
+            "source_seed_sha256",
+            "stage",
+            "evidence_role",
+            "root_seed_census"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "PreparedRootRandomness_f9d048841392": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/simulators/prepared-response/prepared-root-randomness"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "context": {
+              "description": "context; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "index": {
+              "description": "index; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "passive_probe_seed_sha256": {
+              "description": "passive probe seed sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "source_seed_sha256": {
+              "description": "source seed sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "stage": {
+              "description": "stage; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "stream_seed_sha256s": {
+              "description": "stream seed sha256s; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "stage",
+            "context",
+            "index",
+            "source_seed_sha256",
+            "stream_seed_sha256s",
+            "passive_probe_seed_sha256"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:prepared-canary",
+  "$ref": "#/$defs/PreparedResponsePreparedCanary_a9c6fa753cff",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Prepared Canary",
+  "x-consumer": "prepared-canary",
+  "x-consumer-maximum-bytes": 16384,
+  "x-disposition": "editable",
+  "x-preparation-allowed": true
+}

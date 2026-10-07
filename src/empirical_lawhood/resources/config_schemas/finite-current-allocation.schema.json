@@ -1,0 +1,85 @@
+{
+  "$defs": {
+    "FiniteResponseLawCurrentAllocation_887febc6a4df": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/composition/finite-response-law/current-allocation"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "cohort_namespace": {
+              "description": "cohort namespace; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "evidence_role": {
+              "description": "evidence role; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "root_count": {
+              "description": "root count; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "science_plan_sha256": {
+              "description": "science plan sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "scientific_seeds": {
+              "description": "scientific seeds; constructor checks semantics and units.",
+              "items": {
+                "items": false,
+                "maxItems": 3,
+                "minItems": 3,
+                "prefixItems": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "integer"
+                  },
+                  {
+                    "type": "integer"
+                  }
+                ],
+                "type": "array"
+              },
+              "type": "array"
+            },
+            "stage": {
+              "description": "stage; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "stage",
+            "cohort_namespace",
+            "science_plan_sha256",
+            "root_count",
+            "evidence_role",
+            "scientific_seeds"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:finite-current-allocation",
+  "$ref": "#/$defs/FiniteResponseLawCurrentAllocation_887febc6a4df",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Finite Current Allocation",
+  "x-consumer": "finite-current-allocation",
+  "x-consumer-maximum-bytes": 1048576,
+  "x-disposition": "editable",
+  "x-preparation-allowed": true
+}

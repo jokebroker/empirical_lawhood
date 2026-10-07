@@ -1,0 +1,99 @@
+{
+  "$defs": {
+    "PhysicalScaleMorphismTruthSuiteConfig_c23bc86ff137": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/reference-worlds/physical-scale-morphism/physical-scale-morphism-truth-suite-config"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "config_id": {
+              "description": "config id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "fixture_ids": {
+              "description": "fixture ids; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "fixtures_frozen_before_validation": {
+              "description": "fixtures frozen before validation; constructor checks semantics and units.",
+              "type": "boolean"
+            },
+            "outcome_access": {
+              "description": "outcome access; constructor checks semantics and units.",
+              "enum": [
+                "outcome-blind",
+                "development-visible",
+                "evaluation-sealed",
+                "evaluator-reveal",
+                "evaluation-revealed",
+                "privileged-truth"
+              ],
+              "type": "string"
+            },
+            "protected_physical_outcome_count": {
+              "description": "protected physical outcome count; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "truth_labels_hidden_from_method": {
+              "description": "truth labels hidden from method; constructor checks semantics and units.",
+              "type": "boolean"
+            },
+            "validation_seeds": {
+              "description": "validation seeds; constructor checks semantics and units.",
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            "variants": {
+              "description": "variants; constructor checks semantics and units.",
+              "items": {
+                "enum": [
+                  "DETERMINISTIC",
+                  "NOISY_REPEATED_BOARD"
+                ],
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "config_id",
+            "fixture_ids",
+            "variants",
+            "validation_seeds",
+            "fixtures_frozen_before_validation",
+            "truth_labels_hidden_from_method",
+            "protected_physical_outcome_count",
+            "outcome_access"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:scale-morphism-reference",
+  "$ref": "#/$defs/PhysicalScaleMorphismTruthSuiteConfig_c23bc86ff137",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Scale Morphism Reference",
+  "x-consumer": "scale-morphism-reference",
+  "x-consumer-maximum-bytes": 16384,
+  "x-disposition": "editable",
+  "x-preparation-allowed": true
+}

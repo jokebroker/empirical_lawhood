@@ -1,0 +1,1 @@
+{"excluded_seed_ids":["seed.example.exposed-a"],"excluded_unit_ids":["unit.example.exposed-a"],"proposed_seed_ids":["seed.example.exposed-b"],"proposed_unit_ids":["unit.example.exposed-b"],"schema":"empirical-lawhood/methods/finite-response-law/native-exposure-metadata"}

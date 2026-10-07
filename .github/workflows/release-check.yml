@@ -1,0 +1,90 @@
+# SPDX-License-Identifier: MPL-2.0
+name: Release checks
+on:
+  push:
+  pull_request:
+  workflow_dispatch:
+    inputs:
+      profile:
+        description: Explicit additional profile (portable always runs)
+        type: choice
+        default: portable
+        options: [portable, native-open, native-brian2, held-reactor, held-response]
+permissions:
+  contents: read
+concurrency:
+  group: release-check-${{ github.workflow }}-${{ github.ref }}
+  cancel-in-progress: true
+jobs:
+  portable:
+    name: portable-release-check
+    runs-on: ubuntu-24.04
+    timeout-minutes: 240
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
+        with:
+          fetch-depth: 0
+          persist-credentials: false
+      - uses: astral-sh/setup-uv@bec219d24cd3e171d82865faccec33120bb574f4 # v10.1.0
+        with:
+          version: '0.11.28'
+          enable-cache: true
+          cache-dependency-glob: uv.lock
+      - name: Check exact clean source
+        run: uv run --locked --python 3.11.14 --group build --group reactor-example python scripts/release_check.py --output-dir "$RUNNER_TEMP/portable-packet"
+      - name: Retain manifest, logs, coverage and selected builds
+        if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02 # v4.6.2
+        with:
+          name: portable-${{ github.sha }}-${{ github.run_attempt }}
+          path: |
+            ${{ runner.temp }}/portable-packet/release-manifest.json
+            ${{ runner.temp }}/portable-packet/release-status.json
+            ${{ runner.temp }}/portable-packet/logs
+            ${{ runner.temp }}/portable-packet/coverage.json
+            ${{ runner.temp }}/portable-packet/package-inventory.json
+            ${{ runner.temp }}/portable-packet/wheel-requirements.txt
+            ${{ runner.temp }}/portable-packet/artifacts
+          if-no-files-found: error
+          retention-days: 30
+  native:
+    name: selected-native-check
+    if: github.event_name == 'workflow_dispatch' && startsWith(inputs.profile, 'native-')
+    runs-on: ubuntu-24.04
+    timeout-minutes: 120
+    env:
+      SELECTED_PROFILE: ${{ inputs.profile }}
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with: {fetch-depth: 0, persist-credentials: false}
+      - uses: astral-sh/setup-uv@bec219d24cd3e171d82865faccec33120bb574f4
+        with: {version: '0.11.28', enable-cache: true, cache-dependency-glob: uv.lock}
+      - run: uv run --locked --python 3.11.14 --group build --group reactor-example python scripts/release_check.py --profile "$SELECTED_PROFILE" --output-dir "$RUNNER_TEMP/native-packet"
+      - if: always()
+        uses: actions/upload-artifact@ea165f8d65b6e75b540449e92b4886f43607fa02
+        with:
+          name: native-${{ github.sha }}-${{ github.run_attempt }}
+          path: |
+            ${{ runner.temp }}/native-packet/release-manifest.json
+            ${{ runner.temp }}/native-packet/release-status.json
+            ${{ runner.temp }}/native-packet/logs
+          if-no-files-found: error
+          retention-days: 30
+  held:
+    name: selected-held-check
+    if: github.event_name == 'workflow_dispatch' && startsWith(inputs.profile, 'held-')
+    # Maintainer-managed runner: exact external mounts and read authority must
+    # already be supplied under the held-input environment; never public fixtures.
+    runs-on: [self-hosted, linux, x64, empirical-lawhood-held]
+    environment: held-inputs
+    timeout-minutes: 120
+    env:
+      SELECTED_PROFILE: ${{ inputs.profile }}
+    steps:
+      - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683
+        with: {fetch-depth: 0, persist-credentials: false}
+      - uses: astral-sh/setup-uv@bec219d24cd3e171d82865faccec33120bb574f4
+        with: {version: '0.11.28', enable-cache: false}
+      - run: uv run --locked --python 3.11.14 --group build --group reactor-example python scripts/release_check.py --profile "$SELECTED_PROFILE" --output-dir "$RUNNER_TEMP/held-packet-${GITHUB_RUN_ID}-${GITHUB_RUN_ATTEMPT}"
+      # Held logs stay on the permitted runner. Upload only deliberately reviewed
+      # derivatives; private paths and source material are not public CI artifacts.

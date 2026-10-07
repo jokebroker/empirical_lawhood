@@ -1,0 +1,55 @@
+[
+  {
+    "figure": 1,
+    "source": "assets/figure1.pdf",
+    "source_sha256": "2be4605b17ab4c9ea4e0438bd462549186c5257993a744fec8dbc2ed6323a430",
+    "output_png_sha256": "836a3c7f173194177b382c097f9db6aecee8e298252da7a3201ec23a5b635581",
+    "resolution_dpi": 300,
+    "label_changes": [],
+    "numerical_plot_changes": false,
+    "original_diagram_borders_restored_after_label_masks": false
+  },
+  {
+    "figure": 2,
+    "source": "assets/figure2.pdf",
+    "source_sha256": "76115ede337fae3bcad7bb2c07bfd83192439a3671f9ed8612f0940a7be81dbe",
+    "output_png_sha256": "076bda1e86a00f0a3f03aa54e5e949f30059e2fbafa2bda570ad69aa0759cc5d",
+    "resolution_dpi": 300,
+    "label_changes": [
+      "A predicted description supports later use",
+      "32 calibration episodes · 64 new prospective episodes · fixed response coefficients",
+      "Forecast description",
+      "Choose a or decline",
+      "SEALED CHOICES — PREPARED-STATE OBSERVATIONS CANNOT REVISE THEM",
+      "Observe prepared state",
+      "No force",
+      "125 successful delivered assays · 3 choices declined before preparation · 0 later cancellations",
+      "All 64 assigned episodes remain in the denominators · §5.1 and Methods and evidence"
+    ],
+    "numerical_plot_changes": false,
+    "original_diagram_borders_restored_after_label_masks": true
+  },
+  {
+    "figure": 3,
+    "source": "assets/figure3.pdf",
+    "source_sha256": "910f4c6390a3a5e085f93539e6423877a520de54ce96c5537fdb09218d00437b",
+    "output_png_sha256": "7dfa99b66582d4c0f82dd3decfffca075ea8990efecfc53f0916e5ce4d87327f",
+    "resolution_dpi": 300,
+    "label_changes": [
+      "Preparing conditions for an unchanged response package",
+      "Preparation changes the state. The entire response package stays fixed.",
+      "A  FIXED DOMAIN BOUNDARY AND PREPARED-STATE RANGES",
+      "H · unchanged evolution",
+      "N · selected negative preparation",
+      "Fixed upper boundary = 252.063",
+      "Force-rate along direction 2 (model force / model time)",
+      "Bypass is diagnostic only; the outcome-visible search is not a deployable selector.",
+      "C  SUCCESSFUL USE UNDER STRICTER NUMERICAL CHECKS",
+      "N episodes / 32",
+      "Excluded episodes count as zero successful use; every assigned episode remains in the denominator.",
+      "Paired response assays · separate branches for the two tasks · §5.2"
+    ],
+    "numerical_plot_changes": false,
+    "original_diagram_borders_restored_after_label_masks": false
+  }
+]

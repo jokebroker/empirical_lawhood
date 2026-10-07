@@ -1,0 +1,144 @@
+{
+  "$defs": {
+    "FairMastPublicSelection_7492d2135de3": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/physical/mast-archive/fair-mast-public-selection"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "array_path": {
+              "description": "array path; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "campaign_id": {
+              "description": "campaign id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "chunk_key": {
+              "description": "chunk key; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "expected_data_type": {
+              "description": "expected data type; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "expected_unit": {
+              "description": "expected unit; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "external_custody_role": {
+              "description": "external custody role; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "licence_id": {
+              "description": "licence id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "maximum_chunk_bytes": {
+              "description": "maximum chunk bytes; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "maximum_rest_bytes": {
+              "description": "maximum rest bytes; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "maximum_total_bytes": {
+              "description": "maximum total bytes; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "maximum_zarr_metadata_bytes": {
+              "description": "maximum zarr metadata bytes; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "publisher": {
+              "description": "publisher; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "publisher_page": {
+              "description": "publisher page; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "relative_root": {
+              "description": "relative root; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "release_id": {
+              "description": "release id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "request_timeout_seconds": {
+              "description": "request timeout seconds; constructor checks semantics and units.",
+              "type": "integer",
+              "x-unit": "s"
+            },
+            "rest_base": {
+              "description": "rest base; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "shot_id": {
+              "description": "shot id; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "source_id": {
+              "description": "source id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "zarr_base": {
+              "description": "zarr base; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "zarr_format": {
+              "description": "zarr format; constructor checks semantics and units.",
+              "type": "integer"
+            }
+          },
+          "required": [
+            "source_id",
+            "publisher",
+            "release_id",
+            "rest_base",
+            "zarr_base",
+            "publisher_page",
+            "licence_id",
+            "shot_id",
+            "campaign_id",
+            "array_path",
+            "expected_unit",
+            "expected_data_type",
+            "zarr_format",
+            "chunk_key",
+            "maximum_rest_bytes",
+            "maximum_zarr_metadata_bytes",
+            "maximum_chunk_bytes",
+            "maximum_total_bytes",
+            "request_timeout_seconds",
+            "external_custody_role",
+            "relative_root"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:fair-mast-selection",
+  "$ref": "#/$defs/FairMastPublicSelection_7492d2135de3",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Fair Mast Selection",
+  "x-consumer": "fair-mast-selection",
+  "x-consumer-maximum-bytes": 65536,
+  "x-disposition": "editable",
+  "x-preparation-allowed": true
+}

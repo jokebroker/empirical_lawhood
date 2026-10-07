@@ -1,0 +1,118 @@
+{
+  "$defs": {
+    "CurrentPreparationSourceConfig_c84ce2216a93": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/methods/finite-response-law/current-preparation-source-config"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "allocation": {
+              "$ref": "#/$defs/ObjectIdentity_1e3d5e7bc67c",
+              "description": "allocation; constructor checks semantics and units."
+            },
+            "code_sources_sha256": {
+              "description": "code sources sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "config_id": {
+              "description": "config id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "dependency_lock_sha256": {
+              "description": "dependency lock sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "evidence_role": {
+              "description": "evidence role; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "original_f": {
+              "$ref": "#/$defs/ObjectIdentity_1e3d5e7bc67c",
+              "description": "original f; constructor checks semantics and units."
+            },
+            "protocol": {
+              "$ref": "#/$defs/ObjectIdentity_1e3d5e7bc67c",
+              "description": "protocol; constructor checks semantics and units."
+            }
+          },
+          "required": [
+            "config_id",
+            "allocation",
+            "original_f",
+            "protocol",
+            "code_sources_sha256",
+            "dependency_lock_sha256",
+            "evidence_role"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "2.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "ObjectIdentity_1e3d5e7bc67c": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/kernel/object-identity"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "object_fingerprint": {
+              "description": "object fingerprint; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_id": {
+              "description": "object id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_schema": {
+              "description": "object schema; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_version": {
+              "description": "object version; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "object_id",
+            "object_schema",
+            "object_version",
+            "object_fingerprint"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:preparation-source",
+  "$ref": "#/$defs/CurrentPreparationSourceConfig_c84ce2216a93",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Preparation Source",
+  "x-consumer": "preparation-source",
+  "x-consumer-maximum-bytes": 65536,
+  "x-disposition": "editable",
+  "x-preparation-allowed": true
+}

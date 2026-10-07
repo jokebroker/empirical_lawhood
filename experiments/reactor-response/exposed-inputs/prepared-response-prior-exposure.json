@@ -1,0 +1,1 @@
+{"schema":"empirical-lawhood/composition/prepared-response/prepared-exposure-inspection","value":{"excluded_seed_ids":["seed.example.exposed-a"],"excluded_unit_ids":["unit.example.exposed-a"],"proposed_seed_ids":["seed.example.exposed-b"],"proposed_unit_ids":["unit.example.exposed-b"]},"version":"1.0.0"}

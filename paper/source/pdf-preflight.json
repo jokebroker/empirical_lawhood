@@ -1,0 +1,533 @@
+{
+  "edition": "0.60",
+  "result": "PASS_ORIGINAL_PUBLICATION_VISUAL_QA",
+  "reviewer": "Codex maintainer review of exact original supplied assets",
+  "visual_review_method": "All25 pages rendered with system Poppler at110dpi, inspected in seven labelled four-page sheets; all six figure formats separately viewed (original PNG and rendered PDF). No clipping, overlap, missing glyph or unreadable numerical legend observed.",
+  "renderers": {
+    "Poppler": "pdftoppm version 0.86.1",
+    "PyMuPDF": "1.28.2"
+  },
+  "documents": {
+    "manuscript.pdf": {
+      "bytes": 823033,
+      "sha256": "b000a94eeeaa014b6e79491e09ea3d526450457bb0f06236c1d9007e7632f1c7",
+      "pages": 19,
+      "metadata": {
+        "format": "PDF 1.5",
+        "title": "Empirical Lawhood",
+        "author": "Gareth Seneque",
+        "subject": "Preprint. Internal manuscript version 0.60; 4 October 2026",
+        "keywords": "Empirical Lawhood, response laws, conditions of knowledge, scientific capability, scientific agency, observer-participancy, version 0.60",
+        "creator": "LaTeX via pandoc",
+        "producer": "xdvipdfmx (20240305)",
+        "creationDate": "D:20261004114555Z",
+        "modDate": "",
+        "trapped": "",
+        "encryption": null
+      },
+      "rendered_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "visually_inspected_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6,
+        7,
+        8,
+        9,
+        10,
+        11,
+        12,
+        13,
+        14,
+        15,
+        16,
+        17,
+        18,
+        19
+      ],
+      "text_outside_page": [],
+      "replacement_character_pages": [],
+      "bookmarks": [
+        [
+          1,
+          "Abstract",
+          1
+        ],
+        [
+          1,
+          "The conditions of dependable capability",
+          1
+        ],
+        [
+          2,
+          "A hammer, a repair, a bench",
+          2
+        ],
+        [
+          1,
+          "Warrant, participation and physical realisation",
+          3
+        ],
+        [
+          2,
+          "Kant: what entitles a description to function as knowledge?",
+          3
+        ],
+        [
+          2,
+          "Wheeler: how does asking a physical question participate in its answer?",
+          3
+        ],
+        [
+          2,
+          "Hartle: what makes regularity and its use physically possible?",
+          3
+        ],
+        [
+          2,
+          "When a condition becomes an object of inquiry",
+          4
+        ],
+        [
+          1,
+          "Response laws and scientific inquiry",
+          5
+        ],
+        [
+          2,
+          "A relation, a package and a task",
+          5
+        ],
+        [
+          2,
+          "From a failed requirement to another scientific task",
+          6
+        ],
+        [
+          2,
+          "Discovery as an application of the framework",
+          6
+        ],
+        [
+          2,
+          "Relationship to established methods",
+          7
+        ],
+        [
+          1,
+          "What descriptions preserve\u2014and what they do not",
+          7
+        ],
+        [
+          2,
+          "Reduced circuit observations and consequential hidden differences",
+          7
+        ],
+        [
+          2,
+          "Geometric organisation without dynamical commitment",
+          8
+        ],
+        [
+          2,
+          "An approximate algebra survives its scalar detector",
+          9
+        ],
+        [
+          2,
+          "Accurate intervention effects and an uncertain absolute future",
+          9
+        ],
+        [
+          1,
+          "Supplying conditions for use",
+          10
+        ],
+        [
+          2,
+          "Forecast-mediated reuse",
+          10
+        ],
+        [
+          2,
+          "Preparation-mediated applicability",
+          12
+        ],
+        [
+          1,
+          "Different systems, different requirements",
+          13
+        ],
+        [
+          1,
+          "From dependencies to cumulative capability",
+          15
+        ],
+        [
+          2,
+          "What has been established",
+          15
+        ],
+        [
+          2,
+          "Dependence, production and objectivity",
+          15
+        ],
+        [
+          2,
+          "A civilisational response-law engine",
+          15
+        ],
+        [
+          2,
+          "Scientific agency and the direction of inquiry",
+          16
+        ],
+        [
+          1,
+          "Methods, evidence and availability",
+          16
+        ],
+        [
+          2,
+          "Designs, units and timing",
+          16
+        ],
+        [
+          2,
+          "Qualification and interpretation",
+          16
+        ],
+        [
+          2,
+          "Human direction and exploratory development",
+          16
+        ],
+        [
+          2,
+          "Data, code and authorship",
+          16
+        ],
+        [
+          1,
+          "References",
+          16
+        ]
+      ],
+      "link_annotation_count": 0,
+      "navigation": "Original supplied outline and annotations unchanged",
+      "rendered_page_sha256": [
+        "7b1d0481a48c81e61ce00d1dcee069a80860accc8dc7b95c746631903d1fb89c",
+        "878ed38dd29a5a3cac00462b74adc7e3df30dd3d05340a2bbf72f9a87fd02a0d",
+        "e8711573f91baeb8065f6afa8bc97c66a7930bea8008b656ad6755e56d5839b7",
+        "985edb45658460c2a55f7229f40e74433e072a3b70eac17d1de9234f557343b3",
+        "0eb55f3554c161d40b597aff599bc5c216cab87984950b56b0214fc6989f7df6",
+        "7e94a870579997b621a7cde6304bbb770a94df71f32e38f4e134d58d4e1b2bd9",
+        "51a696eb07ad08cd7b3ab9b5c8079a7e5ad0ae6c33529ae4b44b3248fbf5d512",
+        "7275b11cadaae5f62d5ce7ab8dc1eb465a02a8aa5e6b57d709b5feed0242886d",
+        "33d26d3302900534fda358cc680300a3cea0e448b96182a581ff6a60546eb582",
+        "32060041d5efa3fd34adec7ca600628147d78fe2e44886f83acf32af304268a9",
+        "b0105fede02efdcc6d08835950767816f0a270abde7ef489ff603ceea6503ecc",
+        "9efdbf125bc97516cf390b2df772e9fc53e9ba897e2054adb41a68dac11ce9ed",
+        "fd5b1453da3ad2eac4c9187893b5de3ca44dd11d6b24025ef9f8a438d74aae52",
+        "8fb1a200bcc7081ff984f71955f46e2c8908e8f2d276c60d818ffb63cf7a34a8",
+        "99f7e961b74f8e81f106bb2745a541c106727ec55a3dbd21ef8e66fe7bbabbfd",
+        "957c6edadf9b1ca528768cd34ae3ca3d34a0145f7dddec3dfa5e2a197426393f",
+        "9e98274330b6aa02bff1063c8998a07abd5f91ea2a27a44e8aa17c9c9447f2b6",
+        "5e65bf6a3a4c6b18fefeb350e53b68ab3f791dbc3524c7fba2d00685020033e5",
+        "6b691d3253ab7a334b53cfc7f7e9f5001e4f7f0626fa38e48b11c88bcaf9c7f9"
+      ]
+    },
+    "revision-and-evidence-notes.pdf": {
+      "bytes": 87824,
+      "sha256": "0e2216ba1d18839eed387bec93302b6e00a0dd4e70bd53d1e945bb05bb07ff9c",
+      "pages": 6,
+      "metadata": {
+        "format": "PDF 1.5",
+        "title": "Empirical Lawhood: Evidence and provenance",
+        "author": "Gareth Seneque",
+        "subject": "Companion note. Internal version 0.60; 4 October 2026",
+        "keywords": "Empirical Lawhood, evidence, provenance, version 0.60",
+        "creator": "LaTeX via pandoc",
+        "producer": "xdvipdfmx (20240305)",
+        "creationDate": "D:20261004114558Z",
+        "modDate": "",
+        "trapped": "",
+        "encryption": null
+      },
+      "rendered_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "visually_inspected_pages": [
+        1,
+        2,
+        3,
+        4,
+        5,
+        6
+      ],
+      "text_outside_page": [],
+      "replacement_character_pages": [],
+      "bookmarks": [
+        [
+          1,
+          "Scope and release assumption",
+          1
+        ],
+        [
+          1,
+          "Study-to-source register",
+          1
+        ],
+        [
+          1,
+          "Empirical populations and retained distinctions",
+          2
+        ],
+        [
+          2,
+          "Circuit information challenge \u2014 manuscript \u00a74.1",
+          2
+        ],
+        [
+          2,
+          "Matrix geometry, algebra and response \u2014 manuscript \u00a7\u00a74.2\u20134.4",
+          2
+        ],
+        [
+          2,
+          "Forecast-mediated reuse \u2014 manuscript \u00a75.1",
+          3
+        ],
+        [
+          2,
+          "Preparation-mediated applicability \u2014 manuscript \u00a75.2",
+          3
+        ],
+        [
+          2,
+          "Wider systems \u2014 manuscript \u00a76",
+          4
+        ],
+        [
+          1,
+          "Historical verification issues and the repository assumption",
+          4
+        ],
+        [
+          2,
+          "Nominal and final intervals in the first worked forecast episode",
+          4
+        ],
+        [
+          2,
+          "Bootstrap reporting",
+          4
+        ],
+        [
+          2,
+          "Acquisition and independence",
+          5
+        ],
+        [
+          1,
+          "Research-process account and added references",
+          5
+        ],
+        [
+          2,
+          "Application, co-development and evidence",
+          5
+        ],
+        [
+          2,
+          "Wheeler, Engelbart and meaningful human control",
+          5
+        ],
+        [
+          2,
+          "Agency, autonomy and unmeasured benefits",
+          6
+        ],
+        [
+          1,
+          "Editorial continuity",
+          6
+        ],
+        [
+          1,
+          "Figures, build and identifiers",
+          6
+        ]
+      ],
+      "link_annotation_count": 0,
+      "navigation": "Original supplied outline and annotations unchanged",
+      "rendered_page_sha256": [
+        "47ae61e1c8bf9b524ffba233a0be9e536f8eef412d32a6596c4b43661a21fe75",
+        "60437e0b9a49ec4361bb0280c0d38d8db33910654863ede6b37b4b7afd76d72e",
+        "b498bf8d6003b07520636db6fb07fa1ac825ec62ba345f247e5c643f045d276e",
+        "af6180ddf61acde766903bbbd05c0d40591a48dadf9d30bb450aed50143fb9a0",
+        "6fa2c9a0c351ecac7bcaf36df45f1219c61e75c05b225b99783d41ce0a6ed64a",
+        "73a764af2b9fe8ee75fba7db356fe245c275b40e9997a2819c0df3f9b517cc92"
+      ]
+    }
+  },
+  "figures": [
+    {
+      "path": "assets/figure1.png",
+      "bytes": 191150,
+      "sha256": "836a3c7f173194177b382c097f9db6aecee8e298252da7a3201ec23a5b635581",
+      "visually_inspected": true,
+      "review": "Exact supplied format reviewed; numerical marks, captions and legend intact. No clipping or missing glyphs observed."
+    },
+    {
+      "path": "assets/figure1.pdf",
+      "bytes": 190515,
+      "sha256": "7a49b7cc703d8c42c8615b5600e61a99d6af72ccf0f5c5624ad50193da333c9d",
+      "visually_inspected": true,
+      "review": "Exact supplied format reviewed; numerical marks, captions and legend intact. No clipping or missing glyphs observed.",
+      "render_sha256": "f59386e4ada1ebdb644be9f2ea3a64c01b56e81dc5ae6b78bd707f9714d43acc"
+    },
+    {
+      "path": "assets/figure2.png",
+      "bytes": 274881,
+      "sha256": "076bda1e86a00f0a3f03aa54e5e949f30059e2fbafa2bda570ad69aa0759cc5d",
+      "visually_inspected": true,
+      "review": "Exact supplied format reviewed; numerical marks, captions and legend intact. No clipping or missing glyphs observed."
+    },
+    {
+      "path": "assets/figure2.pdf",
+      "bytes": 275835,
+      "sha256": "ec89c367e11467d06ae4f82e3aa7b511ded82cbc55935fb3bb9017b830ffabaf",
+      "visually_inspected": true,
+      "review": "Exact supplied format reviewed; numerical marks, captions and legend intact. No clipping or missing glyphs observed.",
+      "render_sha256": "c9ee24fb09d7ab583c530ecae679adc64fe726ad04ddf4b37d6bb69e64ddcef4"
+    },
+    {
+      "path": "assets/figure3.png",
+      "bytes": 216673,
+      "sha256": "7dfa99b66582d4c0f82dd3decfffca075ea8990efecfc53f0916e5ce4d87327f",
+      "visually_inspected": true,
+      "review": "Exact supplied format reviewed; numerical marks, captions and legend intact. No clipping or missing glyphs observed."
+    },
+    {
+      "path": "assets/figure3.pdf",
+      "bytes": 215780,
+      "sha256": "a7598f5d09752b34456809e0de7ce1c08df94d6810a7860b0974c1d32229c1fc",
+      "visually_inspected": true,
+      "review": "Exact supplied format reviewed; numerical marks, captions and legend intact. No clipping or missing glyphs observed.",
+      "render_sha256": "5784d455611a1b3dc79f2687c24d7e01881e8ca0662d276488221e87a961ca26"
+    }
+  ],
+  "critical_visual_findings": [],
+  "navigation_edits": 0,
+  "independent_fresh_reader": false,
+  "native_scientific_reproduction": false,
+  "original_build_history_limit": "Supplied recipe/report only; not reconstructing full original tool/command/TeX-log history.",
+  "deposited_manuscript": {
+    "path": "editions/v0.60-deposit/Empirical_Lawhood_Manuscript_v0.60.pdf",
+    "bytes": 875723,
+    "sha256": "542c7450f5504316ffab6a28f4f626a963225ff6536753577781acafbd7760db",
+    "md5": "3d621222d09fa7c5c22198b5e1a3231a",
+    "pages": 19,
+    "metadata": {
+      "format": "PDF 1.5",
+      "title": "Empirical Lawhood",
+      "author": "Gareth Seneque",
+      "subject": "Preprint. Internal manuscript version 0.60; 4 October 2026",
+      "keywords": "Empirical Lawhood, response laws, conditions of knowledge, scientific capability, scientific agency, observer-participancy, version 0.60",
+      "creator": "LaTeX via pandoc",
+      "producer": "xdvipdfmx (20240305)",
+      "creationDate": "D:20261004114555Z",
+      "modDate": "",
+      "trapped": "",
+      "encryption": null
+    },
+    "role": "Published preprint PDF downloaded from exact verified Zenodo deposit; distinct from supplied source-bundle PDF.",
+    "visually_inspected_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "review": "Pages1\u201317 and19 pixel-identical at72dpi to reviewed supplied pages, both hashes bound by comparison receipt; changedpage18 separately rendered with systemPoppler110dpi and visually inspected. No clipping/overlap/missing glyph observed.",
+    "comparison_scope": "Onlypage18 changed in text/render: publication identifier paragraph now calls DOI the manuscript DOI. Exact producing transformation/tool receipt unavailable; no inferred edit of supplied source.",
+    "record_path": "editions/v0.60-deposit/zenodo-record.json",
+    "record_sha256": "12d0ae5ff3c2b0145cd92f0a806ea1a50232beaf2f57ffcf6f756c52095b0f76",
+    "publication_date": "2026-10-01",
+    "supplied_manuscript_date": "2026-10-04",
+    "changed_page_render_sha256": "56514083767fcb4defca45c3fe28b13a3a4e56ae6a1b0fff381f5879dc86b10f"
+  },
+  "deposit_comparison": {
+    "supplied_pdf_sha256": "b000a94eeeaa014b6e79491e09ea3d526450457bb0f06236c1d9007e7632f1c7",
+    "deposited_pdf_sha256": "542c7450f5504316ffab6a28f4f626a963225ff6536753577781acafbd7760db",
+    "pixel_equal_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      19
+    ],
+    "changed_pages": [
+      18
+    ],
+    "pymupdf_dpi": 72,
+    "metadata_equal": true,
+    "outlines_equal": true
+  }
+}

@@ -1,0 +1,59 @@
+{
+  "$defs": {
+    "MaterialControlInputPreflight_dd492196a2bd": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/simulators/ambient-pressure-superconductor/material-control-input-preflight"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "archive_relative_paths": {
+              "description": "archive relative paths; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "config_id": {
+              "description": "config id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "workflow_profile_ids": {
+              "description": "workflow profile ids; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "config_id",
+            "workflow_profile_ids",
+            "archive_relative_paths"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:material-control-input",
+  "$ref": "#/$defs/MaterialControlInputPreflight_dd492196a2bd",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Material Control Input",
+  "x-consumer": "material-control-input",
+  "x-consumer-maximum-bytes": 32768,
+  "x-disposition": "editable",
+  "x-preparation-allowed": true
+}

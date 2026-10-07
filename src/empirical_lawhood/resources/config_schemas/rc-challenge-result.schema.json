@@ -1,0 +1,988 @@
+{
+  "$defs": {
+    "ArtifactGenericValidation_5123e6315099": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/runtime/artifact-generic-validation"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "payload_schema": {
+              "description": "payload schema; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "profile": {
+              "description": "profile; constructor checks semantics and units.",
+              "enum": [
+                "CANONICAL_JSON",
+                "ARROW_IPC",
+                "PARQUET",
+                "AUDITED_HDF5",
+                "NUMPY_NO_PICKLE",
+                "JSONL_CHUNKS",
+                "ONNX",
+                "SAFETENSORS",
+                "TEXT_PARAMETERS",
+                "RAW_SOURCE_BYTES"
+              ],
+              "type": "string"
+            },
+            "validator_implementation_sha256": {
+              "description": "validator implementation sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "validator_key": {
+              "description": "validator key; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "validator_version": {
+              "description": "validator version; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "validator_key",
+            "validator_version",
+            "validator_implementation_sha256",
+            "payload_schema",
+            "profile"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "ArtifactLineageParent_47a462c7e57d": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/runtime/artifact-lineage-parent"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "identity": {
+              "$ref": "#/$defs/ObjectIdentity_1e3d5e7bc67c",
+              "description": "identity; constructor checks semantics and units."
+            },
+            "outcome_access": {
+              "description": "outcome access; constructor checks semantics and units.",
+              "enum": [
+                "outcome-blind",
+                "development-visible",
+                "evaluation-sealed",
+                "evaluator-reveal",
+                "evaluation-revealed",
+                "privileged-truth"
+              ],
+              "type": "string"
+            },
+            "visibility_ceiling": {
+              "description": "visibility ceiling; constructor checks semantics and units.",
+              "enum": [
+                "PROSPECTIVE",
+                "DEVELOPMENT_ONLY",
+                "OUTCOME_VISIBLE",
+                "PRIVILEGED_TRUTH",
+                "UNBOUND_HISTORICAL"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "identity",
+            "visibility_ceiling",
+            "outcome_access"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "ArtifactManifest_c6e88395c3d8": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/runtime/artifact-manifest"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "logical": {
+              "$ref": "#/$defs/LogicalArtifactIdentity_73a4d65d54b5",
+              "description": "logical; constructor checks semantics and units."
+            },
+            "materialization": {
+              "$ref": "#/$defs/ArtifactMaterialization_77bc67b0104e",
+              "description": "materialization; constructor checks semantics and units."
+            },
+            "publication": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/ArtifactPublicationBinding_2b77796a9dce"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "publication; constructor checks semantics and units."
+            }
+          },
+          "required": [
+            "logical",
+            "materialization",
+            "publication"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "ArtifactMaterialization_77bc67b0104e": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/runtime/artifact-materialization"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "compression": {
+              "description": "compression; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "logical_artifact_id": {
+              "description": "logical artifact id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "materialization_id": {
+              "description": "materialization id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "partition_selector": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "partition selector; constructor checks semantics and units."
+            },
+            "physical_sha256": {
+              "description": "physical sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "relative_path": {
+              "description": "relative path; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "size_bytes": {
+              "description": "size bytes; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "storage_root_id": {
+              "description": "storage root id; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "materialization_id",
+            "logical_artifact_id",
+            "storage_root_id",
+            "relative_path",
+            "physical_sha256",
+            "size_bytes",
+            "compression",
+            "partition_selector"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "ArtifactPublicationBinding_2b77796a9dce": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/runtime/artifact-publication-binding"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "commit_marker_relative_path": {
+              "description": "commit marker relative path; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "commit_marker_sha256": {
+              "description": "commit marker sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "commit_marker_size_bytes": {
+              "description": "commit marker size bytes; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "members": {
+              "description": "members; constructor checks semantics and units.",
+              "items": {
+                "$ref": "#/$defs/ArtifactPublicationMember_5145bdff2675"
+              },
+              "type": "array"
+            },
+            "publication_batch_id": {
+              "description": "publication batch id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "publication_scope": {
+              "$ref": "#/$defs/ArtifactPublicationScope_493a817dada1",
+              "description": "publication scope; constructor checks semantics and units."
+            }
+          },
+          "required": [
+            "publication_batch_id",
+            "publication_scope",
+            "commit_marker_relative_path",
+            "commit_marker_sha256",
+            "commit_marker_size_bytes",
+            "members"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "ArtifactPublicationMember_5145bdff2675": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/runtime/artifact-publication-member"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "logical_artifact_id": {
+              "description": "logical artifact id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "logical_identity_sha256": {
+              "description": "logical identity sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "materialization_id": {
+              "description": "materialization id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "outcome_access": {
+              "description": "outcome access; constructor checks semantics and units.",
+              "enum": [
+                "outcome-blind",
+                "development-visible",
+                "evaluation-sealed",
+                "evaluator-reveal",
+                "evaluation-revealed",
+                "privileged-truth"
+              ],
+              "type": "string"
+            },
+            "physical_sha256": {
+              "description": "physical sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "relative_path": {
+              "description": "relative path; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "size_bytes": {
+              "description": "size bytes; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "storage_root_id": {
+              "description": "storage root id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "visibility_ceiling": {
+              "description": "visibility ceiling; constructor checks semantics and units.",
+              "enum": [
+                "PROSPECTIVE",
+                "DEVELOPMENT_ONLY",
+                "OUTCOME_VISIBLE",
+                "PRIVILEGED_TRUTH",
+                "UNBOUND_HISTORICAL"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "materialization_id",
+            "logical_artifact_id",
+            "logical_identity_sha256",
+            "storage_root_id",
+            "relative_path",
+            "physical_sha256",
+            "size_bytes",
+            "visibility_ceiling",
+            "outcome_access"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "ArtifactPublicationScope_493a817dada1": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/runtime/artifact-publication-scope"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "outcome_access": {
+              "description": "outcome access; constructor checks semantics and units.",
+              "enum": [
+                "outcome-blind",
+                "development-visible",
+                "evaluation-sealed",
+                "evaluator-reveal",
+                "evaluation-revealed",
+                "privileged-truth"
+              ],
+              "type": "string"
+            },
+            "publication_scope_id": {
+              "description": "publication scope id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "relative_root": {
+              "description": "relative root; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "storage_root_id": {
+              "description": "storage root id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "visibility_ceiling": {
+              "description": "visibility ceiling; constructor checks semantics and units.",
+              "enum": [
+                "PROSPECTIVE",
+                "DEVELOPMENT_ONLY",
+                "OUTCOME_VISIBLE",
+                "PRIVILEGED_TRUTH",
+                "UNBOUND_HISTORICAL"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "publication_scope_id",
+            "storage_root_id",
+            "relative_root",
+            "visibility_ceiling",
+            "outcome_access"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "ArtifactSemanticValidation_d521d81a3872": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/runtime/artifact-semantic-validation"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "field_bindings": {
+              "description": "field bindings; constructor checks semantics and units.",
+              "items": {
+                "items": false,
+                "maxItems": 2,
+                "minItems": 2,
+                "prefixItems": [
+                  {
+                    "type": "string"
+                  },
+                  {
+                    "type": "string"
+                  }
+                ],
+                "type": "array"
+              },
+              "type": "array"
+            },
+            "payload_schema": {
+              "description": "payload schema; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "profile": {
+              "description": "profile; constructor checks semantics and units.",
+              "enum": [
+                "CANONICAL_JSON",
+                "ARROW_IPC",
+                "PARQUET",
+                "AUDITED_HDF5",
+                "NUMPY_NO_PICKLE",
+                "JSONL_CHUNKS",
+                "ONNX",
+                "SAFETENSORS",
+                "TEXT_PARAMETERS",
+                "RAW_SOURCE_BYTES"
+              ],
+              "type": "string"
+            },
+            "top_level_keys": {
+              "description": "top level keys; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "validator_implementation_sha256": {
+              "description": "validator implementation sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "validator_key": {
+              "description": "validator key; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "validator_version": {
+              "description": "validator version; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "value_keys": {
+              "description": "value keys; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "validator_key",
+            "validator_version",
+            "validator_implementation_sha256",
+            "payload_schema",
+            "profile",
+            "top_level_keys",
+            "value_keys",
+            "field_bindings"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "CanonicalTaskReceipt_882cb029771b": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/runtime/canonical-task-receipt"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "attempt_id": {
+              "description": "attempt id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "checks": {
+              "description": "checks; constructor checks semantics and units.",
+              "items": {
+                "$ref": "#/$defs/ReceiptCheck_5685aa98db10"
+              },
+              "type": "array"
+            },
+            "implementation_commit": {
+              "description": "implementation commit; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "input_materialization_ids": {
+              "description": "input materialization ids; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "operational_status": {
+              "description": "operational status; constructor checks semantics and units.",
+              "enum": [
+                "PENDING",
+                "READY",
+                "RUNNING",
+                "SUCCEEDED",
+                "FAILED",
+                "BLOCKED",
+                "SKIPPED",
+                "INVALIDATED"
+              ],
+              "type": "string"
+            },
+            "output_logical_artifacts": {
+              "description": "output logical artifacts; constructor checks semantics and units.",
+              "items": {
+                "$ref": "#/$defs/LogicalArtifactIdentity_73a4d65d54b5"
+              },
+              "type": "array"
+            },
+            "output_materializations": {
+              "description": "output materializations; constructor checks semantics and units.",
+              "items": {
+                "$ref": "#/$defs/ArtifactMaterialization_77bc67b0104e"
+              },
+              "type": "array"
+            },
+            "reason_codes": {
+              "description": "reason codes; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "receipt_id": {
+              "description": "receipt id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "run_id": {
+              "description": "run id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "task_id": {
+              "description": "task id; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "receipt_id",
+            "run_id",
+            "task_id",
+            "attempt_id",
+            "implementation_commit",
+            "input_materialization_ids",
+            "output_materializations",
+            "output_logical_artifacts",
+            "checks",
+            "operational_status",
+            "reason_codes"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "LogicalArtifactIdentity_73a4d65d54b5": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/runtime/logical-artifact-identity"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "content_sha256": {
+              "description": "content sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "generic_validation": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/ArtifactGenericValidation_5123e6315099"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "generic validation; constructor checks semantics and units."
+            },
+            "lineage_parents": {
+              "description": "lineage parents; constructor checks semantics and units.",
+              "items": {
+                "$ref": "#/$defs/ArtifactLineageParent_47a462c7e57d"
+              },
+              "type": "array"
+            },
+            "logical_artifact_id": {
+              "description": "logical artifact id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "media_type": {
+              "description": "media type; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "outcome_access": {
+              "description": "outcome access; constructor checks semantics and units.",
+              "enum": [
+                "outcome-blind",
+                "development-visible",
+                "evaluation-sealed",
+                "evaluator-reveal",
+                "evaluation-revealed",
+                "privileged-truth"
+              ],
+              "type": "string"
+            },
+            "parent_visibility_ceilings": {
+              "description": "parent visibility ceilings; constructor checks semantics and units.",
+              "items": {
+                "enum": [
+                  "PROSPECTIVE",
+                  "DEVELOPMENT_ONLY",
+                  "OUTCOME_VISIBLE",
+                  "PRIVILEGED_TRUTH",
+                  "UNBOUND_HISTORICAL"
+                ],
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "payload_schema": {
+              "description": "payload schema; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "profile": {
+              "description": "profile; constructor checks semantics and units.",
+              "enum": [
+                "CANONICAL_JSON",
+                "ARROW_IPC",
+                "PARQUET",
+                "AUDITED_HDF5",
+                "NUMPY_NO_PICKLE",
+                "JSONL_CHUNKS",
+                "ONNX",
+                "SAFETENSORS",
+                "TEXT_PARAMETERS",
+                "RAW_SOURCE_BYTES"
+              ],
+              "type": "string"
+            },
+            "semantic_validation": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/ArtifactSemanticValidation_d521d81a3872"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "semantic validation; constructor checks semantics and units."
+            },
+            "visibility_ceiling": {
+              "description": "visibility ceiling; constructor checks semantics and units.",
+              "enum": [
+                "PROSPECTIVE",
+                "DEVELOPMENT_ONLY",
+                "OUTCOME_VISIBLE",
+                "PRIVILEGED_TRUTH",
+                "UNBOUND_HISTORICAL"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "logical_artifact_id",
+            "content_sha256",
+            "payload_schema",
+            "profile",
+            "media_type",
+            "visibility_ceiling",
+            "parent_visibility_ceilings",
+            "outcome_access",
+            "generic_validation",
+            "lineage_parents",
+            "semantic_validation"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "ObjectIdentity_1e3d5e7bc67c": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/kernel/object-identity"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "object_fingerprint": {
+              "description": "object fingerprint; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_id": {
+              "description": "object id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_schema": {
+              "description": "object schema; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_version": {
+              "description": "object version; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "object_id",
+            "object_schema",
+            "object_version",
+            "object_fingerprint"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "RCChallengeResultAuthorityContext_077c02a6f57b": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/simulator-morphism-challenges/result-authority-context"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "context_id": {
+              "description": "context id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "execution_authority": {
+              "$ref": "#/$defs/ObjectIdentity_1e3d5e7bc67c",
+              "description": "execution authority; constructor checks semantics and units."
+            },
+            "issued_study": {
+              "$ref": "#/$defs/ObjectIdentity_1e3d5e7bc67c",
+              "description": "issued study; constructor checks semantics and units."
+            },
+            "reveal_authority": {
+              "$ref": "#/$defs/ObjectIdentity_1e3d5e7bc67c",
+              "description": "reveal authority; constructor checks semantics and units."
+            }
+          },
+          "required": [
+            "context_id",
+            "issued_study",
+            "execution_authority",
+            "reveal_authority"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "RCChallengeRetainedResult_3f420d267dcf": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/simulator-morphism-challenges/retained-result"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "authority_context": {
+              "anyOf": [
+                {
+                  "$ref": "#/$defs/RCChallengeResultAuthorityContext_077c02a6f57b"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "authority context; constructor checks semantics and units."
+            },
+            "canonical_payload_text": {
+              "description": "canonical payload text; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "output_manifest": {
+              "$ref": "#/$defs/ArtifactManifest_c6e88395c3d8",
+              "description": "output manifest; constructor checks semantics and units."
+            },
+            "receipt_manifest": {
+              "$ref": "#/$defs/ArtifactManifest_c6e88395c3d8",
+              "description": "receipt manifest; constructor checks semantics and units."
+            },
+            "result_id": {
+              "description": "result id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "task_receipt": {
+              "$ref": "#/$defs/CanonicalTaskReceipt_882cb029771b",
+              "description": "task receipt; constructor checks semantics and units."
+            }
+          },
+          "required": [
+            "result_id",
+            "canonical_payload_text",
+            "output_manifest",
+            "task_receipt",
+            "receipt_manifest",
+            "authority_context"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "ReceiptCheck_5685aa98db10": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/runtime/receipt-check"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "check_id": {
+              "description": "check id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "passed": {
+              "description": "passed; constructor checks semantics and units.",
+              "type": "boolean"
+            },
+            "reason_codes": {
+              "description": "reason codes; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "check_id",
+            "passed",
+            "reason_codes"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:rc-challenge-result",
+  "$ref": "#/$defs/RCChallengeRetainedResult_3f420d267dcf",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Rc Challenge Result",
+  "x-consumer": "rc-challenge-result",
+  "x-consumer-maximum-bytes": 16777216,
+  "x-disposition": "retained",
+  "x-preparation-allowed": false
+}

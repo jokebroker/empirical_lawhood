@@ -1,0 +1,351 @@
+{
+  "$defs": {
+    "ResistorCapacitorLadderActionSegment_cbfbf753dd1a": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/adapters/simulators/rc-ladder-response/resistor-capacitor-ladder-action-segment"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "end_seconds": {
+              "additionalProperties": false,
+              "description": "end seconds; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object",
+              "x-unit": "s"
+            },
+            "left_voltage_volts": {
+              "additionalProperties": false,
+              "description": "left voltage volts; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object",
+              "x-unit": "V"
+            },
+            "right_voltage_volts": {
+              "additionalProperties": false,
+              "description": "right voltage volts; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object",
+              "x-unit": "V"
+            },
+            "segment_id": {
+              "description": "segment id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "start_seconds": {
+              "additionalProperties": false,
+              "description": "start seconds; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object",
+              "x-unit": "s"
+            }
+          },
+          "required": [
+            "segment_id",
+            "start_seconds",
+            "end_seconds",
+            "left_voltage_volts",
+            "right_voltage_volts"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "ResistorCapacitorLadderModelConfig_61aed13aecbd": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/adapters/simulators/rc-ladder-response/resistor-capacitor-ladder-model-config"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "action_segments": {
+              "description": "action segments; constructor checks semantics and units.",
+              "items": {
+                "$ref": "#/$defs/ResistorCapacitorLadderActionSegment_cbfbf753dd1a"
+              },
+              "type": "array"
+            },
+            "capacitances_farads": {
+              "description": "capacitances farads; constructor checks semantics and units.",
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "decimal": {
+                    "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "decimal"
+                ],
+                "type": "object"
+              },
+              "type": "array",
+              "x-unit": "F"
+            },
+            "component_metrology_frozen_before_response": {
+              "description": "component metrology frozen before response; constructor checks semantics and units.",
+              "type": "boolean"
+            },
+            "config_id": {
+              "description": "config id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "initial_voltages_volts": {
+              "description": "initial voltages volts; constructor checks semantics and units.",
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "decimal": {
+                    "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "decimal"
+                ],
+                "type": "object"
+              },
+              "type": "array",
+              "x-unit": "V"
+            },
+            "interior_resistances_ohms": {
+              "description": "interior resistances ohms; constructor checks semantics and units.",
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "decimal": {
+                    "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "decimal"
+                ],
+                "type": "object"
+              },
+              "type": "array",
+              "x-unit": "ohm"
+            },
+            "left_source_resistance_ohms": {
+              "additionalProperties": false,
+              "description": "left source resistance ohms; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object",
+              "x-unit": "ohm"
+            },
+            "output_times_seconds": {
+              "description": "output times seconds; constructor checks semantics and units.",
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "decimal": {
+                    "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "decimal"
+                ],
+                "type": "object"
+              },
+              "type": "array",
+              "x-unit": "s"
+            },
+            "right_termination_resistance_ohms": {
+              "additionalProperties": false,
+              "description": "right termination resistance ohms; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object",
+              "x-unit": "ohm"
+            },
+            "scale_cells": {
+              "description": "scale cells; constructor checks semantics and units.",
+              "type": "integer"
+            }
+          },
+          "required": [
+            "config_id",
+            "scale_cells",
+            "capacitances_farads",
+            "interior_resistances_ohms",
+            "left_source_resistance_ohms",
+            "right_termination_resistance_ohms",
+            "initial_voltages_volts",
+            "action_segments",
+            "output_times_seconds",
+            "component_metrology_frozen_before_response"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "ResistorCapacitorLadderStudyConfig_7bb2532b1947": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/simulators/rc-ladder-response/resistor-capacitor-ladder-study-config"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "backward_euler_maximum_step_seconds": {
+              "additionalProperties": false,
+              "description": "backward euler maximum step seconds; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object",
+              "x-unit": "s"
+            },
+            "maximum_charge_rate_defect_amperes": {
+              "additionalProperties": false,
+              "description": "maximum charge rate defect amperes; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object",
+              "x-unit": "A"
+            },
+            "maximum_view_defect_volts": {
+              "additionalProperties": false,
+              "description": "maximum view defect volts; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object",
+              "x-unit": "V"
+            },
+            "model": {
+              "$ref": "#/$defs/ResistorCapacitorLadderModelConfig_61aed13aecbd",
+              "description": "model; constructor checks semantics and units."
+            },
+            "study_id": {
+              "description": "study id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "unit_id": {
+              "description": "unit id; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "study_id",
+            "unit_id",
+            "model",
+            "backward_euler_maximum_step_seconds",
+            "maximum_view_defect_volts",
+            "maximum_charge_rate_defect_amperes"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:rc-ladder-study",
+  "$ref": "#/$defs/ResistorCapacitorLadderStudyConfig_7bb2532b1947",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Rc Ladder Study",
+  "x-consumer": "rc-ladder-study",
+  "x-consumer-maximum-bytes": 131072,
+  "x-disposition": "editable",
+  "x-preparation-allowed": true
+}

@@ -1,0 +1,59 @@
+{
+  "$id": "urn:empirical-lawhood:configuration:prepared-prior-census",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "properties": {
+    "schema": {
+      "const": "empirical-lawhood/composition/prepared-response/prepared-exposure-inspection"
+    },
+    "value": {
+      "properties": {
+        "excluded_seed_ids": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "excluded_unit_ids": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "proposed_seed_ids": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array"
+        },
+        "proposed_unit_ids": {
+          "items": {
+            "type": "string"
+          },
+          "minItems": 1,
+          "type": "array"
+        }
+      },
+      "required": [
+        "excluded_unit_ids",
+        "excluded_seed_ids",
+        "proposed_unit_ids",
+        "proposed_seed_ids"
+      ],
+      "type": "object"
+    }
+  },
+  "required": [
+    "schema",
+    "value"
+  ],
+  "title": "Prepared Prior Census",
+  "type": "object",
+  "x-consumer": "prepared-prior-census",
+  "x-consumer-maximum-bytes": 67108864,
+  "x-disposition": "import",
+  "x-preparation-allowed": false
+}

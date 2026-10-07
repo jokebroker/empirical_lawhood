@@ -1,0 +1,204 @@
+{
+  "$defs": {
+    "MatrixPreparationSourceConfig_7d3eddfbe681": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/methods/finite-response-law/matrix-preparation-source-config"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "allocation": {
+              "$ref": "#/$defs/ObjectIdentity_1e3d5e7bc67c",
+              "description": "allocation; constructor checks semantics and units."
+            },
+            "code_sources_sha256": {
+              "description": "code sources sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "config_id": {
+              "description": "config id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "dependency_lock_sha256": {
+              "description": "dependency lock sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "evidence_role": {
+              "description": "evidence role; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "protocol": {
+              "$ref": "#/$defs/MatrixPreparationSourceProtocol_c2a059547ab2",
+              "description": "protocol; constructor checks semantics and units."
+            }
+          },
+          "required": [
+            "config_id",
+            "allocation",
+            "protocol",
+            "code_sources_sha256",
+            "dependency_lock_sha256",
+            "evidence_role"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "2.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "MatrixPreparationSourceProtocol_c2a059547ab2": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/methods/finite-response-law/matrix-preparation-source-protocol"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "nested_futures": {
+              "description": "nested futures; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "numerical_views": {
+              "description": "numerical views; constructor checks semantics and units.",
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            "prefix_ticks": {
+              "description": "prefix ticks; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "preparation_menus": {
+              "description": "preparation menus; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "preparation_ticks": {
+              "description": "preparation ticks; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "response_ticks": {
+              "description": "response ticks; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "response_words_including_hold": {
+              "description": "response words including hold; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "sample_stride": {
+              "description": "sample stride; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "source_kinds": {
+              "description": "source kinds; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "timestep": {
+              "additionalProperties": false,
+              "description": "timestep; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "prefix_ticks",
+            "preparation_ticks",
+            "response_ticks",
+            "sample_stride",
+            "numerical_views",
+            "nested_futures",
+            "timestep",
+            "preparation_menus",
+            "response_words_including_hold",
+            "source_kinds"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "ObjectIdentity_1e3d5e7bc67c": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/kernel/object-identity"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "object_fingerprint": {
+              "description": "object fingerprint; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_id": {
+              "description": "object id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_schema": {
+              "description": "object schema; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_version": {
+              "description": "object version; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "object_id",
+            "object_schema",
+            "object_version",
+            "object_fingerprint"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:matrix-source",
+  "$ref": "#/$defs/MatrixPreparationSourceConfig_7d3eddfbe681",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Matrix Source",
+  "x-consumer": "matrix-source",
+  "x-consumer-maximum-bytes": 65536,
+  "x-disposition": "editable",
+  "x-preparation-allowed": true
+}

@@ -1,0 +1,118 @@
+{
+  "edition": "0.60",
+  "external_references": [
+    {
+      "number": 1,
+      "entry": "Kant, I. (1781/1787). *Critique of Pure Reason*, B19, A84/B116, A158/B197 and B165. English translation by J. M. D. Meiklejohn."
+    },
+    {
+      "number": 2,
+      "entry": "Gell-Mann, M. and Hartle, J. B. (1990). Quantum mechanics in the light of quantum cosmology. In W. H. Zurek (ed.), *Complexity, Entropy, and the Physics of Information*, SFI Studies in the Sciences of Complexity VIII. Addison-Wesley. Later open deposit: arXiv:1803.04605 (2018)."
+    },
+    {
+      "number": 3,
+      "entry": "Hartle, J. B. (2011). The quasiclassical realms of this quantum universe. *Foundations of Physics* **41**, 982\u20131006. doi:10.1007/s10701-010-9460-0. Open manuscript: arXiv:0806.3776."
+    },
+    {
+      "number": 4,
+      "entry": "van Waarde, H. J., Eising, J., Trentelman, H. L. and Camlibel, M. K. (2020). Data informativity: A new perspective on data-driven analysis and control. *IEEE Transactions on Automatic Control* **65**, 4753\u20134768. doi:10.1109/TAC.2020.2966717."
+    },
+    {
+      "number": 5,
+      "entry": "Barnett, N. and Crutchfield, J. P. (2015). Computational mechanics of input\u2013output processes: Structured transformations and the epsilon-transducer. *Journal of Statistical Physics* **161**, 404\u2013451. doi:10.1007/s10955-015-1327-5."
+    },
+    {
+      "number": 6,
+      "entry": "Shali, B. M., Heidema, H. M., van der Schaft, A. J. and Besselink, B. (2022). Series composition of simulation-based assume-guarantee contracts for linear dynamical systems. arXiv:2209.01844."
+    },
+    {
+      "number": 7,
+      "entry": "Rischel, E. F. and Weichwald, S. (2021). Compositional abstraction error and a category of causal models. *Proceedings of Machine Learning Research* **161**, 1013\u20131023."
+    },
+    {
+      "number": 8,
+      "entry": "Angelopoulos, A. N. and Bates, S. (2023). Conformal prediction: A gentle introduction. *Foundations and Trends in Machine Learning* **16**(4), 494\u2013591. doi:10.1561/2200000101."
+    },
+    {
+      "number": 9,
+      "entry": "Donti, P. L., Amos, B. and Kolter, J. Z. (2017). Task-based end-to-end model learning in stochastic optimization. *Advances in Neural Information Processing Systems* **30**. Open manuscript: arXiv:1703.04529."
+    },
+    {
+      "number": 10,
+      "entry": "Chorin, A. J., Hald, O. H. and Kupferman, R. (2000). Optimal prediction and the Mori\u2013Zwanzig representation of irreversible processes. *Proceedings of the National Academy of Sciences* **97**, 2968\u20132973. doi:10.1073/pnas.97.7.2968."
+    },
+    {
+      "number": 11,
+      "entry": "Cartwright, N. (1999). Nomological machines and the laws they produce. In *The Dappled World: A Study of the Boundaries of Science*, chapter 3, pp. 49\u201374. Cambridge University Press. doi:10.1017/CBO9781139167093.004."
+    },
+    {
+      "number": 12,
+      "entry": "Badis Ydri, Ramda Khaled and Rouag Ahlam (2016). Geometry in transition in four dimensions: A model of emergent geometry in the early universe and dark energy. *Physical Review D* **94**, 085020. doi:10.1103/PhysRevD.94.085020. Open manuscript: arXiv:1607.06761."
+    },
+    {
+      "number": 13,
+      "entry": "Holbrook, J. A., Kribs, D. W., Laflamme, R. and Poulin, D. (2005). Noiseless subsystems for collective rotation channels in quantum information theory. *Integral Equations and Operator Theory* **51**, 215\u2013234. Open manuscript: arXiv:math/0402105."
+    },
+    {
+      "number": 14,
+      "entry": "Barber, R. F., Cand\u00e8s, E. J., Ramdas, A. and Tibshirani, R. J. (2021). The limits of distribution-free conditional predictive inference. *Information and Inference* **10**(2), 455\u2013482."
+    },
+    {
+      "number": 15,
+      "entry": "Clopper, C. J. and Pearson, E. S. (1934). The use of confidence or fiducial limits illustrated in the case of the binomial. *Biometrika* **26**(4), 404\u2013413. doi:10.1093/biomet/26.4.404."
+    },
+    {
+      "number": 16,
+      "entry": "Heidegger, M. (1927). *Being and Time*, \u00a7\u00a715\u201316. English translation by J. Macquarrie and E. Robinson (1962). Blackwell."
+    },
+    {
+      "number": 17,
+      "entry": "Gell-Mann, M. and Hartle, J. B. (1993). Classical equations for quantum systems. *Physical Review D* **47**, 3345\u20133382. doi:10.1103/PhysRevD.47.3345. Open manuscript: arXiv:gr-qc/9210010."
+    },
+    {
+      "number": 18,
+      "entry": "Seneque, G. (2026). *Empirical Lawhood: Methods and Evidence*. Technical companion, 1 October. E1\u2013E5 document the electrical, forecasted-description, preparation, reactor and wider-system studies."
+    },
+    {
+      "number": 19,
+      "entry": "Seneque, G. (2026). *Geometry Without Commitment*. Structural-event and conditional-future dossier, 29 August. Executive synthesis and \u00a72."
+    },
+    {
+      "number": 20,
+      "entry": "Seneque, G. (2026). *Baseline-anchored, pulse-timed recursive closure*. 20 September, \u00a7\u00a71\u20132. These sections report completed retained-data transient analysis and baseline diagnosis; later proposed experiments are not results."
+    },
+    {
+      "number": 21,
+      "entry": "Seneque, G. (2026). *Empirical Lawhood*. Archived matrix-response account, \u00a75: approximate algebraic structure, passive response and realised-future coupled-tangent comparison."
+    },
+    {
+      "number": 22,
+      "entry": "Seneque, G. (2026). *Empirical Lawhood and Epistemic Control: Scientific synthesis, philosophical argument, and research direction*. 6 September, \u00a7\u00a73\u20134. Supporting matrix and cross-system analyses."
+    },
+    {
+      "number": 23,
+      "entry": "Seneque, G. (2026). *Empirical Lawhood: Evidence and provenance*. Accompanying note, 4 October. Study-to-source mapping, release assumptions, retained inferential boundaries and historical verification issues."
+    },
+    {
+      "number": 24,
+      "entry": "Hartle, J. B. (2016). *Why Our Universe Is Comprehensible*. arXiv:1612.01952."
+    },
+    {
+      "number": 25,
+      "entry": "Wheeler, J. A. (1983). Law without law. In J. A. Wheeler and W. H. Zurek (eds.), *Quantum Theory and Measurement*, pp. 182\u2013213. Princeton University Press."
+    },
+    {
+      "number": 26,
+      "entry": "Wheeler, J. A. (1989). Information, physics, quantum: The search for links. In *Proceedings of the 3rd International Symposium on Foundations of Quantum Mechanics in the Light of New Technology*, pp. 354\u2013368. A related version appears in W. H. Zurek (ed.), *Complexity, Entropy, and the Physics of Information* (1990), Addison-Wesley."
+    },
+    {
+      "number": 27,
+      "entry": "Engelbart, D. C. (1962). *Augmenting Human Intellect: A Conceptual Framework*. SRI Summary Report AFOSR-3223, October. Stanford Research Institute. \u00a7\u00a7I.A, II.A and IV."
+    },
+    {
+      "number": 28,
+      "entry": "Santoni de Sio, F. and van den Hoven, J. (2018). Meaningful human control over autonomous systems: A philosophical account. *Frontiers in Robotics and AI* **5**, 15. doi:10.3389/frobt.2018.00015."
+    }
+  ],
+  "scope": "Exact selected28 numbered entries retained unchanged. Referenced predecessor documents and historical reference-verification records are externally preserved, not part of curated public payload."
+}

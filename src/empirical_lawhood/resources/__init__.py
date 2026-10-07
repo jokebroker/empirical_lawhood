@@ -1,0 +1,1 @@
+"""Installed, offline documentation resources."""

@@ -1,0 +1,115 @@
+{
+  "edition": "0.60",
+  "scope": "Current v0.60 figures are publicly packaged byte-exact. Referenced predecessor documents remain externally preserved under original identities and are not included in this curated release.",
+  "files": [
+    {
+      "path": "assets/figure1.pdf",
+      "bytes": 190515,
+      "sha256": "7a49b7cc703d8c42c8615b5600e61a99d6af72ccf0f5c5624ad50193da333c9d"
+    },
+    {
+      "path": "assets/figure1.png",
+      "bytes": 191150,
+      "sha256": "836a3c7f173194177b382c097f9db6aecee8e298252da7a3201ec23a5b635581"
+    },
+    {
+      "path": "assets/figure2.pdf",
+      "bytes": 275835,
+      "sha256": "ec89c367e11467d06ae4f82e3aa7b511ded82cbc55935fb3bb9017b830ffabaf"
+    },
+    {
+      "path": "assets/figure2.png",
+      "bytes": 274881,
+      "sha256": "076bda1e86a00f0a3f03aa54e5e949f30059e2fbafa2bda570ad69aa0759cc5d"
+    },
+    {
+      "path": "assets/figure3.pdf",
+      "bytes": 215780,
+      "sha256": "a7598f5d09752b34456809e0de7ce1c08df94d6810a7860b0974c1d32229c1fc"
+    },
+    {
+      "path": "assets/figure3.png",
+      "bytes": 216673,
+      "sha256": "7dfa99b66582d4c0f82dd3decfffca075ea8990efecfc53f0916e5ce4d87327f"
+    },
+    {
+      "path": "assets/inherited_figure_provenance.json",
+      "bytes": 2490,
+      "sha256": "e0153a1f1827417e5649d58d6c61b3f31450b46e9bcced99a53d616d31bff936"
+    }
+  ],
+  "externally_preserved_not_packaged": [
+    {
+      "path": "sources/CC1_Baseline_Anchored_Recursive_Closure_Proposal_v2.md",
+      "bytes": 35259,
+      "sha256": "63a7e9a39256356111aa131b4052fdca7b7363fee47b347b958cb811abf2f704",
+      "publicly_packaged": false
+    },
+    {
+      "path": "sources/Empirical_Lawhood_Manuscript_v0.2(1).pdf",
+      "bytes": 163563,
+      "sha256": "15ee54bffb4c8cfd83faf0bfe10b78b67406292b568f221c7f493792470897eb",
+      "publicly_packaged": false
+    },
+    {
+      "path": "sources/Empirical_Lawhood_Manuscript_v0.9.4.pdf",
+      "bytes": 480157,
+      "sha256": "9760351eabce7ccd5f2f93504adab3b2dfe58f02c6e7c1108316712eed33ce99",
+      "publicly_packaged": false
+    },
+    {
+      "path": "sources/Empirical_Lawhood_Methods_and_Evidence_v0.9.1.pdf",
+      "bytes": 272739,
+      "sha256": "22e56f27370f55bc31afa60a07f739639a9e9d73ea2b02b64dc12fe7a000500b",
+      "publicly_packaged": false
+    },
+    {
+      "path": "sources/Empirical_Lawhood_and_Epistemic_Control_White_Paper_v0.2_named.pdf",
+      "bytes": 212473,
+      "sha256": "62704c6ccf57db291450baee1dfd30f367f430bc76be69d7df78b54d72037e80",
+      "publicly_packaged": false
+    },
+    {
+      "path": "sources/Evidence_Manifest_v0.9.4.pdf",
+      "bytes": 195044,
+      "sha256": "5a0308d95428271aee0cbfd7ed8df9e0fca0382c571db9b9097ffdacdc68cc29",
+      "publicly_packaged": false
+    },
+    {
+      "path": "sources/editorial_history/Empirical_Lawhood_Evidence_and_Provenance_v0.4.0.md",
+      "bytes": 18208,
+      "sha256": "8eb6a8bc8d3161f547f0f7a5f8fb3c7bf92097eeda0620278ae5924d32ba8b72",
+      "publicly_packaged": false
+    },
+    {
+      "path": "sources/editorial_history/Empirical_Lawhood_Evidence_and_Provenance_v0.5.0.md",
+      "bytes": 22082,
+      "sha256": "d325e6fc71380b986179fa688d4bea198a03c4bc0691d642068685b2b2602e0b",
+      "publicly_packaged": false
+    },
+    {
+      "path": "sources/editorial_history/Empirical_Lawhood_Manuscript_v0.4.0.md",
+      "bytes": 61529,
+      "sha256": "a58d3ae1dea2cb89473c5512edf894f6bc36a2113d9b6e4592a7e1481761f721",
+      "publicly_packaged": false
+    },
+    {
+      "path": "sources/editorial_history/Empirical_Lawhood_Manuscript_v0.5.0.md",
+      "bytes": 70608,
+      "sha256": "d27b21cb1ef873ea61a5666d7e206680d3894866229a39a6c8efa0a9746a0c0a",
+      "publicly_packaged": false
+    },
+    {
+      "path": "sources/editorial_history/Revision_Summary_v0.5.0.md",
+      "bytes": 3648,
+      "sha256": "f8c78f30f93fe8e09d49a2c6260f685a29652170a7eda8a0679e80a9133608ce",
+      "publicly_packaged": false
+    },
+    {
+      "path": "sources/geometry-without-commitment-thread-and-literature-dossier.md",
+      "bytes": 80179,
+      "sha256": "3b3be41b34eb2f07e849abc6789d533c755a9912f13613eaf6064ee76735a36f",
+      "publicly_packaged": false
+    }
+  ]
+}

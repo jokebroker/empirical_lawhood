@@ -1,0 +1,208 @@
+{
+  "$defs": {
+    "Brian2LIFNativeConfig_1f3b2b3dd1ca": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/simulators/brian2-neuron-current-response/brian2-lif-native-config"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "baseline_ms": {
+              "additionalProperties": false,
+              "description": "baseline ms; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object",
+              "x-unit": "ms"
+            },
+            "config_id": {
+              "description": "config id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "horizon_ms": {
+              "additionalProperties": false,
+              "description": "horizon ms; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object",
+              "x-unit": "ms"
+            },
+            "independent_unit_id": {
+              "description": "independent unit id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "maximum_accepted_pa": {
+              "additionalProperties": false,
+              "description": "maximum accepted pa; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object",
+              "x-unit": "pA"
+            },
+            "membrane_resistance_mohm": {
+              "additionalProperties": false,
+              "description": "membrane resistance mohm; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object",
+              "x-unit": "Mohm"
+            },
+            "membrane_tau_ms": {
+              "additionalProperties": false,
+              "description": "membrane tau ms; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object",
+              "x-unit": "ms"
+            },
+            "requested_step_pa": {
+              "additionalProperties": false,
+              "description": "requested step pa; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object",
+              "x-unit": "pA"
+            },
+            "reset_mv": {
+              "additionalProperties": false,
+              "description": "reset mv; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object",
+              "x-unit": "mV"
+            },
+            "rest_mv": {
+              "additionalProperties": false,
+              "description": "rest mv; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object",
+              "x-unit": "mV"
+            },
+            "threshold_mv": {
+              "additionalProperties": false,
+              "description": "threshold mv; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object",
+              "x-unit": "mV"
+            },
+            "timestep_ms": {
+              "additionalProperties": false,
+              "description": "timestep ms; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object",
+              "x-unit": "ms"
+            }
+          },
+          "required": [
+            "config_id",
+            "independent_unit_id",
+            "timestep_ms",
+            "baseline_ms",
+            "horizon_ms",
+            "membrane_tau_ms",
+            "membrane_resistance_mohm",
+            "rest_mv",
+            "reset_mv",
+            "threshold_mv",
+            "requested_step_pa",
+            "maximum_accepted_pa"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:brian2-current",
+  "$ref": "#/$defs/Brian2LIFNativeConfig_1f3b2b3dd1ca",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Brian2 Current",
+  "x-consumer": "brian2-current",
+  "x-consumer-maximum-bytes": 16384,
+  "x-disposition": "editable",
+  "x-preparation-allowed": true
+}

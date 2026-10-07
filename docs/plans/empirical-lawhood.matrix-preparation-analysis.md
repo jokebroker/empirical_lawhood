@@ -1,0 +1,35 @@
+# Current matrix preparation analysis specification
+
+SPDX-License-Identifier: CC-BY-4.0
+
+This is the operative current P07/P08/P09 integration specification. The frozen paper and historical protocols remain unchanged. Historical results and their counts are documentary provenance, and current source/result identities carry no historical standing grant.
+
+The packaged canonical specification is `resources/matrix_preparation_analysis/specification.canonical.json`, owned by `PreparationAnalysisSpecification` in `adapters/methods/matrix_preparation_analysis/records.py`. Every current configuration and report binds that immutable specification identity. APIs verify installed resource bytes before source or array contact. The resource is an installed scientific operand; this guide and the experiment examples are source-checkout/distribution recipes. The base locked environment already supplies NumPy and SciPy; no extra dependency profile is required.
+
+## P07 current source and explanatory evaluator
+
+The source has assembling/prepared contexts, 64 independent roots each, landmarks 1024/4096, and primary/half steps 0.001/0.0005. Prefix initialization and first-256-tick ramps stay with the existing native source. Every root has explicit PCG64DXSM full seed commitments; effective leading-128-bit collisions refuse. Pre-outcome numerical/development rank permutations assign 16 numerical and 32/16/16 fit/interval/screen roots per context. Changing labels does not change numerical draws.
+
+The five native parents retain the ±0.125 trapezoid 48/32/48 plus 16 recovery, and a shared primary pre-parent mode. The native future owner retains the 64-tick pulse, magnitudes 0.5/1/2/8, readouts 64/128/192/256/320, common versus independent futures, shared sign noise and paired numerical views. The existing discrete differential preserves both native force kicks and gradient evaluations, zero stochastic-innovation derivative and negative curvature. Paired-view agreement retains all 128 roots. The numerical mechanism subset gives 32 independent roots and 6,400 nested comparisons, not 6,400 independent observations. Absolute/odd tolerances remain 1/128 and 1/256; secant tolerance remains 1e-8 plus 1e-5 times finite contrast norm. Amplitude-even, scalar-minus-coupled and finite-secant-minus-tangent diagnostics remain retained explanations.
+
+Current fresh source records compose `response_source`, `matrix_preparation/source.py`, `matrix_preparation/projection.py` and `preparation_differential.py`. They do not subclass or relabel a historical retained prefix or import the donor. Future paths and tangent/scalar/secant results are retrospective diagnostics; explanatory superiority is no use-time forecast or qualification gate.
+
+## P08 fixed transfer and exploratory uncertainty
+
+The existing I2R producer supplies 24 current roots in order, eight Q2 then sixteen CIR1, nine menus including HOLD, two future bundles, two numerical views and 0:16:400 parent trajectories. Prefix/handoff/response clocks are 4096/4496/4688. The frozen four-channel radial kernel uses stiffness (88/9)^2 and friction one; the matched nonrestoring comparator uses stiffness zero. Pulse durations 128/256, recoveries 16/144, amplitude ±0.125 and 3/8–1/4–3/8 trapezoids are unchanged.
+
+Outer folds are root index modulo four, with 18 training and six excluded roots. Three inner folds are assigned separately within each outer training cohort. The all/early-time/duration/recovery regimes retain their declared menu/time masks. Kernel RMS floor 1e-12, modal least-squares rcond 1e-10, prefix RMS floor 1e-8, and ridge ten with unpenalized intercept are fixed. The four saved radial/all outer fits are re-evaluated and reused; 28 other outer and 24 inner fits complete the census.
+
+The original F, including q=0.73599618025169766, retains its exact original numerical/source/calibration/qualification provenance. New current arrays and forecasts have distinct identities. Inner OOF widths maximize normalized errors over all 18 training roots, nine menus, pairs, outputs, futures and views; response boxes use q times DELTA and feature enclosures use complete normalized feature maxima. These are exploratory widths with qualification `NONE`, without independent calibration or fresh confirmation. Current excluded-root endpoint U2, no-correction predicted HOLD, nonrestoring dynamics, actual-handoff F and measured-future-HOLD diagnostics remain separate comparisons. The last is evaluator-only.
+
+## P09 signed decomposition and support
+
+The evaluator reads saved P08 coefficients/predictions without fitting or marching. Feature error is baseline error plus transient error, retaining both squares and the signed cross term. Response error is lower-at-true-interface error plus propagated baseline and transient errors, retaining all three squares and all three signed cross terms. The affine decomposition concerns the two un-clamped signed response outputs; other response diagnostics remain in P08.
+
+Support requires all 24 normalized features finite and maximum absolute value at most six, inclusively. Complete true/false-supported/unsupported cells, root counts, actual failure indices and missingness remain results. No historical failure count becomes an input validity gate. Frozen F widths alone omit upper forecast error. Measured future HOLD cannot replace a causal feature, support definition or choice.
+
+## Custody, source identities and outcome claims
+
+Public APIs use explicit paths and the existing guarded artifact plane and bounded canonical/no-pickle array transport. Version 2 configurations/reports bind the complete actual package-source inventory, selected dependency lock and supported observed producing runtime; the observed Git HEAD/dirty state does not misattribute modified bytes to a clean commit. Original F and current native/bridge/result artifacts are authenticated separately. Per-root native clocks and complete array/member/input-role censuses remain retained. The independently committed `analysis-completion.canonical.json` binds the exact final report and all required files. Readout authenticates that publication and validates closed metric roles and saved missingness without calculation, native contact or catalog dependence. It validates retained producing evidence without observing a new reader environment. Interruption preserves partial members; recovery diagnoses the absence of the durable completion and requires a fresh destination, without overwrite or repeated issued effects.
+
+See [tangent](../../experiments/matrix-tangent/guide.md) and [transient/baseline](../../experiments/matrix-transient/guide.md) for public commands. The resource provenance file names the pinned original differential tests and transient analysis/report source hashes. Those donor paths identify inspected scientific source; installed execution reads current owners and current resources only. Full native studies and scientific qualification are not performed by integration tests.

@@ -1,0 +1,622 @@
+{
+  "$defs": {
+    "NativeToraxActionStage_888bff4543c2": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/simulators/torax-native/native-torax-action-stage"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "coordinate_s": {
+              "additionalProperties": false,
+              "description": "coordinate s; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "power_w": {
+              "additionalProperties": false,
+              "description": "power w; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "stage": {
+              "description": "stage; constructor checks semantics and units.",
+              "enum": [
+                "REQUESTED",
+                "ACCEPTED",
+                "APPLIED",
+                "REALIZED"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "stage",
+            "power_w",
+            "coordinate_s"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "NativeToraxAction_53233aa48609": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/simulators/torax-native/native-torax-action"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "action_id": {
+              "description": "action id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "action_label": {
+              "description": "action label; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "duration_s": {
+              "additionalProperties": false,
+              "description": "duration s; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "source_model_id": {
+              "description": "source model id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "stages": {
+              "description": "stages; constructor checks semantics and units.",
+              "items": {
+                "$ref": "#/$defs/NativeToraxActionStage_888bff4543c2"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "action_id",
+            "action_label",
+            "stages",
+            "duration_s",
+            "source_model_id"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "NativeToraxPreparation_d6018db914ce": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/simulators/torax-native/native-torax-preparation"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "absorbed_power_fraction": {
+              "additionalProperties": false,
+              "description": "absorbed power fraction; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "assumption_ids": {
+              "description": "assumption ids; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "chi_e_m2_s": {
+              "additionalProperties": false,
+              "description": "chi e m2 s; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "chi_i_m2_s": {
+              "additionalProperties": false,
+              "description": "chi i m2 s; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "electron_density_m3": {
+              "description": "electron density m3; constructor checks semantics and units.",
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "decimal": {
+                    "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "decimal"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "electron_heat_fraction": {
+              "additionalProperties": false,
+              "description": "electron heat fraction; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "electron_temperature_ev": {
+              "description": "electron temperature ev; constructor checks semantics and units.",
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "decimal": {
+                    "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "decimal"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "elongation_lcfs": {
+              "additionalProperties": false,
+              "description": "elongation lcfs; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "impurity": {
+              "description": "impurity; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "ion_temperature_ev": {
+              "description": "ion temperature ev; constructor checks semantics and units.",
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "decimal": {
+                    "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "decimal"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "main_ion": {
+              "description": "main ion; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "major_radius_m": {
+              "additionalProperties": false,
+              "description": "major radius m; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "maximum_core_temperature_ev": {
+              "additionalProperties": false,
+              "description": "maximum core temperature ev; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "minor_radius_m": {
+              "additionalProperties": false,
+              "description": "minor radius m; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "particle_convection_m_s": {
+              "additionalProperties": false,
+              "description": "particle convection m s; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "particle_diffusivity_m2_s": {
+              "additionalProperties": false,
+              "description": "particle diffusivity m2 s; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "plasma_current_a": {
+              "additionalProperties": false,
+              "description": "plasma current a; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "preparation_id": {
+              "description": "preparation id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "radial_coordinates": {
+              "description": "radial coordinates; constructor checks semantics and units.",
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "decimal": {
+                    "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "decimal"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "source_radial_location": {
+              "additionalProperties": false,
+              "description": "source radial location; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "source_width": {
+              "additionalProperties": false,
+              "description": "source width; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "toroidal_field_t": {
+              "additionalProperties": false,
+              "description": "toroidal field t; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "zeff": {
+              "additionalProperties": false,
+              "description": "zeff; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            }
+          },
+          "required": [
+            "preparation_id",
+            "radial_coordinates",
+            "electron_temperature_ev",
+            "ion_temperature_ev",
+            "electron_density_m3",
+            "plasma_current_a",
+            "main_ion",
+            "impurity",
+            "zeff",
+            "major_radius_m",
+            "minor_radius_m",
+            "toroidal_field_t",
+            "elongation_lcfs",
+            "source_radial_location",
+            "source_width",
+            "electron_heat_fraction",
+            "absorbed_power_fraction",
+            "chi_i_m2_s",
+            "chi_e_m2_s",
+            "particle_diffusivity_m2_s",
+            "particle_convection_m_s",
+            "maximum_core_temperature_ev",
+            "assumption_ids"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "NativeToraxQuickstart_8bb631c57636": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/simulators/torax-native/native-torax-quickstart"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "config_id": {
+              "description": "config id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "high_action": {
+              "$ref": "#/$defs/NativeToraxAction_53233aa48609",
+              "description": "high action; constructor checks semantics and units."
+            },
+            "low_action": {
+              "$ref": "#/$defs/NativeToraxAction_53233aa48609",
+              "description": "low action; constructor checks semantics and units."
+            },
+            "preparation": {
+              "$ref": "#/$defs/NativeToraxPreparation_d6018db914ce",
+              "description": "preparation; constructor checks semantics and units."
+            },
+            "view": {
+              "$ref": "#/$defs/NativeToraxView_53d88ad7022a",
+              "description": "view; constructor checks semantics and units."
+            }
+          },
+          "required": [
+            "config_id",
+            "preparation",
+            "view",
+            "low_action",
+            "high_action"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "NativeToraxView_53d88ad7022a": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/simulators/torax-native/native-torax-view"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "closure_id": {
+              "description": "closure id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "horizon_s": {
+              "additionalProperties": false,
+              "description": "horizon s; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "linear_solver_id": {
+              "description": "linear solver id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "precision": {
+              "description": "precision; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "radial_cells": {
+              "description": "radial cells; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "solver_id": {
+              "description": "solver id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "timestep_s": {
+              "additionalProperties": false,
+              "description": "timestep s; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "view_id": {
+              "description": "view id; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "view_id",
+            "radial_cells",
+            "timestep_s",
+            "horizon_s",
+            "solver_id",
+            "linear_solver_id",
+            "precision",
+            "closure_id"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:tokamak-heat",
+  "$ref": "#/$defs/NativeToraxQuickstart_8bb631c57636",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Tokamak Heat",
+  "x-consumer": "tokamak-heat",
+  "x-consumer-maximum-bytes": 32768,
+  "x-disposition": "editable",
+  "x-preparation-allowed": true
+}

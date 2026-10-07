@@ -1,0 +1,187 @@
+{
+  "$defs": {
+    "ObjectIdentity_1e3d5e7bc67c": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/kernel/object-identity"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "object_fingerprint": {
+              "description": "object fingerprint; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_id": {
+              "description": "object id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_schema": {
+              "description": "object schema; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_version": {
+              "description": "object version; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "object_id",
+            "object_schema",
+            "object_version",
+            "object_fingerprint"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "TangentPreparationConfig_862f11ae5ffd": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/methods/matrix-preparation-analysis/tangent-preparation-config"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "code_sources_sha256": {
+              "description": "code sources sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "config_id": {
+              "description": "config id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "dependency_lock_sha256": {
+              "description": "dependency lock sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "exposure": {
+              "description": "exposure; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "roots": {
+              "description": "roots; constructor checks semantics and units.",
+              "items": {
+                "$ref": "#/$defs/TangentPreparationRoot_862d6cabe83c"
+              },
+              "type": "array"
+            },
+            "specification": {
+              "$ref": "#/$defs/ObjectIdentity_1e3d5e7bc67c",
+              "description": "specification; constructor checks semantics and units."
+            },
+            "summary_context": {
+              "description": "summary context; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "config_id",
+            "roots",
+            "summary_context",
+            "exposure",
+            "code_sources_sha256",
+            "dependency_lock_sha256",
+            "specification"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "2.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "TangentPreparationRoot_862d6cabe83c": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/methods/matrix-preparation-analysis/tangent-root"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "context": {
+              "description": "context; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "development_rank": {
+              "description": "development rank; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "index": {
+              "description": "index; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "namespace": {
+              "description": "namespace; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "numerical_rank": {
+              "description": "numerical rank; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "prefix_seed_sha256": {
+              "description": "prefix seed sha256; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "preparation_seed_sha256": {
+              "description": "preparation seed sha256; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "namespace",
+            "context",
+            "index",
+            "numerical_rank",
+            "development_rank",
+            "prefix_seed_sha256",
+            "preparation_seed_sha256"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:matrix-tangent",
+  "$ref": "#/$defs/TangentPreparationConfig_862f11ae5ffd",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Matrix Tangent",
+  "x-consumer": "matrix-tangent",
+  "x-consumer-maximum-bytes": 4194304,
+  "x-disposition": "editable",
+  "x-preparation-allowed": true
+}

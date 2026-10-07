@@ -1,0 +1,142 @@
+{
+  "$defs": {
+    "MatrixHistoryAllocation_7c20d7bbeeef": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/matrix-history-analysis/allocation"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "allocation_id": {
+              "description": "allocation id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "exposure": {
+              "description": "exposure; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "prior_effective_seeds": {
+              "description": "prior effective seeds; constructor checks semantics and units.",
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            "roots": {
+              "description": "roots; constructor checks semantics and units.",
+              "items": {
+                "$ref": "#/$defs/MatrixHistoryRootAllocation_379f7c7a2595"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "allocation_id",
+            "roots",
+            "exposure",
+            "prior_effective_seeds"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "MatrixHistoryRootAllocation_379f7c7a2595": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/matrix-history-analysis/root-allocation"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "history_id": {
+              "description": "history id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "history_index": {
+              "description": "history index; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "seeds": {
+              "description": "seeds; constructor checks semantics and units.",
+              "items": {
+                "$ref": "#/$defs/MatrixHistorySeed_04251ca2e206"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "history_id",
+            "history_index",
+            "seeds"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "MatrixHistorySeed_04251ca2e206": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/matrix-history-analysis/seed"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "digest_sha256": {
+              "description": "digest sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "purpose": {
+              "description": "purpose; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "purpose",
+            "digest_sha256"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:matrix-history-allocation",
+  "$ref": "#/$defs/MatrixHistoryAllocation_7c20d7bbeeef",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Matrix History Allocation",
+  "x-consumer": "matrix-history-allocation",
+  "x-consumer-maximum-bytes": 1048576,
+  "x-disposition": "editable",
+  "x-preparation-allowed": true
+}

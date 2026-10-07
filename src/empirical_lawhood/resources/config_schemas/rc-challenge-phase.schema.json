@@ -1,0 +1,513 @@
+{
+  "$defs": {
+    "SimulatorMorphismChallengeConfig_34c7b11a804c": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/simulator-morphism-challenges/simulator-morphism-challenge-config"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "action_amplitudes_u_star": {
+              "description": "action amplitudes u star; constructor checks semantics and units.",
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "decimal": {
+                    "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "decimal"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "action_durations_t_star": {
+              "description": "action durations t star; constructor checks semantics and units.",
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "decimal": {
+                    "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "decimal"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "bootstrap_resamples": {
+              "description": "bootstrap resamples; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "bootstrap_seed": {
+              "description": "bootstrap seed; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "config_id": {
+              "description": "config id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "coordinate_collision_epsilon": {
+              "additionalProperties": false,
+              "description": "coordinate collision epsilon; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "descriptor_algorithm_id": {
+              "description": "descriptor algorithm id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "diagnostic_times_t_star": {
+              "description": "diagnostic times t star; constructor checks semantics and units.",
+              "items": {
+                "additionalProperties": false,
+                "properties": {
+                  "decimal": {
+                    "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                    "type": "string"
+                  }
+                },
+                "required": [
+                  "decimal"
+                ],
+                "type": "object"
+              },
+              "type": "array"
+            },
+            "disorder_families": {
+              "description": "disorder families; constructor checks semantics and units.",
+              "items": {
+                "enum": [
+                  "smooth-periodic-12",
+                  "correlated-field-12",
+                  "multiscale-wavelet-12"
+                ],
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "evidence_ceiling": {
+              "description": "evidence ceiling; constructor checks semantics and units.",
+              "enum": [
+                "NON_PROMOTABLE",
+                "MEASUREMENT",
+                "ORDER_RELATION",
+                "RESPONSE",
+                "LOCAL_LAW",
+                "ADMISSION",
+                "CONTROLLER_USE"
+              ],
+              "type": "string"
+            },
+            "excluded_resource_canary_scale_cells": {
+              "description": "excluded resource canary scale cells; constructor checks semantics and units.",
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            "future_divergence_epsilon": {
+              "additionalProperties": false,
+              "description": "future divergence epsilon; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "generator_observer_metric_tolerance": {
+              "additionalProperties": false,
+              "description": "generator observer metric tolerance; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "hidden_amplitude_max_volts": {
+              "additionalProperties": false,
+              "description": "hidden amplitude max volts; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object",
+              "x-unit": "V"
+            },
+            "hidden_voltage_envelope": {
+              "description": "hidden voltage envelope; constructor checks semantics and units.",
+              "items": false,
+              "maxItems": 2,
+              "minItems": 2,
+              "prefixItems": [
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "decimal": {
+                      "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "decimal"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "decimal": {
+                      "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "decimal"
+                  ],
+                  "type": "object"
+                }
+              ],
+              "type": "array"
+            },
+            "hidden_voltage_interior_margin": {
+              "additionalProperties": false,
+              "description": "hidden voltage interior margin; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "history_lag_t_star": {
+              "additionalProperties": false,
+              "description": "history lag t star; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "history_max_depth": {
+              "description": "history max depth; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "history_rank_algorithm_id": {
+              "description": "history rank algorithm id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "inference_algorithm_id": {
+              "description": "inference algorithm id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "majority_opposition_threshold": {
+              "additionalProperties": false,
+              "description": "majority opposition threshold; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "midpoint_boundary_tie_epsilon": {
+              "additionalProperties": false,
+              "description": "midpoint boundary tie epsilon; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "nonactuating": {
+              "description": "nonactuating; constructor checks semantics and units.",
+              "type": "boolean"
+            },
+            "outcome_access": {
+              "description": "outcome access; constructor checks semantics and units.",
+              "enum": [
+                "outcome-blind",
+                "development-visible",
+                "evaluation-sealed",
+                "evaluator-reveal",
+                "evaluation-revealed",
+                "privileged-truth"
+              ],
+              "type": "string"
+            },
+            "panel_endpoint_t_star": {
+              "additionalProperties": false,
+              "description": "panel endpoint t star; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "parent_result_id": {
+              "description": "parent result id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "phase": {
+              "description": "phase; constructor checks semantics and units.",
+              "enum": [
+                "NOMINATION",
+                "CANARY",
+                "DEVELOPMENT",
+                "EVALUATION"
+              ],
+              "type": "string"
+            },
+            "physical_execution_authorized": {
+              "description": "physical execution authorized; constructor checks semantics and units.",
+              "type": "boolean"
+            },
+            "plan_id": {
+              "description": "plan id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "random_comparator_algorithm_id": {
+              "description": "random comparator algorithm id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "random_pairs_per_depth": {
+              "description": "random pairs per depth; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "rank_relative_threshold": {
+              "additionalProperties": false,
+              "description": "rank relative threshold; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "receiver_bin_count": {
+              "description": "receiver bin count; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "requests_controller": {
+              "description": "requests controller; constructor checks semantics and units.",
+              "type": "boolean"
+            },
+            "scale_cells": {
+              "description": "scale cells; constructor checks semantics and units.",
+              "items": {
+                "type": "integer"
+              },
+              "type": "array"
+            },
+            "seed_roster_commitment_sha256": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "seed roster commitment sha256; constructor checks semantics and units."
+            },
+            "simultaneous_alpha": {
+              "additionalProperties": false,
+              "description": "simultaneous alpha; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "sink_pairs_per_depth": {
+              "description": "sink pairs per depth; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "sink_voltage_maximum_v_star": {
+              "additionalProperties": false,
+              "description": "sink voltage maximum v star; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "target_charge_minimum_q_star": {
+              "additionalProperties": false,
+              "description": "target charge minimum q star; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object"
+            },
+            "target_pairs_per_depth": {
+              "description": "target pairs per depth; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "targeting_tie_break_rule_id": {
+              "description": "targeting tie break rule id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "unit_ids": {
+              "description": "unit ids; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "visibility_ceiling": {
+              "description": "visibility ceiling; constructor checks semantics and units.",
+              "enum": [
+                "PROSPECTIVE",
+                "DEVELOPMENT_ONLY",
+                "OUTCOME_VISIBLE",
+                "PRIVILEGED_TRUTH",
+                "UNBOUND_HISTORICAL"
+              ],
+              "type": "string"
+            }
+          },
+          "required": [
+            "config_id",
+            "phase",
+            "plan_id",
+            "parent_result_id",
+            "scale_cells",
+            "excluded_resource_canary_scale_cells",
+            "disorder_families",
+            "unit_ids",
+            "seed_roster_commitment_sha256",
+            "receiver_bin_count",
+            "history_max_depth",
+            "history_lag_t_star",
+            "rank_relative_threshold",
+            "coordinate_collision_epsilon",
+            "future_divergence_epsilon",
+            "generator_observer_metric_tolerance",
+            "midpoint_boundary_tie_epsilon",
+            "hidden_amplitude_max_volts",
+            "hidden_voltage_envelope",
+            "hidden_voltage_interior_margin",
+            "target_pairs_per_depth",
+            "sink_pairs_per_depth",
+            "random_pairs_per_depth",
+            "action_amplitudes_u_star",
+            "action_durations_t_star",
+            "panel_endpoint_t_star",
+            "diagnostic_times_t_star",
+            "target_charge_minimum_q_star",
+            "sink_voltage_maximum_v_star",
+            "bootstrap_resamples",
+            "bootstrap_seed",
+            "simultaneous_alpha",
+            "majority_opposition_threshold",
+            "descriptor_algorithm_id",
+            "history_rank_algorithm_id",
+            "targeting_tie_break_rule_id",
+            "random_comparator_algorithm_id",
+            "inference_algorithm_id",
+            "evidence_ceiling",
+            "outcome_access",
+            "visibility_ceiling",
+            "physical_execution_authorized",
+            "requests_controller",
+            "nonactuating"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:rc-challenge-phase",
+  "$ref": "#/$defs/SimulatorMorphismChallengeConfig_34c7b11a804c",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Rc Challenge Phase",
+  "x-consumer": "rc-challenge-phase",
+  "x-consumer-maximum-bytes": 65536,
+  "x-disposition": "editable",
+  "x-preparation-allowed": true
+}

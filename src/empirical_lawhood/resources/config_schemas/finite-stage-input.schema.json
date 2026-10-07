@@ -1,0 +1,58 @@
+{
+  "$defs": {
+    "FiniteResponseLawStageInput_0b696b83fc5f": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/composition/finite-response-law/finite-response-law-stage-input"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "config_id": {
+              "description": "config id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "evidence_role": {
+              "description": "evidence role; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "stage": {
+              "description": "stage; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "target_prefix": {
+              "description": "target prefix; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "config_id",
+            "stage",
+            "target_prefix",
+            "evidence_role"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:finite-stage-input",
+  "$ref": "#/$defs/FiniteResponseLawStageInput_0b696b83fc5f",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Finite Stage Input",
+  "x-consumer": "finite-stage-input",
+  "x-consumer-maximum-bytes": 16384,
+  "x-disposition": "editable",
+  "x-preparation-allowed": true
+}

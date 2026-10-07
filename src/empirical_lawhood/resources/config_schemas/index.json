@@ -1,0 +1,1104 @@
+{
+  "consumers": [
+    {
+      "authoring_maximum_bytes": 16777216,
+      "command": "campaign preparation-diagnostic-phase-prepare",
+      "consumer": "preparation-diagnostic-phase",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 4194304,
+      "consumer_requires_canonical": true,
+      "disposition": "retained",
+      "owner": "PreparationDiagnosticPhaseInput",
+      "preparation_allowed": false,
+      "schema_id": "empirical-lawhood/constructed-preparation-applicability/diagnostic-phase-input",
+      "schema_resource": "preparation-diagnostic-phase.schema.json",
+      "supplied_inputs": []
+    },
+    {
+      "authoring_maximum_bytes": 33554432,
+      "command": "campaign preparation-diagnostics",
+      "consumer": "preparation-diagnostics",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 8388608,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "PreparationDiagnosticInput",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/constructed-preparation-applicability/diagnostic-input",
+      "schema_resource": "preparation-diagnostics.schema.json",
+      "supplied_inputs": []
+    },
+    {
+      "authoring_maximum_bytes": 33554432,
+      "command": "campaign matrix-geometry-prove",
+      "consumer": "matrix-geometry",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 8388608,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "MatrixGeometryScanInput",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/matrix-geometry/scan-input",
+      "schema_resource": "matrix-geometry.schema.json",
+      "supplied_inputs": [
+        "experiments/matrix-geometry/input.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 4194304,
+      "command": "campaign selected-parent-reconstruct",
+      "consumer": "selected-parent",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 1048576,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "MatrixSelectedParentRequest",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/selected-events/parent-request",
+      "schema_resource": "selected-parent.schema.json",
+      "supplied_inputs": [
+        "experiments/selected-events/parent.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 67108864,
+      "command": "campaign selected-events-run",
+      "consumer": "selected-events",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 16777216,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "MatrixSelectedEventInput",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/selected-events/input",
+      "schema_resource": "selected-events.schema.json",
+      "supplied_inputs": []
+    },
+    {
+      "authoring_maximum_bytes": 4194304,
+      "command": "campaign matrix-history-allocation",
+      "consumer": "matrix-history-allocation",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 1048576,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "MatrixHistoryAllocation",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/matrix-history-analysis/allocation",
+      "schema_resource": "matrix-history-allocation.schema.json",
+      "supplied_inputs": [
+        "experiments/matrix-history-analysis/allocation.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 4194304,
+      "command": "campaign matrix-history-source-export",
+      "consumer": "matrix-history-source",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 1048576,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "MatrixHistorySourceConfig",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/matrix-history-analysis/source-config",
+      "schema_resource": "matrix-history-source.schema.json",
+      "supplied_inputs": [
+        "experiments/matrix-history-analysis/source.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 4194304,
+      "command": "campaign matrix-history-analyze",
+      "consumer": "matrix-history-analysis",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 1048576,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "MatrixHistoryAnalysisConfig",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/matrix-history-analysis/analysis-config",
+      "schema_resource": "matrix-history-analysis.schema.json",
+      "supplied_inputs": [
+        "experiments/matrix-history-analysis/algebra.json",
+        "experiments/matrix-history-analysis/passive.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 262144,
+      "command": "campaign matrix-transient-analyze",
+      "consumer": "matrix-transient-analysis",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 65536,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "TransientAnalysisConfig",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/methods/matrix-preparation-analysis/transient-analysis-config",
+      "schema_resource": "matrix-transient-analysis.schema.json",
+      "supplied_inputs": [
+        "experiments/matrix-transient/input.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 262144,
+      "command": "campaign matrix-baseline-analyze",
+      "consumer": "matrix-baseline-analysis",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 65536,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "BaselineSupportConfig",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/methods/matrix-preparation-analysis/baseline-support-config",
+      "schema_resource": "matrix-baseline-analysis.schema.json",
+      "supplied_inputs": [
+        "experiments/matrix-transient/baseline.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 16777216,
+      "command": "campaign matrix-tangent-source-export",
+      "consumer": "matrix-tangent",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 4194304,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "TangentPreparationConfig",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/methods/matrix-preparation-analysis/tangent-preparation-config",
+      "schema_resource": "matrix-tangent.schema.json",
+      "supplied_inputs": [
+        "experiments/matrix-tangent/input.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 67108864,
+      "command": "campaign preparation-result",
+      "consumer": "preparation-retained-result",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 16777216,
+      "consumer_requires_canonical": true,
+      "disposition": "retained",
+      "owner": "PreparationApplicabilityRetainedResult",
+      "preparation_allowed": false,
+      "schema_id": "empirical-lawhood/preparation-applicability/retained-result",
+      "schema_resource": "preparation-retained-result.schema.json",
+      "supplied_inputs": []
+    },
+    {
+      "authoring_maximum_bytes": 4194304,
+      "command": "campaign preparation-conformance",
+      "consumer": "preparation-native-conformance",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 1048576,
+      "consumer_requires_canonical": true,
+      "disposition": "retained",
+      "owner": "PreparationApplicabilityNativeConformance",
+      "preparation_allowed": false,
+      "schema_id": "empirical-lawhood/preparation-applicability/native-conformance",
+      "schema_resource": "preparation-native-conformance.schema.json",
+      "supplied_inputs": []
+    },
+    {
+      "authoring_maximum_bytes": 16777216,
+      "command": "campaign preparation-exposure-inspect",
+      "consumer": "preparation-exposure-inspection",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 4194304,
+      "consumer_requires_canonical": true,
+      "disposition": "retained",
+      "owner": "PreparationApplicabilityExposureInspection",
+      "preparation_allowed": false,
+      "schema_id": "empirical-lawhood/preparation-applicability/exposure-inspection",
+      "schema_resource": "preparation-exposure-inspection.schema.json",
+      "supplied_inputs": []
+    },
+    {
+      "authoring_maximum_bytes": 67108864,
+      "command": "campaign preparation-input-publish",
+      "consumer": "preparation-published-input",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 16777216,
+      "consumer_requires_canonical": true,
+      "disposition": "retained",
+      "owner": "PreparationApplicabilityPublishedInput",
+      "preparation_allowed": false,
+      "schema_id": "empirical-lawhood/preparation-applicability/published-input",
+      "schema_resource": "preparation-published-input.schema.json",
+      "supplied_inputs": []
+    },
+    {
+      "authoring_maximum_bytes": 67108864,
+      "command": "campaign preparation-panel-bind",
+      "consumer": "preparation-panel-publication",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 16777216,
+      "consumer_requires_canonical": true,
+      "disposition": "retained",
+      "owner": "PreparationApplicabilityPanelPublication",
+      "preparation_allowed": false,
+      "schema_id": "empirical-lawhood/preparation-applicability/panel-publication",
+      "schema_resource": "preparation-panel-publication.schema.json",
+      "supplied_inputs": []
+    },
+    {
+      "authoring_maximum_bytes": 33554432,
+      "command": "campaign finite-response-result",
+      "consumer": "finite-current-result",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 8388608,
+      "consumer_requires_canonical": true,
+      "disposition": "retained",
+      "owner": "FiniteResponseLawCurrentResultInput",
+      "preparation_allowed": false,
+      "schema_id": "empirical-lawhood/composition/finite-response-law/current-result-input",
+      "schema_resource": "finite-current-result.schema.json",
+      "supplied_inputs": []
+    },
+    {
+      "authoring_maximum_bytes": 67108864,
+      "command": "campaign rc-challenge-result",
+      "consumer": "rc-challenge-result",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 16777216,
+      "consumer_requires_canonical": true,
+      "disposition": "retained",
+      "owner": "RCChallengeRetainedResult",
+      "preparation_allowed": false,
+      "schema_id": "empirical-lawhood/simulator-morphism-challenges/retained-result",
+      "schema_resource": "rc-challenge-result.schema.json",
+      "supplied_inputs": []
+    },
+    {
+      "authoring_maximum_bytes": 4194304,
+      "command": "campaign rc-challenge-result",
+      "consumer": "rc-challenge-result-authority",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 1048576,
+      "consumer_requires_canonical": true,
+      "disposition": "retained",
+      "owner": "RCChallengeResultAuthorityContext",
+      "preparation_allowed": false,
+      "schema_id": "empirical-lawhood/simulator-morphism-challenges/result-authority-context",
+      "schema_resource": "rc-challenge-result-authority.schema.json",
+      "supplied_inputs": []
+    },
+    {
+      "authoring_maximum_bytes": 4194304,
+      "command": "campaign original-f-check",
+      "consumer": "original-f",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 1048576,
+      "consumer_requires_canonical": true,
+      "disposition": "retained",
+      "owner": "OriginalFiniteResponseLaw",
+      "preparation_allowed": false,
+      "schema_id": "empirical-lawhood/methods/finite-response-law/original-finite-response-law",
+      "schema_resource": "original-f.schema.json",
+      "supplied_inputs": []
+    },
+    {
+      "authoring_maximum_bytes": 4194304,
+      "command": "campaign nomination-check",
+      "consumer": "current-nomination",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 1048576,
+      "consumer_requires_canonical": true,
+      "disposition": "retained",
+      "owner": "CurrentNominationOperand",
+      "preparation_allowed": false,
+      "schema_id": "empirical-lawhood/methods/finite-response-law/current-nomination-operand",
+      "schema_resource": "current-nomination.schema.json",
+      "supplied_inputs": []
+    },
+    {
+      "authoring_maximum_bytes": 16777216,
+      "command": "campaign preparation-operands-export",
+      "consumer": "saved-matrix-arrays",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 4194304,
+      "consumer_requires_canonical": true,
+      "disposition": "retained",
+      "owner": "SavedMatrixArrays",
+      "preparation_allowed": false,
+      "schema_id": "empirical-lawhood/kernel/saved-matrix-arrays",
+      "schema_resource": "saved-matrix-arrays.schema.json",
+      "supplied_inputs": []
+    },
+    {
+      "authoring_maximum_bytes": 262144,
+      "command": "campaign preparation-source-export",
+      "consumer": "preparation-source",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 65536,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "CurrentPreparationSourceConfig",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/methods/finite-response-law/current-preparation-source-config",
+      "schema_resource": "preparation-source.schema.json",
+      "supplied_inputs": [
+        "experiments/matrix-inputs/preparation-source.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 262144,
+      "command": "campaign matrix-source-export",
+      "consumer": "matrix-source",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 65536,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "MatrixPreparationSourceConfig",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/methods/finite-response-law/matrix-preparation-source-config",
+      "schema_resource": "matrix-source.schema.json",
+      "supplied_inputs": [
+        "experiments/matrix-inputs/matrix-source.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 4194304,
+      "command": "campaign rc-challenge-source-export",
+      "consumer": "rc-challenge-source",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 1048576,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "RCChallengeSourceExportConfig",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/simulator-morphism-challenges/source-export-config",
+      "schema_resource": "rc-challenge-source.schema.json",
+      "supplied_inputs": [
+        "experiments/rc-challenges/source-export.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 262144,
+      "command": "campaign rc-challenge-author",
+      "consumer": "rc-challenge-phase",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 65536,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "SimulatorMorphismChallengeConfig",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/simulator-morphism-challenges/simulator-morphism-challenge-config",
+      "schema_resource": "rc-challenge-phase.schema.json",
+      "supplied_inputs": [
+        "experiments/rc-challenges/canary.json",
+        "experiments/rc-challenges/nomination.json",
+        "experiments/rc-challenges/development.json",
+        "experiments/rc-challenges/evaluation.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 16777216,
+      "command": "campaign finite-response-author",
+      "consumer": "finite-rerun",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 4194304,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "FiniteResponseLawRerunInput",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/composition/finite-response-law/rerun-input",
+      "schema_resource": "finite-rerun.schema.json",
+      "supplied_inputs": [
+        "experiments/finite-response-law/rerun-calibration.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 4194304,
+      "command": "campaign finite-response-author",
+      "consumer": "finite-current-allocation",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 1048576,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "FiniteResponseLawCurrentAllocation",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/composition/finite-response-law/current-allocation",
+      "schema_resource": "finite-current-allocation.schema.json",
+      "supplied_inputs": [
+        "experiments/finite-response-law/current-calibration-allocation.json",
+        "experiments/finite-response-law/current-evaluation-allocation.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 16777216,
+      "command": "campaign finite-response-author",
+      "consumer": "finite-current-exposure",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 4194304,
+      "consumer_requires_canonical": true,
+      "disposition": "retained",
+      "owner": "FiniteResponseLawCurrentExposure",
+      "preparation_allowed": false,
+      "schema_id": "empirical-lawhood/composition/finite-response-law/current-exposure",
+      "schema_resource": "finite-current-exposure.schema.json",
+      "supplied_inputs": [
+        "experiments/finite-response-law/current-exposure.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 33554432,
+      "command": "campaign finite-response-author",
+      "consumer": "finite-current-parent",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 8388608,
+      "consumer_requires_canonical": true,
+      "disposition": "retained",
+      "owner": "FiniteResponseLawCurrentParent",
+      "preparation_allowed": false,
+      "schema_id": "empirical-lawhood/composition/finite-response-law/current-parent",
+      "schema_resource": "finite-current-parent.schema.json",
+      "supplied_inputs": []
+    },
+    {
+      "authoring_maximum_bytes": 4194304,
+      "command": "campaign finite-response-bind-runtime",
+      "consumer": "finite-runtime-context",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 1048576,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "FiniteResponseLawRuntimeContext",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/composition/finite-response-law/finite-response-law-runtime-context",
+      "schema_resource": "finite-runtime-context.schema.json",
+      "supplied_inputs": []
+    },
+    {
+      "authoring_maximum_bytes": 16777216,
+      "command": "campaign preparation-author",
+      "consumer": "preparation-applicability-selection",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 4194304,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "PreparationApplicabilitySelection",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/composition/preparation-applicability/selection",
+      "schema_resource": "preparation-applicability-selection.schema.json",
+      "supplied_inputs": []
+    },
+    {
+      "authoring_maximum_bytes": 16777216,
+      "command": "campaign preparation-author",
+      "consumer": "preparation-applicability-stage",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 4194304,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "PreparationApplicabilityStage",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/preparation-applicability/stage",
+      "schema_resource": "preparation-applicability-stage.schema.json",
+      "supplied_inputs": []
+    },
+    {
+      "authoring_maximum_bytes": 4194304,
+      "command": "campaign preparation-author",
+      "consumer": "preparation-applicability-source",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 1048576,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "PreparationApplicabilitySource",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/preparation-applicability/source",
+      "schema_resource": "preparation-applicability-source.schema.json",
+      "supplied_inputs": []
+    },
+    {
+      "authoring_maximum_bytes": 16777216,
+      "command": "campaign preparation-author",
+      "consumer": "constructed-preparation-applicability-selection",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 4194304,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "ConstructedPreparationApplicabilitySelection",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/composition/constructed-preparation-applicability/selection",
+      "schema_resource": "constructed-preparation-applicability-selection.schema.json",
+      "supplied_inputs": []
+    },
+    {
+      "authoring_maximum_bytes": 16777216,
+      "command": "campaign preparation-author",
+      "consumer": "constructed-preparation-applicability-stage",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 4194304,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "ConstructedPreparationStage",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/constructed-preparation-applicability/stage",
+      "schema_resource": "constructed-preparation-applicability-stage.schema.json",
+      "supplied_inputs": []
+    },
+    {
+      "authoring_maximum_bytes": 4194304,
+      "command": "campaign preparation-author",
+      "consumer": "constructed-preparation-applicability-source",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 1048576,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "ConstructedPreparationSource",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/constructed-preparation-applicability/source",
+      "schema_resource": "constructed-preparation-applicability-source.schema.json",
+      "supplied_inputs": []
+    },
+    {
+      "authoring_maximum_bytes": 262144,
+      "command": "example rc-information",
+      "consumer": "rc-information",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 65536,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "RCInformationConfig",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/methods/rc-information/config",
+      "schema_resource": "rc-information.schema.json",
+      "supplied_inputs": [
+        "experiments/rc-information/input.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 4194304,
+      "command": "campaign preparation-operands-export",
+      "consumer": "matrix-allocation",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 1048576,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "MatrixAllocation",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/kernel/matrix-allocation",
+      "schema_resource": "matrix-allocation.schema.json",
+      "supplied_inputs": [
+        "experiments/matrix-inputs/allocation.json",
+        "experiments/preparation-applicability/conformance-allocation.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 262144,
+      "command": "campaign rc-ladder-native-check",
+      "consumer": "rc-ladder-model",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 65536,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "ResistorCapacitorLadderModelConfig",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/adapters/simulators/rc-ladder-response/resistor-capacitor-ladder-model-config",
+      "schema_resource": "rc-ladder-model.schema.json",
+      "supplied_inputs": [
+        "experiments/rc-ladder-response/model.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 65536,
+      "command": "campaign finite-response-input-check",
+      "consumer": "finite-calibration-input",
+      "consumer_loader": "api.codecs.load_registered_authoring",
+      "consumer_maximum_bytes": 16384,
+      "consumer_requires_canonical": false,
+      "disposition": "editable",
+      "owner": "FiniteResponseLawCalibrationInput",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/composition/finite-response-law/finite-response-law-calibration-input",
+      "schema_resource": "finite-calibration-input.schema.json",
+      "supplied_inputs": [
+        "experiments/finite-response-law/finite-calibration-input.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 65536,
+      "command": "campaign finite-response-stage-input-check",
+      "consumer": "finite-stage-input",
+      "consumer_loader": "api.codecs.load_registered_authoring",
+      "consumer_maximum_bytes": 16384,
+      "consumer_requires_canonical": false,
+      "disposition": "editable",
+      "owner": "FiniteResponseLawStageInput",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/composition/finite-response-law/finite-response-law-stage-input",
+      "schema_resource": "finite-stage-input.schema.json",
+      "supplied_inputs": [
+        "experiments/finite-response-law/calibration-input.json",
+        "experiments/finite-response-law/calibration-stage-input.json",
+        "experiments/finite-response-law/informative-composition-input.json",
+        "experiments/finite-response-law/preparation-screen-input.json",
+        "experiments/finite-response-law/prospective-continuation-input.json",
+        "experiments/finite-response-law/prospective-evaluation-input.json",
+        "experiments/finite-response-law/supplemental-development-input.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 134217728,
+      "command": "campaign matrix-response-author --prior-inspection",
+      "consumer": "prepared-prior-census",
+      "consumer_loader": "adapters.composition.prepared_response.native_authoring._prior_census",
+      "consumer_maximum_bytes": 67108864,
+      "consumer_requires_canonical": false,
+      "disposition": "import",
+      "owner": "_prior_census",
+      "preparation_allowed": false,
+      "schema_id": "empirical-lawhood/composition/prepared-response/prepared-exposure-inspection",
+      "schema_resource": "prepared-prior-census.schema.json",
+      "supplied_inputs": [
+        "experiments/reactor-response/exposed-inputs/prepared-response-prior-exposure.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 65536,
+      "command": "campaign dependent-response-input-check",
+      "consumer": "prepared-dependent-input",
+      "consumer_loader": "api.codecs.load_registered_authoring",
+      "consumer_maximum_bytes": 16384,
+      "consumer_requires_canonical": false,
+      "disposition": "editable",
+      "owner": "PreparedResponseDependentInput",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/composition/prepared-response/prepared-response-dependent-input",
+      "schema_resource": "prepared-dependent-input.schema.json",
+      "supplied_inputs": [
+        "experiments/prepared-response/prepared-dependent-refinement-input.json",
+        "experiments/prepared-response/prepared-fresh-response-calibration-input.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 4194304,
+      "command": "campaign matrix-response-author",
+      "consumer": "matrix-response-authoring",
+      "consumer_loader": "api.codecs.load_registered_authoring",
+      "consumer_maximum_bytes": 1048576,
+      "consumer_requires_canonical": false,
+      "disposition": "editable",
+      "owner": "PreparedResponseNativeAuthoringInput",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/composition/prepared-response/prepared-response-native-authoring-input",
+      "schema_resource": "matrix-response-authoring.schema.json",
+      "supplied_inputs": [
+        "experiments/causal-response/causal-author.json",
+        "experiments/information-response/information-author.json",
+        "experiments/prepared-response/prepared-source-qualification-author.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 134217728,
+      "command": "campaign reactor-author",
+      "consumer": "reactor-assigned-profile",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 67108864,
+      "consumer_requires_canonical": true,
+      "disposition": "retained",
+      "owner": "AssignedReactorAuthoringProfile",
+      "preparation_allowed": false,
+      "schema_id": "empirical-lawhood/composition/reactor-prefix-response/assigned-reactor-authoring-profile",
+      "schema_resource": "reactor-assigned-profile.schema.json",
+      "supplied_inputs": [
+        "experiments/reactor-response/exposed-inputs/reactor-assigned-exposed.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 134217728,
+      "command": "campaign reactor-author",
+      "consumer": "reactor-fresh-profile",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 67108864,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "FreshReactorAuthoringProfile",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/composition/reactor-prefix-response/fresh-reactor-authoring-profile",
+      "schema_resource": "reactor-fresh-profile.schema.json",
+      "supplied_inputs": [
+        "experiments/reactor-response/profile.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 65536,
+      "command": "campaign response-composition-input-check",
+      "consumer": "response-composition-input",
+      "consumer_loader": "api.codecs.load_registered_authoring",
+      "consumer_maximum_bytes": 16384,
+      "consumer_requires_canonical": false,
+      "disposition": "editable",
+      "owner": "ResponseCompositionInput",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/composition/response-composition/response-composition-input",
+      "schema_resource": "response-composition-input.schema.json",
+      "supplied_inputs": [
+        "experiments/causal-transfer-audit/analysis-input.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 262144,
+      "command": "scripts/generate_operator_examples.py",
+      "consumer": "exposed-inventory",
+      "consumer_loader": "documentary helper; no runner loader",
+      "consumer_maximum_bytes": 65536,
+      "consumer_requires_canonical": false,
+      "disposition": "helper",
+      "owner": "documentary helper",
+      "preparation_allowed": false,
+      "schema_id": "empirical-lawhood/examples/exposed-inventory",
+      "schema_resource": "exposed-inventory.schema.json",
+      "supplied_inputs": [
+        "experiments/reactor-response/exposed-inputs/exposed-inventory.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 134217728,
+      "command": "campaign finite-response-stage-input-check --prior-exposure",
+      "consumer": "finite-prior-census",
+      "consumer_loader": "adapters.composition.finite_response_law.native_input._census",
+      "consumer_maximum_bytes": 134217728,
+      "consumer_requires_canonical": false,
+      "disposition": "import",
+      "owner": "_census",
+      "preparation_allowed": false,
+      "schema_id": "empirical-lawhood/methods/finite-response-law/native-exposure-metadata",
+      "schema_resource": "finite-prior-census.schema.json",
+      "supplied_inputs": [
+        "experiments/reactor-response/exposed-inputs/finite-response-prior-exposure.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 65536,
+      "command": "campaign propulsion-reference-check",
+      "consumer": "propulsion-reference",
+      "consumer_loader": "api.codecs.load_registered_authoring",
+      "consumer_maximum_bytes": 16384,
+      "consumer_requires_canonical": false,
+      "disposition": "editable",
+      "owner": "SyntheticPropulsionDevelopmentInput",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/methods/synthetic-propulsion-development-input",
+      "schema_resource": "propulsion-reference.schema.json",
+      "supplied_inputs": [
+        "experiments/propulsion-reliability-reference/config.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 65536,
+      "command": "campaign glenn-import-check",
+      "consumer": "glenn-import-selection",
+      "consumer_loader": "api.codecs.load_registered_authoring",
+      "consumer_maximum_bytes": 16384,
+      "consumer_requires_canonical": false,
+      "disposition": "editable",
+      "owner": "GlennInputQuickstart",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/physical/glenn/glenn-input-quickstart",
+      "schema_resource": "glenn-import-selection.schema.json",
+      "supplied_inputs": [
+        "experiments/laser-archive-inspection/config.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 262144,
+      "command": "source acquire",
+      "consumer": "fair-mast-selection",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 65536,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "FairMastPublicSelection",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/physical/mast-archive/fair-mast-public-selection",
+      "schema_resource": "fair-mast-selection.schema.json",
+      "supplied_inputs": [
+        "configs/sources/fair-mast-level2.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 131072,
+      "command": "campaign reaction-response-native-check",
+      "consumer": "reaction-development",
+      "consumer_loader": "api.codecs.load_registered_authoring",
+      "consumer_maximum_bytes": 32768,
+      "consumer_requires_canonical": false,
+      "disposition": "editable",
+      "owner": "ReactionDiffusionDevelopmentInput",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/reaction-diffusion-development/reaction-diffusion-development-input",
+      "schema_resource": "reaction-development.schema.json",
+      "supplied_inputs": [
+        "experiments/reaction-diffusion-response/config.json",
+        "experiments/reactor-flow-response/config.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 65536,
+      "command": "campaign scale-morphism-reference-check",
+      "consumer": "scale-morphism-reference",
+      "consumer_loader": "api.codecs.load_registered_authoring",
+      "consumer_maximum_bytes": 16384,
+      "consumer_requires_canonical": false,
+      "disposition": "editable",
+      "owner": "PhysicalScaleMorphismTruthSuiteConfig",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/reference-worlds/physical-scale-morphism/physical-scale-morphism-truth-suite-config",
+      "schema_resource": "scale-morphism-reference.schema.json",
+      "supplied_inputs": [
+        "experiments/response-method-reference/config.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 134217728,
+      "command": "doctor",
+      "consumer": "operator-storage",
+      "consumer_loader": "api.codecs.load_registered_authoring",
+      "consumer_maximum_bytes": 134217728,
+      "consumer_requires_canonical": false,
+      "disposition": "editable",
+      "owner": "OperatorStorageProfile",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/runtime/operator-storage-profile",
+      "schema_resource": "operator-storage.schema.json",
+      "supplied_inputs": [
+        "configs/operator-storage.example.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 131072,
+      "command": "campaign material-workflow-input-check",
+      "consumer": "material-control-input",
+      "consumer_loader": "api.codecs.load_registered_authoring",
+      "consumer_maximum_bytes": 32768,
+      "consumer_requires_canonical": false,
+      "disposition": "editable",
+      "owner": "MaterialControlInputPreflight",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/simulators/ambient-pressure-superconductor/material-control-input-preflight",
+      "schema_resource": "material-control-input.schema.json",
+      "supplied_inputs": [
+        "experiments/material-control-inputs/control-inputs.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 524288,
+      "command": "campaign synthetic-material-author",
+      "consumer": "lattice-method-authoring",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 131072,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "SyntheticMaterialResponseMethodConfig",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/simulators/ambient-pressure-superconductor/synthetic-material-response-method-config",
+      "schema_resource": "lattice-method-authoring.schema.json",
+      "supplied_inputs": [
+        "experiments/lattice-pairing-method/authoring.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 65536,
+      "command": "campaign brian2-native-check",
+      "consumer": "brian2-current",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 16384,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "Brian2LIFNativeConfig",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/simulators/brian2-neuron-current-response/brian2-lif-native-config",
+      "schema_resource": "brian2-current.schema.json",
+      "supplied_inputs": [
+        "experiments/neuron-current-response/config.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 65536,
+      "command": "campaign finite-response-native-check",
+      "consumer": "finite-canary",
+      "consumer_loader": "api.codecs.load_registered_authoring",
+      "consumer_maximum_bytes": 16384,
+      "consumer_requires_canonical": false,
+      "disposition": "editable",
+      "owner": "FiniteResponseLawCanary",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/simulators/finite-response-law/finite-response-law-canary",
+      "schema_resource": "finite-canary.schema.json",
+      "supplied_inputs": [
+        "experiments/finite-response-law/finite-canary.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 65536,
+      "command": "campaign grid2op-native-check",
+      "consumer": "grid-development",
+      "consumer_loader": "api.codecs.load_registered_authoring",
+      "consumer_maximum_bytes": 16384,
+      "consumer_requires_canonical": false,
+      "disposition": "editable",
+      "owner": "Grid2OpDevelopmentInput",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/simulators/grid2op-response/grid2-op-development-input",
+      "schema_resource": "grid-development.schema.json",
+      "supplied_inputs": [
+        "experiments/grid-response-inputs/config.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 65536,
+      "command": "campaign gym-torax-native-check",
+      "consumer": "tokamak-control",
+      "consumer_loader": "api.codecs.load_registered_authoring",
+      "consumer_maximum_bytes": 16384,
+      "consumer_requires_canonical": false,
+      "disposition": "editable",
+      "owner": "GymToraxNativeQuickstart",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/simulators/gym-torax-native/gym-torax-native-quickstart",
+      "schema_resource": "tokamak-control.schema.json",
+      "supplied_inputs": [
+        "experiments/tokamak-control-response/config.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 65536,
+      "command": "campaign prepared-response-native-check",
+      "consumer": "prepared-canary",
+      "consumer_loader": "api.codecs.load_registered_authoring",
+      "consumer_maximum_bytes": 16384,
+      "consumer_requires_canonical": false,
+      "disposition": "editable",
+      "owner": "PreparedResponsePreparedCanary",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/simulators/prepared-response/prepared-response-prepared-canary",
+      "schema_resource": "prepared-canary.schema.json",
+      "supplied_inputs": [
+        "experiments/prepared-response/prepared-canary.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 65536,
+      "command": "campaign battery-native-check",
+      "consumer": "battery-development",
+      "consumer_loader": "api.codecs.load_registered_authoring",
+      "consumer_maximum_bytes": 16384,
+      "consumer_requires_canonical": false,
+      "disposition": "editable",
+      "owner": "PyBaMMDevelopmentInput",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/simulators/py-ba-mm-development-input",
+      "schema_resource": "battery-development.schema.json",
+      "supplied_inputs": [
+        "experiments/battery-response-and-restart/config.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 524288,
+      "command": "campaign circuit-author",
+      "consumer": "rc-ladder-study",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 131072,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "ResistorCapacitorLadderStudyConfig",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/simulators/rc-ladder-response/resistor-capacitor-ladder-study-config",
+      "schema_resource": "rc-ladder-study.schema.json",
+      "supplied_inputs": [
+        "experiments/rc-ladder-response/study.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 65536,
+      "command": "campaign reactor-batch-input-check",
+      "consumer": "reactor-batch-input",
+      "consumer_loader": "api.codecs.load_registered_authoring",
+      "consumer_maximum_bytes": 16384,
+      "consumer_requires_canonical": false,
+      "disposition": "editable",
+      "owner": "ReactorBatchInput",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/simulators/reactor-prefix-response/reactor-batch-input",
+      "schema_resource": "reactor-batch-input.schema.json",
+      "supplied_inputs": [
+        "experiments/reactor-response/batch-input.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 65536,
+      "command": "campaign reactor-prepared-input-check",
+      "consumer": "reactor-prepared-input",
+      "consumer_loader": "api.codecs.load_registered_authoring",
+      "consumer_maximum_bytes": 16384,
+      "consumer_requires_canonical": false,
+      "disposition": "editable",
+      "owner": "ReactorPreparedInput",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/simulators/reactor-prefix-response/reactor-prepared-input",
+      "schema_resource": "reactor-prepared-input.schema.json",
+      "supplied_inputs": [
+        "experiments/reactor-response/causal-response-study-input.json",
+        "experiments/reactor-response/feed-input.json",
+        "experiments/reactor-response/finite-control-frontier-input.json",
+        "experiments/reactor-response/local-input.json",
+        "experiments/reactor-response/matched-replay-history-input.json",
+        "experiments/reactor-response/regime-input.json",
+        "experiments/reactor-response/selected-action-response-input.json",
+        "experiments/reactor-response/staged-pulse-response-input.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 131072,
+      "command": "campaign torax-native-check",
+      "consumer": "tokamak-heat",
+      "consumer_loader": "api.codecs.load_registered_authoring",
+      "consumer_maximum_bytes": 32768,
+      "consumer_requires_canonical": false,
+      "disposition": "editable",
+      "owner": "NativeToraxQuickstart",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/simulators/torax-native/native-torax-quickstart",
+      "schema_resource": "tokamak-heat.schema.json",
+      "supplied_inputs": [
+        "experiments/tokamak-heat-response/config.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": 131072,
+      "command": "campaign electron-gas-reference-check",
+      "consumer": "electron-gas-reference",
+      "consumer_loader": "kernel.decoding.decode_canonical_bytes",
+      "consumer_maximum_bytes": 32768,
+      "consumer_requires_canonical": true,
+      "disposition": "editable",
+      "owner": "UniformElectronGasAnalyticReferenceConfig",
+      "preparation_allowed": true,
+      "schema_id": "empirical-lawhood/simulators/uniform-electron-gas-response/analytic-reference-config",
+      "schema_resource": "electron-gas-reference.schema.json",
+      "supplied_inputs": [
+        "experiments/electron-gas-response/config.json"
+      ]
+    },
+    {
+      "authoring_maximum_bytes": null,
+      "command": "manual evidence provenance",
+      "consumer": "evidence-provenance-template",
+      "consumer_loader": "documentary helper; no runner loader",
+      "consumer_maximum_bytes": null,
+      "consumer_requires_canonical": false,
+      "disposition": "helper",
+      "owner": "human-edited template",
+      "preparation_allowed": false,
+      "schema_id": null,
+      "schema_resource": null,
+      "supplied_inputs": [
+        "configs/templates/evidence-provenance.yaml"
+      ]
+    }
+  ],
+  "format_version": "1.0.0"
+}

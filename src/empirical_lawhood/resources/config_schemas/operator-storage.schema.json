@@ -1,0 +1,142 @@
+{
+  "$defs": {
+    "OperatorStorageProfile_6cbea9288597": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/runtime/operator-storage-profile"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "access_mode": {
+              "description": "access mode; constructor checks semantics and units.",
+              "enum": [
+                "READ_ONLY",
+                "READ_WRITE"
+              ],
+              "type": "string"
+            },
+            "allowed_filesystem_types": {
+              "description": "allowed filesystem types; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "artifact_namespace": {
+              "description": "artifact namespace; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "authority_granted": {
+              "description": "authority granted; constructor checks semantics and units.",
+              "type": "boolean"
+            },
+            "backend_key": {
+              "description": "backend key; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "backend_version": {
+              "description": "backend version; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "containment_policy_key": {
+              "description": "containment policy key; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "expected_mount_source": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "expected mount source; constructor checks semantics and units."
+            },
+            "expected_volume_identity": {
+              "anyOf": [
+                {
+                  "type": "string"
+                },
+                {
+                  "type": "null"
+                }
+              ],
+              "description": "expected volume identity; constructor checks semantics and units."
+            },
+            "external_root_locator": {
+              "description": "external root locator; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "maximum_parallel_tasks": {
+              "description": "maximum parallel tasks; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "minimum_free_bytes": {
+              "description": "minimum free bytes; constructor checks semantics and units.",
+              "type": "integer"
+            },
+            "profile_id": {
+              "description": "profile id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "read_only_mirror_ids": {
+              "description": "read only mirror ids; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "required_mount_path": {
+              "description": "required mount path; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "scientific_scratch_namespace": {
+              "description": "scientific scratch namespace; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "profile_id",
+            "backend_key",
+            "backend_version",
+            "external_root_locator",
+            "required_mount_path",
+            "artifact_namespace",
+            "scientific_scratch_namespace",
+            "access_mode",
+            "expected_mount_source",
+            "expected_volume_identity",
+            "allowed_filesystem_types",
+            "containment_policy_key",
+            "minimum_free_bytes",
+            "read_only_mirror_ids",
+            "maximum_parallel_tasks",
+            "authority_granted"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:operator-storage",
+  "$ref": "#/$defs/OperatorStorageProfile_6cbea9288597",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Operator Storage",
+  "x-consumer": "operator-storage",
+  "x-consumer-maximum-bytes": 134217728,
+  "x-disposition": "editable",
+  "x-preparation-allowed": true
+}

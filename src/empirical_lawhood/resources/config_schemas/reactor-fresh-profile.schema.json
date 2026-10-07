@@ -1,0 +1,53 @@
+{
+  "$defs": {
+    "FreshReactorAuthoringProfile_278298d7e2d5": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/composition/reactor-prefix-response/fresh-reactor-authoring-profile"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "experiment_id": {
+              "description": "experiment id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "profile_id": {
+              "description": "profile id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "public_source_sha256": {
+              "description": "public source sha256; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "profile_id",
+            "experiment_id",
+            "public_source_sha256"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:reactor-fresh-profile",
+  "$ref": "#/$defs/FreshReactorAuthoringProfile_278298d7e2d5",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Reactor Fresh Profile",
+  "x-consumer": "reactor-fresh-profile",
+  "x-consumer-maximum-bytes": 67108864,
+  "x-disposition": "editable",
+  "x-preparation-allowed": true
+}

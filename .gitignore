@@ -1,0 +1,57 @@
+# OS / editor
+.DS_Store
+Thumbs.db
+*.swp
+*.swo
+*~
+
+# Python caches / build artifacts
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.coverage
+htmlcov/
+build/
+dist/
+example-output/
+*.egg-info/
+
+# Rebuildable local operational catalog; scientific custody is external.
+.empirical-lawhood/
+
+# Virtual environments
+.venv/
+venv/
+env/
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Local environment / secrets
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+
+# IDE metadata
+.vscode/
+.idea/
+
+# Temporary files
+*.tmp
+*.temp
+*.log
+
+# Do not globally ignore results, evidence, manifests, or PDFs:
+# archival scientific artifacts are intended to be tracked explicitly.
+
+# Local release working plans; retain outside version control.
+/FINALISERELEASE.md
+/FINALAUDIT.md
+/FINALISENAMING.md
+/LOWFRICTION.md
+/FINALINTEGRATIONS.md
+/DOCFINALISE.md

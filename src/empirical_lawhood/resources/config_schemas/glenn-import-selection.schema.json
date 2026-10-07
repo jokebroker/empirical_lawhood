@@ -1,0 +1,58 @@
+{
+  "$defs": {
+    "GlennInputQuickstart_e040d57972a6": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/physical/glenn/glenn-input-quickstart"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "archive_relative_path": {
+              "description": "archive relative path; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "config_id": {
+              "description": "config id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "profile_id": {
+              "description": "profile id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "source_role": {
+              "description": "source role; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "config_id",
+            "profile_id",
+            "archive_relative_path",
+            "source_role"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:glenn-import-selection",
+  "$ref": "#/$defs/GlennInputQuickstart_e040d57972a6",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Glenn Import Selection",
+  "x-consumer": "glenn-import-selection",
+  "x-consumer-maximum-bytes": 16384,
+  "x-disposition": "editable",
+  "x-preparation-allowed": true
+}

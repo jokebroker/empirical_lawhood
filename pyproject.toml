@@ -1,0 +1,119 @@
+[build-system]
+requires = ["hatchling==1.32.4"]
+build-backend = "hatchling.build"
+
+[project]
+name = "empirical-lawhood"
+version = "0.2.0"
+description = "Auditable empirical response-law research software"
+readme = "README.md"
+requires-python = ">=3.11,<3.12"
+license = "MPL-2.0"
+authors = [{ name = "Gareth Seneque" }]
+dependencies = [
+  "alembic>=1.14,<2",
+  "cryptography>=45,<47",
+  "h5py>=3.11,<4",
+  "mpmath>=1.3,<2",
+  "numpy>=2.0,<3",
+  "onnx>=1.17,<2",
+  "pyarrow>=17,<24",
+  "python-flint>=0.8,<0.9",
+  "pyyaml>=6.0,<7",
+  "scipy>=1.14,<2",
+  "sqlalchemy>=2.0,<3",
+  "threadpoolctl>=3.5,<4",
+  "safetensors>=0.4,<1",
+  "typer>=0.12,<1",
+]
+
+[project.scripts]
+empirical-lawhood = "empirical_lawhood.cli.entry:main"
+
+[project.urls]
+Repository = "https://github.com/jokebroker/empirical_lawhood"
+Documentation = "https://github.com/jokebroker/empirical_lawhood/blob/main/README.md"
+Issues = "https://github.com/jokebroker/empirical_lawhood/issues"
+
+[dependency-groups]
+dev = [
+    "pytest>=8.3,<10",
+    "ruff>=0.12,<1",
+    "coverage>=7.10,<8",
+    "jsonschema>=4.23,<5",
+]
+build = ["hatchling==1.32.4"]
+paper = [
+  "matplotlib==3.11.2",
+  "numpy==2.4.6",
+  "pymupdf==1.28.2",
+  "pypandoc-binary==1.17",
+  "cairosvg==2.9.1",
+]
+reactor-example = ["numpy==2.4.6"]
+open-simulators = [
+  "gymtorax==1.1.1",
+  "torax==1.4.2",
+  "jax==0.10.2",
+  "jaxlib==0.10.2",
+  "numpy==2.4.6",
+  "scipy==1.17.1",
+  "xarray==2026.7.0",
+  "pybamm==26.6.2.0",
+]
+open-simulators-gpu = [
+  "jax[cuda12]==0.10.2; sys_platform == 'linux' and platform_machine == 'x86_64'",
+]
+reaction-response-simulators = ["cantera==3.2.0", "fipy==4.0.3"]
+grid2op-held = [
+  "grid2op==1.12.5; sys_platform == 'linux' and platform_machine == 'x86_64'",
+  "lightsim2grid==0.13.1; sys_platform == 'linux' and platform_machine == 'x86_64'",
+]
+freegsnke-static-metatheory = [
+  "freegs4e==0.14.0; sys_platform == 'linux' and platform_machine == 'x86_64'",
+  "freegsnke[freegs4e]==3.1.0; sys_platform == 'linux' and platform_machine == 'x86_64'",
+]
+virtual-cell = [
+  "anndata>=0.11,<0.12",
+  "cell-eval==0.6.6",
+  "pdex==0.1.26",
+  "scikit-learn>=1.6,<1.8",
+]
+standard-discovery = ["botorch==0.18.1", "scikit-learn>=1.6,<1.8"]
+mast-torax-response = [
+  "botorch==0.18.1",
+  "scikit-learn>=1.6,<1.8",
+  "torch==2.6.0",
+]
+
+[tool.uv]
+conflicts = [
+  [{ group = "open-simulators-gpu" }, { group = "mast-torax-response" }],
+  [{ group = "standard-discovery" }, { group = "mast-torax-response" }],
+]
+
+[tool.uv.sources]
+freegs4e = { git = "https://github.com/FusionComputingLab/freegs4e.git", rev = "4ee98af61a4e7ede7574c103a7275dddda8acb82" }
+freegsnke = { git = "https://github.com/FusionComputingLab/freegsnke.git", rev = "bd1c3398cf96cfae4550efa247ace2ce60ca0af0" }
+torch = [
+  { index = "pytorch-cu124", group = "mast-torax-response", marker = "sys_platform == 'linux' and platform_machine == 'x86_64'" },
+]
+
+[[tool.uv.index]]
+name = "pytorch-cu124"
+url = "https://download.pytorch.org/whl/cu124"
+explicit = true
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/empirical_lawhood"]
+
+[tool.pytest.ini_options]
+testpaths = ["tests"]
+addopts = "--strict-markers --durations=10"
+markers = [
+  "native(*distributions): requires the named optional installed scientific distributions",
+  "held: requires explicitly selected authentic external source inputs",
+]
+
+[tool.ruff.lint]
+select = ["F", "E9"]

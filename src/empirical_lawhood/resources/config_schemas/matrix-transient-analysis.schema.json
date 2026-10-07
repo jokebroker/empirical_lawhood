@@ -1,0 +1,98 @@
+{
+  "$defs": {
+    "ObjectIdentity_1e3d5e7bc67c": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/kernel/object-identity"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "object_fingerprint": {
+              "description": "object fingerprint; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_id": {
+              "description": "object id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_schema": {
+              "description": "object schema; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_version": {
+              "description": "object version; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "object_id",
+            "object_schema",
+            "object_version",
+            "object_fingerprint"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "TransientAnalysisConfig_1e575507fe4b": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/methods/matrix-preparation-analysis/transient-analysis-config"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "analysis_id": {
+              "description": "analysis id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "specification": {
+              "$ref": "#/$defs/ObjectIdentity_1e3d5e7bc67c",
+              "description": "specification; constructor checks semantics and units."
+            },
+            "summary_population": {
+              "description": "summary population; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "analysis_id",
+            "summary_population",
+            "specification"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:matrix-transient-analysis",
+  "$ref": "#/$defs/TransientAnalysisConfig_1e575507fe4b",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Matrix Transient Analysis",
+  "x-consumer": "matrix-transient-analysis",
+  "x-consumer-maximum-bytes": 65536,
+  "x-disposition": "editable",
+  "x-preparation-allowed": true
+}

@@ -1,0 +1,5 @@
+% SPDX-License-Identifier: MPL-2.0
+% Keep native graphicx alt support. Accept Pandoc's option on older TeX.
+\makeatletter
+\@ifundefined{KV@Gin@alt}{\define@key{Gin}{alt}{}}{}
+\makeatother

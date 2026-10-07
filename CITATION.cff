@@ -1,0 +1,45 @@
+cff-version: 1.2.0
+message: "If you use Empirical Lawhood in your work, please cite this software and the published preprint."
+title: "Empirical Lawhood"
+type: software
+version: "0.2.0"
+# Unpublished software candidate; no candidate DOI or publication date is assigned.
+authors:
+  - family-names: "Seneque"
+    given-names: "Gareth"
+    orcid: "https://orcid.org/0009-0003-3046-6899"
+abstract: "Research software and executable experimental machinery supporting Empirical Lawhood, a framework for identifying, validating, composing, and using empirical response laws across heterogeneous dynamical systems."
+keywords:
+  - empirical lawhood
+  - response laws
+  - system identification
+  - dynamical systems
+  - control
+  - scientific discovery
+  - reproducibility
+repository-code: "https://github.com/jokebroker/empirical_lawhood"
+url: "https://github.com/jokebroker/empirical_lawhood"
+license: "MPL-2.0"
+preferred-citation:
+  type: article
+  title: "Empirical Lawhood"
+  authors:
+    - family-names: "Seneque"
+      given-names: "Gareth"
+      orcid: "https://orcid.org/0009-0003-3046-6899"
+  version: "0.60"
+  doi: "10.5281/zenodo.23083988"
+  date-published: "2026-10-01"
+  url: "https://zenodo.org/records/23083988"
+  notes: "Canonical first preprint; not peer reviewed. Verified Zenodo deposit published 1 October 2026. Supplied source-bundle date 4 October 2026; its original project/software DOI label remains historical provenance."
+references:
+  - type: article
+    title: "Empirical Lawhood"
+    authors:
+      - family-names: "Seneque"
+        given-names: "Gareth"
+        orcid: "https://orcid.org/0009-0003-3046-6899"
+    version: "0.60"
+    doi: "10.5281/zenodo.23083988"
+    date-published: "2026-10-01"
+    notes: "Verified Zenodo preprint. The original supplied source bundle's project/software DOI label remains historical provenance; its PDF differs from the deposited PDF in the page18 identifier paragraph. Neither DOI nor date applies to the unpublished software candidate."

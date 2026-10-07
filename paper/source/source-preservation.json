@@ -1,0 +1,446 @@
+{
+  "edition": "0.60",
+  "archive_sha256": "9e3ea52ae38cf9113f21dc4f479ac6f51f64e0a0d58a1f70fb977674c15df1b5",
+  "archive": {
+    "path": "editions/Empirical_Lawhood_v0.60_Selected_Source.zip",
+    "bytes": 2128309,
+    "sha256": "9e3ea52ae38cf9113f21dc4f479ac6f51f64e0a0d58a1f70fb977674c15df1b5",
+    "members": 17,
+    "kind": "CURATED_CURRENT_EDITION_ONLY_EXPORT"
+  },
+  "selected_inputs": [
+    {
+      "member": "Empirical_Lawhood_v0.60/Empirical_Lawhood_Evidence_and_Provenance_v0.60.md",
+      "path": "editions/v0.60/Empirical_Lawhood_Evidence_and_Provenance_v0.60.md",
+      "bytes": 22081,
+      "sha256": "49bcc63664e537c5a4bd3d09b9e8c76653376ca4a19a15ef714234c2058b1d34"
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/Empirical_Lawhood_Evidence_and_Provenance_v0.60.md",
+      "path": "revision-and-evidence-notes.md",
+      "bytes": 22081,
+      "sha256": "49bcc63664e537c5a4bd3d09b9e8c76653376ca4a19a15ef714234c2058b1d34"
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/Empirical_Lawhood_Evidence_and_Provenance_v0.60.pdf",
+      "path": "editions/v0.60/Empirical_Lawhood_Evidence_and_Provenance_v0.60.pdf",
+      "bytes": 87824,
+      "sha256": "0e2216ba1d18839eed387bec93302b6e00a0dd4e70bd53d1e945bb05bb07ff9c"
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/Empirical_Lawhood_Evidence_and_Provenance_v0.60.pdf",
+      "path": "revision-and-evidence-notes.pdf",
+      "bytes": 87824,
+      "sha256": "0e2216ba1d18839eed387bec93302b6e00a0dd4e70bd53d1e945bb05bb07ff9c"
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/Empirical_Lawhood_Manuscript_v0.60.md",
+      "path": "editions/v0.60/Empirical_Lawhood_Manuscript_v0.60.md",
+      "bytes": 70802,
+      "sha256": "dcce819ca073c680a89434eec8101422f1dcbee886e768e28a91056ee617bc3d"
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/Empirical_Lawhood_Manuscript_v0.60.md",
+      "path": "manuscript.md",
+      "bytes": 70802,
+      "sha256": "dcce819ca073c680a89434eec8101422f1dcbee886e768e28a91056ee617bc3d"
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/Empirical_Lawhood_Manuscript_v0.60.pdf",
+      "path": "editions/v0.60/Empirical_Lawhood_Manuscript_v0.60.pdf",
+      "bytes": 823033,
+      "sha256": "b000a94eeeaa014b6e79491e09ea3d526450457bb0f06236c1d9007e7632f1c7"
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/Empirical_Lawhood_Manuscript_v0.60.pdf",
+      "path": "manuscript.pdf",
+      "bytes": 823033,
+      "sha256": "b000a94eeeaa014b6e79491e09ea3d526450457bb0f06236c1d9007e7632f1c7"
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/Revision_Summary_v0.60.md",
+      "path": "editions/v0.60/Revision_Summary_v0.60.md",
+      "bytes": 1822,
+      "sha256": "d01b144389341917d6ea845d91d57d12543ef3c2e5845e9eb724ec4392dd5285"
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/Revision_Summary_v0.60.md",
+      "path": "revision-summary.md",
+      "bytes": 1822,
+      "sha256": "d01b144389341917d6ea845d91d57d12543ef3c2e5845e9eb724ec4392dd5285"
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/assets/figure1.pdf",
+      "path": "editions/v0.60/assets/figure1.pdf",
+      "bytes": 190515,
+      "sha256": "7a49b7cc703d8c42c8615b5600e61a99d6af72ccf0f5c5624ad50193da333c9d"
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/assets/figure1.pdf",
+      "path": "assets/figure1.pdf",
+      "bytes": 190515,
+      "sha256": "7a49b7cc703d8c42c8615b5600e61a99d6af72ccf0f5c5624ad50193da333c9d"
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/assets/figure1.png",
+      "path": "editions/v0.60/assets/figure1.png",
+      "bytes": 191150,
+      "sha256": "836a3c7f173194177b382c097f9db6aecee8e298252da7a3201ec23a5b635581"
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/assets/figure1.png",
+      "path": "assets/figure1.png",
+      "bytes": 191150,
+      "sha256": "836a3c7f173194177b382c097f9db6aecee8e298252da7a3201ec23a5b635581"
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/assets/figure2.pdf",
+      "path": "editions/v0.60/assets/figure2.pdf",
+      "bytes": 275835,
+      "sha256": "ec89c367e11467d06ae4f82e3aa7b511ded82cbc55935fb3bb9017b830ffabaf"
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/assets/figure2.pdf",
+      "path": "assets/figure2.pdf",
+      "bytes": 275835,
+      "sha256": "ec89c367e11467d06ae4f82e3aa7b511ded82cbc55935fb3bb9017b830ffabaf"
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/assets/figure2.png",
+      "path": "editions/v0.60/assets/figure2.png",
+      "bytes": 274881,
+      "sha256": "076bda1e86a00f0a3f03aa54e5e949f30059e2fbafa2bda570ad69aa0759cc5d"
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/assets/figure2.png",
+      "path": "assets/figure2.png",
+      "bytes": 274881,
+      "sha256": "076bda1e86a00f0a3f03aa54e5e949f30059e2fbafa2bda570ad69aa0759cc5d"
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/assets/figure3.pdf",
+      "path": "editions/v0.60/assets/figure3.pdf",
+      "bytes": 215780,
+      "sha256": "a7598f5d09752b34456809e0de7ce1c08df94d6810a7860b0974c1d32229c1fc"
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/assets/figure3.pdf",
+      "path": "assets/figure3.pdf",
+      "bytes": 215780,
+      "sha256": "a7598f5d09752b34456809e0de7ce1c08df94d6810a7860b0974c1d32229c1fc"
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/assets/figure3.png",
+      "path": "editions/v0.60/assets/figure3.png",
+      "bytes": 216673,
+      "sha256": "7dfa99b66582d4c0f82dd3decfffca075ea8990efecfc53f0916e5ce4d87327f"
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/assets/figure3.png",
+      "path": "assets/figure3.png",
+      "bytes": 216673,
+      "sha256": "7dfa99b66582d4c0f82dd3decfffca075ea8990efecfc53f0916e5ce4d87327f"
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/assets/inherited_figure_provenance.json",
+      "path": "editions/v0.60/assets/inherited_figure_provenance.json",
+      "bytes": 2490,
+      "sha256": "e0153a1f1827417e5649d58d6c61b3f31450b46e9bcced99a53d616d31bff936"
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/assets/inherited_figure_provenance.json",
+      "path": "assets/inherited_figure_provenance.json",
+      "bytes": 2490,
+      "sha256": "e0153a1f1827417e5649d58d6c61b3f31450b46e9bcced99a53d616d31bff936"
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/build.sh",
+      "path": "editions/v0.60/build.sh",
+      "bytes": 1245,
+      "sha256": "a7dd4da3b3d518a68cb5fe38dba8edd6252ae39b63bd4155897f7331d62cc3dc"
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/evidence_metadata.tex",
+      "path": "editions/v0.60/evidence_metadata.tex",
+      "bytes": 220,
+      "sha256": "5a5d5f973b39f84a5cd3f807f8afe986d63e601f43d52ab12d9b3ae952f4986e"
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/evidence_metadata.tex",
+      "path": "source/evidence_metadata.tex",
+      "bytes": 220,
+      "sha256": "5a5d5f973b39f84a5cd3f807f8afe986d63e601f43d52ab12d9b3ae952f4986e"
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/header.tex",
+      "path": "editions/v0.60/header.tex",
+      "bytes": 2131,
+      "sha256": "61c19159dea0146a2664578b83ccd09d61de9bfd05329930aef7fc179f423c20"
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/header.tex",
+      "path": "source/preamble.tex",
+      "bytes": 2131,
+      "sha256": "61c19159dea0146a2664578b83ccd09d61de9bfd05329930aef7fc179f423c20"
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/layout.lua",
+      "path": "editions/v0.60/layout.lua",
+      "bytes": 2900,
+      "sha256": "6965306e3832d1164aad02047149e73fee61e5c6305bdd79cc1db21194c9b2d0"
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/layout.lua",
+      "path": "source/pdf_filter.lua",
+      "bytes": 2900,
+      "sha256": "6965306e3832d1164aad02047149e73fee61e5c6305bdd79cc1db21194c9b2d0"
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/validation_report.json",
+      "path": "editions/v0.60/validation_report.json",
+      "bytes": 3034,
+      "sha256": "dae4f559e53c9217891a420ef0cd4e3e69cbd536ce985e259ad9b068daaeb71e"
+    }
+  ],
+  "documents": {
+    "manuscript.md": {
+      "supplied_sha256": "dcce819ca073c680a89434eec8101422f1dcbee886e768e28a91056ee617bc3d",
+      "public_sha256": "dcce819ca073c680a89434eec8101422f1dcbee886e768e28a91056ee617bc3d",
+      "bytes": 70802,
+      "supplied_bytes_equal": true
+    },
+    "revision-and-evidence-notes.md": {
+      "supplied_sha256": "49bcc63664e537c5a4bd3d09b9e8c76653376ca4a19a15ef714234c2058b1d34",
+      "public_sha256": "49bcc63664e537c5a4bd3d09b9e8c76653376ca4a19a15ef714234c2058b1d34",
+      "bytes": 22081,
+      "supplied_bytes_equal": true
+    },
+    "manuscript.pdf": {
+      "supplied_sha256": "b000a94eeeaa014b6e79491e09ea3d526450457bb0f06236c1d9007e7632f1c7",
+      "public_sha256": "b000a94eeeaa014b6e79491e09ea3d526450457bb0f06236c1d9007e7632f1c7",
+      "bytes": 823033,
+      "supplied_bytes_equal": true
+    },
+    "revision-and-evidence-notes.pdf": {
+      "supplied_sha256": "0e2216ba1d18839eed387bec93302b6e00a0dd4e70bd53d1e945bb05bb07ff9c",
+      "public_sha256": "0e2216ba1d18839eed387bec93302b6e00a0dd4e70bd53d1e945bb05bb07ff9c",
+      "bytes": 87824,
+      "supplied_bytes_equal": true
+    }
+  },
+  "public_translation": {
+    "kind": "Curated current-edition-only packaging of selected exact original members; predecessor documents and editorial payloads omitted",
+    "scientific_text_edits": 0,
+    "bibliographic_edits": 0,
+    "pdf_page_content_edits": 0,
+    "pdf_metadata_edits": 0,
+    "pdf_navigation_value_edits": 0,
+    "figure_edits": 0
+  },
+  "original_build": {
+    "status": "SUPPLIED_BUILD_RECIPE_AND_VALIDATION_ONLY",
+    "recipe_path": "editions/v0.60/build.sh",
+    "validation_report_path": "editions/v0.60/validation_report.json",
+    "full_producing_tool_versions_commands_tex_logs_available": false,
+    "new_build_performed": false,
+    "deposited_pdf_producing_transform": "Not supplied; observed DOI paragraph difference only, original source-bundle PDF/source unchanged",
+    "historical_validator": "Original validate.py needs externally retained predecessor drafts; excluded from public selection. Use source/validate_bundle.py for current selection."
+  },
+  "scope": "Selected supplied v0.60 documentary bytes and external preservation provenance only. Curated export is not complete original bundle and does not authenticate or newly qualify native experimental records.",
+  "deposited_publication": {
+    "path": "editions/v0.60-deposit/Empirical_Lawhood_Manuscript_v0.60.pdf",
+    "bytes": 875723,
+    "sha256": "542c7450f5504316ffab6a28f4f626a963225ff6536753577781acafbd7760db",
+    "md5": "3d621222d09fa7c5c22198b5e1a3231a",
+    "pages": 19,
+    "metadata": {
+      "format": "PDF 1.5",
+      "title": "Empirical Lawhood",
+      "author": "Gareth Seneque",
+      "subject": "Preprint. Internal manuscript version 0.60; 4 October 2026",
+      "keywords": "Empirical Lawhood, response laws, conditions of knowledge, scientific capability, scientific agency, observer-participancy, version 0.60",
+      "creator": "LaTeX via pandoc",
+      "producer": "xdvipdfmx (20240305)",
+      "creationDate": "D:20261004114555Z",
+      "modDate": "",
+      "trapped": "",
+      "encryption": null
+    },
+    "role": "Published preprint PDF downloaded from exact verified Zenodo deposit; distinct from supplied source-bundle PDF.",
+    "visually_inspected_pages": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "review": "Pages1\u201317 and19 pixel-identical at72dpi to reviewed supplied pages, both hashes bound by comparison receipt; changedpage18 separately rendered with systemPoppler110dpi and visually inspected. No clipping/overlap/missing glyph observed.",
+    "comparison_scope": "Onlypage18 changed in text/render: publication identifier paragraph now calls DOI the manuscript DOI. Exact producing transformation/tool receipt unavailable; no inferred edit of supplied source.",
+    "record_path": "editions/v0.60-deposit/zenodo-record.json",
+    "record_sha256": "12d0ae5ff3c2b0145cd92f0a806ea1a50232beaf2f57ffcf6f756c52095b0f76",
+    "publication_date": "2026-10-01",
+    "supplied_manuscript_date": "2026-10-04",
+    "changed_page_render_sha256": "56514083767fcb4defca45c3fe28b13a3a4e56ae6a1b0fff381f5879dc86b10f"
+  },
+  "original_archive": {
+    "filename": "Empirical_Lawhood_v0.60_Source_Bundle.zip",
+    "bytes": 3456552,
+    "sha256": "69bf607bb2a0c7f1c3980872c89ca432d6df2a864988b6d336d72777835ef30b",
+    "members": 40,
+    "status": "EXTERNALLY_PRESERVED_NOT_PACKAGED"
+  },
+  "excluded_original_members": [
+    {
+      "member": "Empirical_Lawhood_v0.60/README.md",
+      "bytes": 3804,
+      "sha256": "04e14362923f47c8abbf9e519cfcf7c7d7c7b96c24106934223f248d9695044d",
+      "publicly_packaged": false
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/bundle_manifest.json",
+      "bytes": 6787,
+      "sha256": "8ffa9b62c1a151ddb06c5a5bae67836254c58491cc7d20bdd5ee35ce2aaec4dc",
+      "publicly_packaged": false
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/changes/evidence_v0.5.0_to_v0.60.diff",
+      "bytes": 280,
+      "sha256": "dd1a2593a0fd9ff528cb5ecca6b329edcbf2f1cd970ef736a2e20cd7bb1dc3e5",
+      "publicly_packaged": false
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/changes/v0.4.0_to_v0.5.0.diff",
+      "bytes": 45780,
+      "sha256": "0c57e0b61cf69b31dd091e2ee75a4ba5396cfb7f7c0f53b8d52314505a1bd3f5",
+      "publicly_packaged": false
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/changes/v0.5.0_to_v0.60.diff",
+      "bytes": 4423,
+      "sha256": "57a0326c25b92d8ee20c5ab4014286ea43e0c3a27bd815b31614dfbc23b4f737",
+      "publicly_packaged": false
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/opening_change.json",
+      "bytes": 1409,
+      "sha256": "b47564ad9fa9c4763734b565249a31b93faf7db6ab9f1d04633872923926261a",
+      "publicly_packaged": false
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/pdf_comparison_report.json",
+      "bytes": 1142,
+      "sha256": "916315a2906e64de5b174b4945619aeb9e0cc0294e505e469aa590f87e8cad6c",
+      "publicly_packaged": false
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/preservation_baseline.json",
+      "bytes": 1797,
+      "sha256": "a2ae9e212fb99830376824099a7a6beb4f042a49ab5e77ab6300f103b85df493",
+      "publicly_packaged": false
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/reference_verification.md",
+      "bytes": 2662,
+      "sha256": "4a7ea360de05554ff5a65b4c3faa8980222c9b9ae267840f91ded20d79ebc66f",
+      "publicly_packaged": false
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/source_inventory.json",
+      "bytes": 3673,
+      "sha256": "7e2274c8b326a9b0eb105a75ea2ac82eb6025b5599e44170e5c62bb3455ea924",
+      "publicly_packaged": false
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/sources/CC1_Baseline_Anchored_Recursive_Closure_Proposal_v2.md",
+      "bytes": 35259,
+      "sha256": "63a7e9a39256356111aa131b4052fdca7b7363fee47b347b958cb811abf2f704",
+      "publicly_packaged": false
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/sources/Empirical_Lawhood_Manuscript_v0.2(1).pdf",
+      "bytes": 163563,
+      "sha256": "15ee54bffb4c8cfd83faf0bfe10b78b67406292b568f221c7f493792470897eb",
+      "publicly_packaged": false
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/sources/Empirical_Lawhood_Manuscript_v0.9.4.pdf",
+      "bytes": 480157,
+      "sha256": "9760351eabce7ccd5f2f93504adab3b2dfe58f02c6e7c1108316712eed33ce99",
+      "publicly_packaged": false
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/sources/Empirical_Lawhood_Methods_and_Evidence_v0.9.1.pdf",
+      "bytes": 272739,
+      "sha256": "22e56f27370f55bc31afa60a07f739639a9e9d73ea2b02b64dc12fe7a000500b",
+      "publicly_packaged": false
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/sources/Empirical_Lawhood_and_Epistemic_Control_White_Paper_v0.2_named.pdf",
+      "bytes": 212473,
+      "sha256": "62704c6ccf57db291450baee1dfd30f367f430bc76be69d7df78b54d72037e80",
+      "publicly_packaged": false
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/sources/Evidence_Manifest_v0.9.4.pdf",
+      "bytes": 195044,
+      "sha256": "5a0308d95428271aee0cbfd7ed8df9e0fca0382c571db9b9097ffdacdc68cc29",
+      "publicly_packaged": false
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/sources/editorial_history/Empirical_Lawhood_Evidence_and_Provenance_v0.4.0.md",
+      "bytes": 18208,
+      "sha256": "8eb6a8bc8d3161f547f0f7a5f8fb3c7bf92097eeda0620278ae5924d32ba8b72",
+      "publicly_packaged": false
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/sources/editorial_history/Empirical_Lawhood_Evidence_and_Provenance_v0.5.0.md",
+      "bytes": 22082,
+      "sha256": "d325e6fc71380b986179fa688d4bea198a03c4bc0691d642068685b2b2602e0b",
+      "publicly_packaged": false
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/sources/editorial_history/Empirical_Lawhood_Manuscript_v0.4.0.md",
+      "bytes": 61529,
+      "sha256": "a58d3ae1dea2cb89473c5512edf894f6bc36a2113d9b6e4592a7e1481761f721",
+      "publicly_packaged": false
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/sources/editorial_history/Empirical_Lawhood_Manuscript_v0.5.0.md",
+      "bytes": 70608,
+      "sha256": "d27b21cb1ef873ea61a5666d7e206680d3894866229a39a6c8efa0a9746a0c0a",
+      "publicly_packaged": false
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/sources/editorial_history/Revision_Summary_v0.5.0.md",
+      "bytes": 3648,
+      "sha256": "f8c78f30f93fe8e09d49a2c6260f685a29652170a7eda8a0679e80a9133608ce",
+      "publicly_packaged": false
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/sources/geometry-without-commitment-thread-and-literature-dossier.md",
+      "bytes": 80179,
+      "sha256": "3b3be41b34eb2f07e849abc6789d533c755a9912f13613eaf6064ee76735a36f",
+      "publicly_packaged": false
+    },
+    {
+      "member": "Empirical_Lawhood_v0.60/validate.py",
+      "bytes": 6530,
+      "sha256": "0b9c3c0fc1a8297d7e9c5349050ccf5a3d53c3c93b005bbe5eea498132686ea7",
+      "publicly_packaged": false
+    }
+  ]
+}

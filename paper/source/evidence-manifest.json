@@ -1,0 +1,104 @@
+{
+  "edition": "0.60",
+  "scope": "Historical source hashes and original native identities retained as provenance metadata. Referenced predecessor documents are externally preserved, not packaged; current v0.60 manuscript and companion remain supplied byte-exact.",
+  "documentary_sources": [
+    {
+      "id": "D1",
+      "bytes": 480157,
+      "sha256": "9760351eabce7ccd5f2f93504adab3b2dfe58f02c6e7c1108316712eed33ce99",
+      "role_and_limit": "Historical main-paper findings and original figure source; documentary PDF, not a native dataset.",
+      "original_member": "Empirical_Lawhood_v0.60/sources/Empirical_Lawhood_Manuscript_v0.9.4.pdf",
+      "publicly_packaged": false,
+      "preservation_status": "EXTERNALLY_PRESERVED_NOT_PACKAGED"
+    },
+    {
+      "id": "D2",
+      "bytes": 272739,
+      "sha256": "22e56f27370f55bc31afa60a07f739639a9e9d73ea2b02b64dc12fe7a000500b",
+      "role_and_limit": "Available v0.9.1 technical companion, E1\u2013E5. Preserved under its original edition; no current v0.60 methods-companion identity.",
+      "original_member": "Empirical_Lawhood_v0.60/sources/Empirical_Lawhood_Methods_and_Evidence_v0.9.1.pdf",
+      "publicly_packaged": false,
+      "preservation_status": "EXTERNALLY_PRESERVED_NOT_PACKAGED"
+    },
+    {
+      "id": "D3",
+      "bytes": 212473,
+      "sha256": "62704c6ccf57db291450baee1dfd30f367f430bc76be69d7df78b54d72037e80",
+      "role_and_limit": "Historical scientific and engineering synthesis. Then-future proposals are not completed results.",
+      "original_member": "Empirical_Lawhood_v0.60/sources/Empirical_Lawhood_and_Epistemic_Control_White_Paper_v0.2_named.pdf",
+      "publicly_packaged": false,
+      "preservation_status": "EXTERNALLY_PRESERVED_NOT_PACKAGED"
+    },
+    {
+      "id": "D4",
+      "bytes": 80179,
+      "sha256": "3b3be41b34eb2f07e849abc6789d533c755a9912f13613eaf6064ee76735a36f",
+      "role_and_limit": "Post-outcome geometry dossier. Finite-family feasibility and conditional selected-event analysis; no independent replication or native custody.",
+      "original_member": "Empirical_Lawhood_v0.60/sources/geometry-without-commitment-thread-and-literature-dossier.md",
+      "publicly_packaged": false,
+      "preservation_status": "EXTERNALLY_PRESERVED_NOT_PACKAGED"
+    },
+    {
+      "id": "D5",
+      "bytes": 35259,
+      "sha256": "63a7e9a39256356111aa131b4052fdca7b7363fee47b347b958cb811abf2f704",
+      "role_and_limit": "Sections1\u20132 report retained transient findings and baseline diagnosis. Later proposed stages were not executed by this revision.",
+      "original_member": "Empirical_Lawhood_v0.60/sources/CC1_Baseline_Anchored_Recursive_Closure_Proposal_v2.md",
+      "publicly_packaged": false,
+      "preservation_status": "EXTERNALLY_PRESERVED_NOT_PACKAGED"
+    },
+    {
+      "id": "D6",
+      "bytes": 163563,
+      "sha256": "15ee54bffb4c8cfd83faf0bfe10b78b67406292b568f221c7f493792470897eb",
+      "role_and_limit": "Earlier manuscript Section5 reports overlapping retained factor/passive/tangent analyses; not an independent population.",
+      "original_member": "Empirical_Lawhood_v0.60/sources/Empirical_Lawhood_Manuscript_v0.2(1).pdf",
+      "publicly_packaged": false,
+      "preservation_status": "EXTERNALLY_PRESERVED_NOT_PACKAGED"
+    },
+    {
+      "id": "D7",
+      "bytes": 195044,
+      "sha256": "5a0308d95428271aee0cbfd7ed8df9e0fca0382c571db9b9097ffdacdc68cc29",
+      "role_and_limit": "Historical manifest reports external identities and unresolved source gaps; does not supply its cited original native archive.",
+      "original_member": "Empirical_Lawhood_v0.60/sources/Evidence_Manifest_v0.9.4.pdf",
+      "publicly_packaged": false,
+      "preservation_status": "EXTERNALLY_PRESERVED_NOT_PACKAGED"
+    }
+  ],
+  "reported_native_identities": [
+    {
+      "source": "D4 section1.1 E1",
+      "name": "Canonical C1 report",
+      "sha256": "2f88db1de1c04cb38330e653531ee50d36c9838e9952c454130083e61114e8f5",
+      "bytes_present": false
+    },
+    {
+      "source": "D4 section1.1 E2",
+      "name": "Isolated-event terminal report",
+      "sha256": "5cd55b5f1eaa732077d9e61d45f42dc608e37480fb42ecf4ec134873a3e70453",
+      "bytes_present": false
+    },
+    {
+      "source": "D5 section13 B",
+      "name": "cc1-m5-transient-bridge-2026-09-20.md",
+      "sha256": "4758bbc852e171389705f2c92e41da49774b9f0e4899c1ab8013c97f7c2685e9",
+      "bytes_present": false
+    }
+  ],
+  "evidence_boundaries": {
+    "new_native_acquisition": false,
+    "new_model_fitting": false,
+    "bootstrap_recomputed": false,
+    "scientific_adjudication_changed": false,
+    "independent_replication": false,
+    "current_software_methods_authenticate_historical_results": false,
+    "programme_formal_admission": "NOT_EVALUATED"
+  },
+  "unresolved": [
+    "M4 final worked-example admission interval and complete development/selection history.",
+    "RC generator sign/time-origin convention.",
+    "Full capstone plan, thresholds, source/active waveforms, compatibility and bootstrap operands; reported bootstrap confidence levels.",
+    "Native matrix trajectories and arrays, physical cohort reconstruction and full reactor atlas."
+  ]
+}

@@ -1,0 +1,223 @@
+{
+  "$defs": {
+    "RCInformationConfig_f4507ccd2ed0": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/methods/rc-information/config"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "capacitance_unit": {
+              "description": "capacitance unit; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "config_id": {
+              "description": "config id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "equal_branch_capacitance_farads": {
+              "additionalProperties": false,
+              "description": "equal branch capacitance farads; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object",
+              "x-unit": "F"
+            },
+            "initial_state_a_v0": {
+              "description": "initial state a v0; constructor checks semantics and units.",
+              "items": false,
+              "maxItems": 2,
+              "minItems": 2,
+              "prefixItems": [
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "decimal": {
+                      "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "decimal"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "decimal": {
+                      "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "decimal"
+                  ],
+                  "type": "object"
+                }
+              ],
+              "type": "array"
+            },
+            "initial_state_b_v0": {
+              "description": "initial state b v0; constructor checks semantics and units.",
+              "items": false,
+              "maxItems": 2,
+              "minItems": 2,
+              "prefixItems": [
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "decimal": {
+                      "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "decimal"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "decimal": {
+                      "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "decimal"
+                  ],
+                  "type": "object"
+                }
+              ],
+              "type": "array"
+            },
+            "instance_kind": {
+              "description": "instance kind; constructor checks semantics and units.",
+              "enum": [
+                "BASELINE",
+                "VARIANT"
+              ],
+              "type": "string"
+            },
+            "predictor_input_a_sha256": {
+              "description": "predictor input a sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "predictor_input_b_sha256": {
+              "description": "predictor input b sha256; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "receiver_id": {
+              "description": "receiver id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "time_constants_seconds": {
+              "description": "time constants seconds; constructor checks semantics and units.",
+              "items": false,
+              "maxItems": 2,
+              "minItems": 2,
+              "prefixItems": [
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "decimal": {
+                      "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "decimal"
+                  ],
+                  "type": "object"
+                },
+                {
+                  "additionalProperties": false,
+                  "properties": {
+                    "decimal": {
+                      "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                      "type": "string"
+                    }
+                  },
+                  "required": [
+                    "decimal"
+                  ],
+                  "type": "object"
+                }
+              ],
+              "type": "array",
+              "x-unit": "s"
+            },
+            "time_unit": {
+              "description": "time unit; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "voltage_scale_volts": {
+              "additionalProperties": false,
+              "description": "voltage scale volts; constructor checks semantics and units.",
+              "properties": {
+                "decimal": {
+                  "description": "Exact finite Decimal text; no binary float. Runtime bounds expansion and decides lexical/semantic acceptance.",
+                  "type": "string"
+                }
+              },
+              "required": [
+                "decimal"
+              ],
+              "type": "object",
+              "x-unit": "V"
+            },
+            "voltage_unit": {
+              "description": "voltage unit; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "config_id",
+            "instance_kind",
+            "voltage_scale_volts",
+            "equal_branch_capacitance_farads",
+            "time_constants_seconds",
+            "initial_state_a_v0",
+            "initial_state_b_v0",
+            "predictor_input_a_sha256",
+            "predictor_input_b_sha256",
+            "receiver_id",
+            "voltage_unit",
+            "time_unit",
+            "capacitance_unit"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:rc-information",
+  "$ref": "#/$defs/RCInformationConfig_f4507ccd2ed0",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Rc Information",
+  "x-consumer": "rc-information",
+  "x-consumer-maximum-bytes": 65536,
+  "x-disposition": "editable",
+  "x-preparation-allowed": true
+}

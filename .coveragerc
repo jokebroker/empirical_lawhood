@@ -1,0 +1,50 @@
+[run]
+branch = True
+relative_files = True
+include =
+    src/empirical_lawhood/adapters/simulators/_native_admission.py
+    src/empirical_lawhood/api/codecs.py
+    src/empirical_lawhood/api/current_result_custody.py
+    src/empirical_lawhood/api/integration_proof.py
+    src/empirical_lawhood/api/matrix_numerical_provenance.py
+    src/empirical_lawhood/kernel/numerical_provenance.py
+    src/empirical_lawhood/kernel/parsed_nodes.py
+    src/empirical_lawhood/adapters/_bounded_files.py
+    src/empirical_lawhood/adapters/composition/finite_response_law/consumer_input.py
+    src/empirical_lawhood/adapters/composition/finite_response_law/consumer_ports.py
+    src/empirical_lawhood/adapters/composition/finite_response_law/informative_composition_input.py
+    src/empirical_lawhood/adapters/composition/finite_response_law/stage_input.py
+    src/empirical_lawhood/adapters/composition/prepared_response/dependent_input.py
+    src/empirical_lawhood/adapters/composition/reactor_prefix_response/fresh_authoring.py
+    src/empirical_lawhood/adapters/composition/response_composition/input.py
+    src/empirical_lawhood/adapters/composition/response_parent_custody.py
+    src/empirical_lawhood/adapters/composition/response_parent_input.py
+    src/empirical_lawhood/adapters/composition/response_parent_reader.py
+    src/empirical_lawhood/adapters/composition/response_parent_store.py
+    src/empirical_lawhood/adapters/methods/_scientific_description_codebook.py
+    src/empirical_lawhood/adapters/methods/scientific_description_code.py
+    src/empirical_lawhood/api/facade.py
+    src/empirical_lawhood/infrastructure/bounded_io.py
+    src/empirical_lawhood/infrastructure/catalog_mutation.py
+    src/empirical_lawhood/infrastructure/catalog_projection.py
+    src/empirical_lawhood/infrastructure/catalog_rebuild.py
+    src/empirical_lawhood/infrastructure/dataset_catalog_access.py
+    src/empirical_lawhood/infrastructure/dataset_projection.py
+    src/empirical_lawhood/infrastructure/sql/__init__.py
+    src/empirical_lawhood/infrastructure/sql/database.py
+    src/empirical_lawhood/infrastructure/sql/dataset_repository.py
+    src/empirical_lawhood/infrastructure/sql/migrations/__init__.py
+    src/empirical_lawhood/infrastructure/sql/migrations/catalog_tables.py
+    src/empirical_lawhood/infrastructure/sql/migrations/dataset_tables.py
+    src/empirical_lawhood/infrastructure/sql/migrations/env.py
+    src/empirical_lawhood/infrastructure/sql/migrations/versions/initial_catalog.py
+    src/empirical_lawhood/infrastructure/sql/migrations/versions/__init__.py
+    src/empirical_lawhood/infrastructure/sql/operations.py
+    src/empirical_lawhood/infrastructure/sql/repository.py
+    src/empirical_lawhood/infrastructure/sql/schema.py
+    src/empirical_lawhood/kernel/decoding.py
+    src/empirical_lawhood/kernel/serialization.py
+    src/empirical_lawhood/runtime/candidate_composition.py
+
+[report]
+show_missing = True

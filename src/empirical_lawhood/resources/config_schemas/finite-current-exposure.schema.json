@@ -1,0 +1,59 @@
+{
+  "$defs": {
+    "FiniteResponseLawCurrentExposure_1cf27e150abc": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/composition/finite-response-law/current-exposure"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "census_id": {
+              "description": "census id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "excluded_seed_ids": {
+              "description": "excluded seed ids; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            },
+            "excluded_unit_ids": {
+              "description": "excluded unit ids; constructor checks semantics and units.",
+              "items": {
+                "type": "string"
+              },
+              "type": "array"
+            }
+          },
+          "required": [
+            "census_id",
+            "excluded_unit_ids",
+            "excluded_seed_ids"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:finite-current-exposure",
+  "$ref": "#/$defs/FiniteResponseLawCurrentExposure_1cf27e150abc",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Finite Current Exposure",
+  "x-consumer": "finite-current-exposure",
+  "x-consumer-maximum-bytes": 4194304,
+  "x-disposition": "retained",
+  "x-preparation-allowed": false
+}

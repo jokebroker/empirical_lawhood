@@ -1,0 +1,103 @@
+{
+  "$defs": {
+    "ObjectIdentity_1e3d5e7bc67c": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/kernel/object-identity"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "object_fingerprint": {
+              "description": "object fingerprint; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_id": {
+              "description": "object id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_schema": {
+              "description": "object schema; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "object_version": {
+              "description": "object version; constructor checks semantics and units.",
+              "type": "string"
+            }
+          },
+          "required": [
+            "object_id",
+            "object_schema",
+            "object_version",
+            "object_fingerprint"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    },
+    "RCChallengeResultAuthorityContext_077c02a6f57b": {
+      "additionalProperties": false,
+      "properties": {
+        "schema": {
+          "const": "empirical-lawhood/simulator-morphism-challenges/result-authority-context"
+        },
+        "value": {
+          "additionalProperties": false,
+          "properties": {
+            "context_id": {
+              "description": "context id; constructor checks semantics and units.",
+              "type": "string"
+            },
+            "execution_authority": {
+              "$ref": "#/$defs/ObjectIdentity_1e3d5e7bc67c",
+              "description": "execution authority; constructor checks semantics and units."
+            },
+            "issued_study": {
+              "$ref": "#/$defs/ObjectIdentity_1e3d5e7bc67c",
+              "description": "issued study; constructor checks semantics and units."
+            },
+            "reveal_authority": {
+              "$ref": "#/$defs/ObjectIdentity_1e3d5e7bc67c",
+              "description": "reveal authority; constructor checks semantics and units."
+            }
+          },
+          "required": [
+            "context_id",
+            "issued_study",
+            "execution_authority",
+            "reveal_authority"
+          ],
+          "type": "object"
+        },
+        "version": {
+          "const": "1.0.0"
+        }
+      },
+      "required": [
+        "schema",
+        "version",
+        "value"
+      ],
+      "type": "object"
+    }
+  },
+  "$id": "urn:empirical-lawhood:configuration:rc-challenge-result-authority",
+  "$ref": "#/$defs/RCChallengeResultAuthorityContext_077c02a6f57b",
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "description": "Structural projection only. Typed owner decides lexical/semantic acceptance; no external prerequisites or authority are checked.",
+  "title": "Rc Challenge Result Authority",
+  "x-consumer": "rc-challenge-result-authority",
+  "x-consumer-maximum-bytes": 1048576,
+  "x-disposition": "retained",
+  "x-preparation-allowed": false
+}
