@@ -113,6 +113,46 @@ def test_success_retains_exact_consumed_input_and_unchanged_report_once(tmp_path
     assert attempts._current.get() is None
 
 
+def test_retention_needs_no_hard_links(tmp_path, native, monkeypatch):
+    def unsupported(*args, **kwargs):
+        raise PermissionError("FAT does not support hard links")
+
+    monkeypatch.setattr(storage.os, "link", unsupported)
+    destination = tmp_path / "fat-attempt"
+    result = invoke(MODEL, destination)
+    assert result.exit_code == 0, result.output
+    assert record(destination)["state"] == "SUCCEEDED"
+    assert json.loads((destination / "report.json").read_text()) == native[2]
+    assert len(native[1]) == 1
+    assert not list(destination.glob(".write-*"))
+
+
+@pytest.mark.parametrize("symlink", [False, True])
+def test_atomic_attempt_publication_refuses_a_racing_writer(tmp_path, monkeypatch, symlink):
+    attempt = storage.DevelopmentAttempt(tmp_path / "attempt", "controlled")
+    protected = tmp_path / "protected"
+    protected.write_bytes(b"other writer's bytes")
+    original = storage.rename_noreplace
+
+    def raced(source, destination, **kwargs):
+        target = attempt.path / destination
+        if symlink:
+            target.symlink_to(protected)
+        else:
+            target.write_bytes(protected.read_bytes())
+        return original(source, destination, **kwargs)
+
+    monkeypatch.setattr(storage, "rename_noreplace", raced)
+    try:
+        with pytest.raises(FileExistsError):
+            attempt._write("report.json", b"our report", 1024)
+        assert (attempt.path / "report.json").read_bytes() == protected.read_bytes()
+        assert protected.read_bytes() == b"other writer's bytes"
+        assert not list(attempt.path.glob(".write-*"))
+    finally:
+        attempt.close()
+
+
 def test_multiple_consumed_inputs_keep_distinct_owned_snapshots(tmp_path):
     first, second = tmp_path / 'first.json', tmp_path / 'second.json'
     first.write_bytes(b'{"first":1}\n')

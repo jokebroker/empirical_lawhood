@@ -24,6 +24,8 @@ import numpy.typing as npt
 import pyarrow as pa  # type: ignore[import-untyped]
 import pyarrow.parquet as pq  # type: ignore[import-untyped]
 
+from .atomic_files import rename_noreplace
+
 from empirical_lawhood.kernel.serialization import (
     canonical_json_bytes,
 )
@@ -1714,38 +1716,14 @@ class ExternalArtifactPlane:
         to a check-then-replace sequence on an unsupported platform.
         """
 
-        libc = ctypes.CDLL(None, use_errno=True)
         try:
-            renameat2 = libc.renameat2
-        except AttributeError as error:
+            rename_noreplace(source, destination)
+        except FileExistsError:
+            raise
+        except OSError as error:
             raise ArtifactIdentityConflict(
-                "exclusive atomic control publication is unavailable"
+                "exclusive atomic control publication failed"
             ) from error
-        renameat2.argtypes = (
-            ctypes.c_int,
-            ctypes.c_char_p,
-            ctypes.c_int,
-            ctypes.c_char_p,
-            ctypes.c_uint,
-        )
-        renameat2.restype = ctypes.c_int
-        result = int(
-            renameat2(
-                -100,
-                os.fsencode(source),
-                -100,
-                os.fsencode(destination),
-                1,
-            )
-        )
-        if result == 0:
-            return
-        error_number = ctypes.get_errno()
-        if error_number == errno.EEXIST:
-            raise FileExistsError(error_number, os.strerror(error_number), destination)
-        raise ArtifactIdentityConflict("exclusive atomic control publication failed") from OSError(
-            error_number, os.strerror(error_number), destination
-        )
 
     @staticmethod
     def _require_component_identity(path: Path, identity: tuple[int, str]) -> None:

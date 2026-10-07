@@ -18,6 +18,7 @@ from uuid import uuid4
 
 from .bounded_io import bounded_file_sha256, read_bounded_bytes
 from .bounded_process import BoundedProcessError, run_bounded_command
+from .atomic_files import rename_noreplace
 
 
 MAX_REPORT_BYTES = 1024 * 1024
@@ -174,7 +175,7 @@ class DevelopmentAttempt:
                 os.close(descriptor)
             self._check_directory()
             if expected is None:
-                os.link(temporary, name, src_dir_fd=self._fd, dst_dir_fd=self._fd, follow_symlinks=False)
+                rename_noreplace(temporary, name, source_dir_fd=self._fd, destination_dir_fd=self._fd)
             else:
                 os.replace(temporary, name, src_dir_fd=self._fd, dst_dir_fd=self._fd)
             self._installed[name] = hashlib.sha256(payload).hexdigest()
