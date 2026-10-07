@@ -233,7 +233,9 @@ def main() -> None:
                                            "--checkout", str(checkout)])
             run("tests", [*uv_python, "-m", "coverage", "run", "-m", "pytest",
                           "-q", "-ra", "--fail-on-skip", "-o",
-                          f"cache_dir={packet / 'pytest-cache'}", *tests])
+                          f"cache_dir={packet / 'pytest-cache'}", "-o",
+                          "tmp_path_retention_policy=failed", "-o",
+                          "tmp_path_retention_count=1", *tests])
             run("critical-coverage", [*uv_python, "-m", "coverage", "report"])
             run("critical-coverage-json", [*uv_python, "-m", "coverage", "json",
                                             "-o", str(packet / "coverage.json")])
