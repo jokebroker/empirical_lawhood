@@ -227,6 +227,11 @@ def main() -> None:
             "print(json.dumps({'python':platform.python_version(), 'executable':sys.executable, "
             "'package_origin':empirical_lawhood.__file__, 'selected_version':selected, "
             "'packages':sorted((d.metadata['Name'],d.version) for d in m.distributions())},indent=2))"])
+        # Refuse inexpensive source drift before the complete portable suite.
+        run("static-errors", ["uv", "run", "--no-sync", "ruff", "check", "src", "tests", "scripts"])
+        for generator in ("extension_bundle_aggregate", "executable_binding_aggregate", "cli_reference", "test_fixture", "operator_examples", "workflow_index", "config_schemas", "integration_examples"):
+            run(f"generated-{generator}", [*uv_python, f"scripts/generate_{generator}.py", "--check"])
+        run("documentation-links", [*uv_python, "scripts/check_documentation.py"])
         if args.profile == "portable" and prior_portable is None:
             environment["COVERAGE_FILE"] = str(packet / ".coverage")
             run("coverage-configuration", [*uv_python, "scripts/check_coverage_inventory.py",
@@ -273,10 +278,6 @@ def main() -> None:
                 "from pathlib import Path; from scripts.release_portable_evidence import authenticate_portable_evidence; "
                 f"authenticate_portable_evidence(Path({str(retained / selected_path.name)!r}), Path.cwd()); "
                 "print('one passing precommit suite authenticated to this exact tree; no tests executed')"])
-        run("static-errors", ["uv", "run", "--no-sync", "ruff", "check", "src", "tests", "scripts"])
-        for generator in ("extension_bundle_aggregate", "executable_binding_aggregate", "cli_reference", "test_fixture", "operator_examples", "workflow_index", "config_schemas", "integration_examples"):
-            run(f"generated-{generator}", [*uv_python, f"scripts/generate_{generator}.py", "--check"])
-        run("documentation-links", [*uv_python, "scripts/check_documentation.py"])
         if args.profile == "portable":
             artifacts = packet / "artifacts"
             # With neither --wheel nor --sdist, uv builds the wheel THROUGH the

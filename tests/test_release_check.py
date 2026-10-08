@@ -184,6 +184,29 @@ def test_uv_prerequisite_interrupt_creates_no_unfinalized_packet(release_runner,
     assert not packet.exists()
 
 
+def test_generated_input_drift_refuses_before_portable_suite(release_runner, monkeypatch, tmp_path):
+    packet = tmp_path / "packet"
+    monkeypatch.setattr(release_runner.sys, "argv", ["release_check.py", "--profile", "portable",
+                                                    "--output-dir", str(packet)])
+
+    def child(command, **kwargs):
+        assert "pytest" not in command, "generated input drift must refuse before the expensive suite"
+        drifted = "scripts/generate_integration_examples.py" in command
+        kwargs["stdout"].write("integration input drift\n" if drifted else "synthetic preflight passed\n")
+        return SimpleNamespace(returncode=1 if drifted else 0)
+
+    monkeypatch.setattr(release_runner.subprocess, "run", child)
+    with pytest.raises(RuntimeError, match="generated-integration_examples failed"):
+        release_runner.main()
+    manifest = read_packet(packet)
+    assert manifest["status"] == "FAILED"
+    failed = manifest["checks"][-1]
+    assert failed["name"] == "generated-integration_examples"
+    assert failed["exit_code"] == 1
+    assert (packet / failed["log"]).read_text() == "integration input drift\n"
+    assert not any(check["name"] == "tests" for check in manifest["checks"])
+
+
 @pytest.mark.parametrize("stage", ["packet", "logs", "temporary-files"])
 @pytest.mark.parametrize("error", [RuntimeError("setup defect"), SystemExit(7), KeyboardInterrupt()])
 def test_setup_failure_finalizes_created_packet(release_runner, monkeypatch, tmp_path, stage, error):
