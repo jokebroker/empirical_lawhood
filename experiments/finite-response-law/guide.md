@@ -20,12 +20,26 @@ Copy `current-calibration-allocation.json`, `current-evaluation-allocation.json`
 
 `campaign finite-response-packet` prepares a canonical packet from an edited allocation, the exposure census, authenticated `nomination.canonical.json` and its source directory. Supply `--stage calibration`, a distinct `--config-id`, and a new `--output`. Calibration-method and prospective-evaluation require an authenticated current `--parent`; their actual method/control operands are derived by the existing scientific owners. No user-authored hash or imported donor grant substitutes for that join.
 
+For a proposed packet, supply global `--project-root` and `--operator-profile` options.
+After preparation of a disjoint allocation and the complete exposure census, run:
+
+```bash
+uv run --no-sync empirical-lawhood --project-root /selected/clean/checkout \
+  --operator-profile /work/operator-profile.json campaign finite-response-packet \
+  --stage calibration --config-id example.disjoint-calibration \
+  --allocation /work/disjoint-calibration-allocation.canonical.json \
+  --exposure /work/current-exposure.canonical.json \
+  --nomination /work/new/nomination/nomination.canonical.json \
+  --nomination-directory /work/new/nomination \
+  --output /work/new/calibration-packet.canonical.json
+```
+
 ## Author, prove and run through the existing lifecycle
 
 ```bash
 uv run --no-sync empirical-lawhood --project-root /selected/clean/checkout \
   --operator-profile /work/operator-profile.json campaign finite-response-author \
-  --config /work/rerun-calibration.canonical.json \
+  --config /work/new/calibration-packet.canonical.json \
   --exposure /work/current-exposure.canonical.json \
   --nomination-directory /work/new/nomination \
   --output-dir /external/new/calibration-authoring
@@ -34,7 +48,14 @@ uv run --no-sync empirical-lawhood --project-root /selected/clean/checkout \
   --authoring-dir /external/new/calibration-authoring
 ```
 
-The supplied `rerun-calibration.json` is an exposed full-size authoring example. The proof reconstructs actual installed factories, output contracts, graph and resource bounds with zero scientific task execution. Select the same directory through global `--authoring-dir` for existing readiness, issue/package, run, status and resume operations; see [the shared lifecycle](../../docs/integrations.md) and [CLI reference](../../docs/cli.md).
+The supplied `rerun-calibration.json` retains exposed sample operands.
+The complete exposure census causes authoring to refuse those operands.
+Use a disjoint proposed allocation to check full-size authoring and proof.
+Keep every existing exclusion in the exposure census.
+
+The proof reconstructs installed factories, output contracts, the graph and resource bounds with zero scientific task execution.
+Select the same directory through global `--authoring-dir` for later lifecycle operations.
+See [the shared lifecycle](../../docs/integrations.md) and [CLI reference](../../docs/cli.md).
 
 Allow time for full-size authoring and proof even though they execute no native task.
 In a branch-coverage check on an Intel i7-10700KF, Python 3.11.14 and the locked

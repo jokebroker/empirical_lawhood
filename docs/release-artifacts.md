@@ -45,10 +45,11 @@ The [release runner](../scripts/release_check.py) clones the exact committed sou
 It installs the locked environment and retains the actual Python, distribution and backend versions.
 Before testing or building, it verifies the executing package belongs to that
 checkout and that source, module and distribution versions agree.
-The portable profile executes the complete portable tests and required critical coverage.
+The runner examines static errors, all registered generators and shipped-document targets before expensive tests.
+The generator check stops source drift before the complete portable suite.
+The portable profile retains the complete portable tests and required critical coverage.
 Coverage checks configured paths separately from the actual measured critical
 owners, including the active catalog migration.
-It also examines static errors, all registered generators and shipped-document targets.
 Selected skips fail.
 
 The runner builds the wheel through its newly produced sdist. It compares every package source/resource member with the selected Git source. It installs those exact artifact bytes in a separate wheel environment. Installed checks cover leaf help, metadata, packaged notices, native refusals and the full public reactor example.

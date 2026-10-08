@@ -10,6 +10,13 @@ Use it to select a job and retain its complete evidence packet.
 `portable-release-check` on pushes and pull requests using Ubuntu 24.04 x86-64,
 CPython 3.11.14 and uv 0.11.28. It calls the same clean-source release runner used locally. The runner validates the locked environment, portable tests, scoped coverage, static errors, generators and documentation. It builds through the source archive and examines the installed wheel outside the checkout.
 
+The portable job selects the [frozen RC numerical profile](environments.md#frozen-rc-numerical-input-profile).
+It retains exact original descriptor and fibre hashes.
+The runner verifies those exposed inputs, generators and document targets before expensive tests.
+A profile mismatch or source drift therefore stops early.
+The complete portable test selection remains required in CI.
+These software checks confer no scientific qualification.
+
 A 30-day artifact retains manifest, status, logs,
 coverage and artifact hashes. Download and preserve the complete selected packet
 before CI retention expires. Failed checks upload their available diagnostic

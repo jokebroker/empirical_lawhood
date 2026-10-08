@@ -42,6 +42,9 @@ Optional publication derivatives can be built separately, but the packaged examp
 A later evidence release needs its original code identity, configuration, native source, independent-unit roster, outputs and verification records.
 Historical producing identities remain separate from the current package.
 
+The [first-release reproduction record](docs/paper-reproduction.md) documents original external inputs, full numerical replays and encountered failures.
+It separates headline reproduction, numerical differences, software checks and fresh qualification.
+
 A new result should record the exact target version, command, environment,
 configuration, source and seed roster, independent-unit definition, output
 hashes, receipts and adjudication. Use the [provenance template](configs/templates/evidence-provenance.yaml)

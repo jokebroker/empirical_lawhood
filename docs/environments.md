@@ -28,6 +28,27 @@ is not a numerical qualification.
 | Brian2 | Separate [native environment](../experiments/neuron-current-response/native-env/pyproject.toml): CPython 3.11.14, Brian2 2.9.0, NumPy 1.26.4 | Runs through the explicit native Python subprocess. Do not combine its NumPy pin with the main environment |
 | Release packaging | `dev`, `build`, `reactor-example`. Hatchling 1.32.4 and its transitive dependencies in `uv.lock` | Builds and tests software artifacts. No scientific requalification |
 
+## Frozen RC numerical input profile
+
+The retained RC reproduction uses NumPy `X86_V3` dispatch and the OpenBLAS Haswell kernel.
+A different CPU dispatch can change exact descriptor bytes with the same dependency versions.
+On an AVX2/FMA host, select this profile before NumPy import:
+
+```sh
+export OPENBLAS_CORETYPE=HASWELL
+export NPY_DISABLE_CPU_FEATURES=X86_V4,AVX512_ICL,AVX512_SPR
+uv run --no-sync python scripts/check_frozen_rc_inputs.py
+```
+
+The portable CI job selects these variables before its first numerical import.
+The release runner separately retains its single-thread limits.
+The check requires exact hashes for all eighteen frozen exposed development descriptors and their original fibre seeds.
+A mismatch refuses before the expensive portable tests.
+It performs no native acquisition or scientific qualification.
+
+Other numerical environments retain their own source and verification requirements.
+Keep the exact original descriptor hashes and numerical records unchanged.
+
 ## Discover and interpret readiness
 
 `workflow show ID --format json` lists the selected task's environment and input roles without checking either.
@@ -118,6 +139,9 @@ See [contributor checks](../CONTRIBUTING.md) for the clean release runner and
 The linked source modules, command metadata and existing checks own the implemented behavior described here.
 The [scientific integrity guide](scientific-integrity.md) defines its separate evidence and authority boundaries.
 The [program source register](../paper/SOURCES.md) identifies bounded historical results and unavailable primary records.
+
+The [NumPy CPU options](https://numpy.org/doc/2.4/reference/simd/build-options.html) define the selected feature groups and runtime exclusions.
+The [OpenBLAS runtime variables](https://www.openmathlib.org/OpenBLAS/docs/runtime_variables/) define `OPENBLAS_CORETYPE`.
 
 ## Current numerical integrations
 
