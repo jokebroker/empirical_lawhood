@@ -184,26 +184,30 @@ def test_uv_prerequisite_interrupt_creates_no_unfinalized_packet(release_runner,
     assert not packet.exists()
 
 
-def test_generated_input_drift_refuses_before_portable_suite(release_runner, monkeypatch, tmp_path):
+@pytest.mark.parametrize(("script", "check_name"), (
+    ("scripts/generate_integration_examples.py", "generated-integration_examples"),
+    ("scripts/check_frozen_rc_inputs.py", "frozen-rc-numerical-inputs"),
+))
+def test_source_drift_refuses_before_portable_suite(release_runner, monkeypatch, tmp_path, script, check_name):
     packet = tmp_path / "packet"
     monkeypatch.setattr(release_runner.sys, "argv", ["release_check.py", "--profile", "portable",
                                                     "--output-dir", str(packet)])
 
     def child(command, **kwargs):
-        assert "pytest" not in command, "generated input drift must refuse before the expensive suite"
-        drifted = "scripts/generate_integration_examples.py" in command
-        kwargs["stdout"].write("integration input drift\n" if drifted else "synthetic preflight passed\n")
+        assert "pytest" not in command, "source drift must refuse before the expensive suite"
+        drifted = script in command
+        kwargs["stdout"].write("source input drift\n" if drifted else "synthetic preflight passed\n")
         return SimpleNamespace(returncode=1 if drifted else 0)
 
     monkeypatch.setattr(release_runner.subprocess, "run", child)
-    with pytest.raises(RuntimeError, match="generated-integration_examples failed"):
+    with pytest.raises(RuntimeError, match=f"{check_name} failed"):
         release_runner.main()
     manifest = read_packet(packet)
     assert manifest["status"] == "FAILED"
     failed = manifest["checks"][-1]
-    assert failed["name"] == "generated-integration_examples"
+    assert failed["name"] == check_name
     assert failed["exit_code"] == 1
-    assert (packet / failed["log"]).read_text() == "integration input drift\n"
+    assert (packet / failed["log"]).read_text() == "source input drift\n"
     assert not any(check["name"] == "tests" for check in manifest["checks"])
 
 

@@ -20,6 +20,10 @@ jobs:
     name: portable-release-check
     runs-on: ubuntu-24.04
     timeout-minutes: 240
+    env:
+      # Keep the frozen RC descriptor recipe on the original numerical dispatch.
+      OPENBLAS_CORETYPE: HASWELL
+      NPY_DISABLE_CPU_FEATURES: X86_V4,AVX512_ICL,AVX512_SPR
     steps:
       - uses: actions/checkout@11bd71901bbe5b1630ceea73d27597364c9af683 # v4.2.2
         with:

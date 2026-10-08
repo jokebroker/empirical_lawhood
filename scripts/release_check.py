@@ -227,6 +227,8 @@ def main() -> None:
             "print(json.dumps({'python':platform.python_version(), 'executable':sys.executable, "
             "'package_origin':empirical_lawhood.__file__, 'selected_version':selected, "
             "'packages':sorted((d.metadata['Name'],d.version) for d in m.distributions())},indent=2))"])
+        if args.profile == "portable":
+            run("frozen-rc-numerical-inputs", [*uv_python, "scripts/check_frozen_rc_inputs.py"])
         # Refuse inexpensive source drift before the complete portable suite.
         run("static-errors", ["uv", "run", "--no-sync", "ruff", "check", "src", "tests", "scripts"])
         for generator in ("extension_bundle_aggregate", "executable_binding_aggregate", "cli_reference", "test_fixture", "operator_examples", "workflow_index", "config_schemas", "integration_examples"):

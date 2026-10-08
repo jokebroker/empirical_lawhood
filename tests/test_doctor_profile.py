@@ -10,6 +10,7 @@ from pathlib import Path
 from tempfile import TemporaryDirectory
 
 import pytest
+from rich.text import Text
 from typer.testing import CliRunner
 
 from empirical_lawhood.cli.app import app
@@ -54,13 +55,20 @@ def _invoke(tmp_path: Path, raw: bytes | None):
     return result
 
 
-def test_no_profile_is_portable_and_malformed_profile_is_not_ignored(tmp_path: Path) -> None:
+@pytest.mark.parametrize("force_color", (False, True))
+def test_no_profile_is_portable_and_malformed_profile_is_not_ignored(tmp_path: Path, monkeypatch, force_color) -> None:
+    if force_color:
+        monkeypatch.setenv("FORCE_COLOR", "1")
+        monkeypatch.delenv("NO_COLOR", raising=False)
+    else:
+        monkeypatch.delenv("FORCE_COLOR", raising=False)
+        monkeypatch.setenv("NO_COLOR", "1")
     result = _invoke(tmp_path, None)
     assert result.exit_code == 0, result.output
     assert "OPERATOR_STORAGE_UNCONFIGURED" in json.loads(result.stdout)["reason_codes"]
     malformed = _invoke(tmp_path, b'{"not":"an operator storage profile"}')
     assert malformed.exit_code == 2, malformed.output
-    assert "operator-profile" in malformed.output
+    assert "operator-profile" in Text.from_ansi(malformed.output).plain
 
 
 @pytest.mark.parametrize("read_only", (False, True))
